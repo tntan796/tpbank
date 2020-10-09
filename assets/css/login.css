@@ -1,0 +1,204 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.login-page {
+    box-sizing: inherit;
+    min-height: 100vh;
+    background-image: url(../images/login/login-bg-1920.835cba0e82c8d6e6ab7b.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 25px;
+    position: relative;
+    padding-bottom: 70px;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+/* Trung tâm */
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+    /* Trung tâm - Header  */
+.top {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top .left{
+    box-sizing: inherit;
+}
+
+.top .left img{
+    vertical-align: middle;
+    border-style: none;
+}
+
+.login-logo {
+    height: 44px;
+}
+
+.top .right{
+    text-align: right;
+}
+
+.top .right a {
+    display: inline-block;
+    color: #ff9800;
+    font-size: 16px;
+}
+.top .right img {
+    vertical-align: middle;
+    border-style: none;
+}
+.top .right a div{
+    display: inline-block;
+    margin-left: 5px;
+}
+
+/* Trung tâm - Content */
+.content-wrap {
+    margin-top: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 350px;
+}
+
+.welcome {
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.username-container {
+    position: relative;
+}
+
+.username-container input::placeholder, .password-container input::placeholder {
+    color: rgb(168 135 211);
+    font-weight: 400;
+}
+
+.password-container .form-control, .username-container .form-control {
+    padding: 13px 16px;
+    height: 48px;
+    background-color: rgba(0,0,0,.4);
+    border: 1px solid rgba(226,216,238,.3) !important;
+    color: #fff;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.password-container img{
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    top: 12px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.forget-password {
+    color: #FF9800;
+}
+
+.tooltip-wrapper {
+    position: absolute;
+    top: 14px;
+    right: 15px;
+    display: inline-block;
+}
+
+.tooltip-wrapper .tooltip-trigger {
+    cursor: pointer;
+    color: #FF9800;
+    font-size: 20px;
+}
+
+.password-container {
+    position: relative;
+}
+
+.btn-login {
+    width: 100%;
+    height: 48px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: none;
+    background-image: linear-gradient(to bottom, #7b35bb, #5d2e86) !important;
+    color: #FF9800 !important;
+    border-radius: 5px !important;
+}
+
+
+/* Footer */
+.bottom {
+    position: absolute;
+    width: 100vw;
+    background: #42236a;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+}
+
+.bottom .container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom .container .left {
+    color: white;
+}
+
+.bottom .container .right {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    box-sizing: inherit;   
+}
+
+.bottom .container .right a{
+    color: #ff9800;
+    text-decoration: underline;
+}
+
+
+/* Responsive */
+
+@media only screen and (max-width: 1000px) {
+    .top {
+        justify-content: center;
+    }
+
+    .top .right {
+        display: none;
+    }
+
+    .bottom {
+        display: none;
+    }
+}
