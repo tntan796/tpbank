@@ -1,0 +1,318 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+a {
+    color: #7b35bb;
+    text-decoration: none;
+    background-color: transparent;
+    outline: none;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+/* Menu left */
+.main-container > .left {
+    width: 270px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    flex-shrink: 0;
+    background-color: #7b35bb;
+    background-repeat: no-repeat;
+    color: #a0a0a0;
+}
+
+.main-container > .left .main-logo {
+    margin: 37px 0px;
+    text-align: center;
+}
+
+.main-container > .left .main-logo img {
+    width: 134px;
+}
+
+
+/* Menu */
+.menu {
+    height: calc((var(--viewportHeight, 1vh) * 100) - 105px);
+    overflow-y: auto;
+}
+
+    /* Ẩn thanh scroll */
+.menu::-webkit-scrollbar {
+    display: none;
+}
+
+.menu .menu-group .menu-item-list {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+.menu .menu-group .menu-item-list.active {
+    max-height: 700px;
+    transition: max-height 0.3s ease-in;
+}
+
+.menu .menu-group .menu-item.parent {
+    transition: color 0.3s linear;
+    position: relative;
+}
+
+.menu .menu-group .menu-item.parent.active::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    background-color: #FF9800;
+    top: 0px;
+    left: 0px;
+    width: 4px;
+    height: 100%;
+}
+
+.menu .menu-group .menu-item.parent .fa-chevron-down {
+    position: absolute;
+    right: 25px;
+    font-size: 90%;
+}
+
+.menu .menu-group .menu-item.parent .fa-chevron-up {
+    color: #FF9800;
+    position: absolute;
+    right: 25px;
+    font-size: 90%;
+}
+
+.menu .menu-group .menu-item {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 13px 0px;
+    color: #ad8ad8;
+    border-top: 1px solid rgba(200, 200, 200, 0.1);
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.menu .menu-group .menu-item.active {
+    color: #ffffff;
+}
+
+.menu .menu-group .menu-item .menu-icon {
+    flex-shrink: 0;
+    width: 60px;
+    text-align: center;
+}
+
+.menu .menu-group .menu-item .menu-icon img {
+    height: 24px;
+}
+
+.menu .menu-group .menu-item .menu-name {
+    flex-grow: 1;
+}
+
+.fa, .fas {
+    font-weight: 900;
+}
+
+.fa, .far, .fas {
+    font-family: "Font Awesome 5 Free";
+}
+
+.menu-logo {
+    position: fixed;
+    bottom: 0;
+    left: 15px;
+    z-index: -1000;
+}
+
+
+
+/* Menu Right */
+
+.main-container > .right {
+    margin-left: 270px;
+}
+
+.page-header {
+    background-color: #EBEBFA;
+    position: fixed;
+    width: calc(100% - 270px);
+    top: 0;
+    padding: 24px 30px 24px 30px;
+    z-index: 99;
+    min-height: 105px;
+}
+
+.page-header .top-header {
+    display: flex;
+    align-items: center;
+    height: 65px;
+    position: absolute;
+    background: #7b35bb;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 0 16px;
+}
+
+.page-header .top-header #hamburger-menu {
+    cursor: pointer;
+}
+
+.page-header .top-header .logo {
+    height: 20px;
+    margin-left: 8px;
+}
+
+
+.page-header > .left-text > div {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.page-header .page-title {
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 28px;
+    text-transform: capitalize;
+}
+
+.page-header .user-info {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    position: absolute;
+    top: 27px;
+    right: 30px;
+}
+
+.page-header .user-info #notification-btn {
+    font-size: 20px;
+    color: #FF9800;
+    cursor: pointer;
+    margin-right: 30px;
+    position: relative;
+}
+
+#notification-btn[_ngcontent-pyc-c8] {
+    outline: 0;
+}
+
+.page-header .user-info #notification-btn .notification-active-icon {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ff3b30;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    top: -3px;
+    right: -2px;
+}
+
+.page-header .user-info #user-btn {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.page-header .user-info #user-btn .avatar {
+    margin-right: 10px;
+}
+
+.page-header .user-info #user-btn .user-name {
+    margin-right: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.page-header .user-info #user-btn .fa-chevron-down {
+    color: #FF9800;
+}
+
+
+
+/* Body left*/
+.page-body {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 105px;
+    padding: 5px 30px 5px 30px;
+    min-height: calc(100vh - 330px);
+}
+
+.page-body .left {
+    flex-grow: 1;
+    margin-right: 30px;
+}
+
+.page-body .left .content-wrap {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+/* Responsive */
+
+@media only screen and (min-width: 1440px) {
+    .page-header {
+        width: calc(100% - 270px);
+        padding: 24px 30px 24px 30px;
+    }
+
+    .page-header .top-header {
+        display: none;
+    }
+
+    .page-header > .left-text {
+        margin-top: 0;
+        margin-right: calc(270px + 30px);
+    }
+
+    .page-header > .user-info {
+        top: 30px;
+        right: 30px;
+    }
+    .page-header > .user-info .user-name {
+        display: inline-block;
+        color: #42236a;
+    }
+
+    .main-container > .right .page-body {
+        padding: 5px 30px 5px 30px;
+        margin-top: 105px;
+    }
+
+
+    .main-container > .right .page-body .left {
+        margin-right: 30px;
+    }
+}
+
+
+
+@media only screen and (max-width: 1439px)
+{
+    .main-container > .left {
+        transition: none;
+        transform: none;
+    }
+
+    .main-container > .right {
+        margin-left: 270px;
+    }
+}
+
