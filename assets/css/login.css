@@ -24,6 +24,10 @@ html, body {
     visibility: hidden;
 }
 
+.lang-icon {
+    width: 34px;
+    height: 20px;
+}
 
 /* Trung tâm */
 .container {
