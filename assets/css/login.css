@@ -123,6 +123,11 @@ html, body {
     color: #FF9800;
 }
 
+.forget-password:hover {
+    color: #b36a00 !important;
+    text-decoration: none;
+}
+
 .tooltip-wrapper {
     position: absolute;
     top: 14px;
@@ -151,6 +156,20 @@ html, body {
     border-radius: 5px !important;
 }
 
+.btn-login:hover {
+    background-image: linear-gradient(to bottom, #622a95, #4b256c) !important;
+    cursor: pointer;
+}
+
+    /* Login bằng tài khoản khác */
+.login-with-other-account {
+    color: #FF9800;
+}
+
+.login-with-other-account:hover {
+    color: #b36a00 !important;
+    text-decoration: none;
+}
 
 /* Footer */
 .bottom {
