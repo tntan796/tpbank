@@ -1,0 +1,293 @@
+@media only screen and (min-width: 1440px) { 
+    .page-header .top-header {
+        display: none;
+    }
+    .page-header > .left-text {
+        margin-top: 0;
+        margin-right: calc(270px + 30px);
+    }
+}
+
+@media only screen and (max-width: 1439px) {
+    /*_____Left container _____*/
+    .main-container > .left {
+        transition: none;
+        transform: none;
+    }
+
+    /*_____Right ______*/
+    .main-container > .right {
+        margin-left: 270px;
+    }
+
+    .page-header {
+        width: calc(100% - 270px);
+        padding: 24px 30px 24px 30px;
+    }
+
+    .page-header .top-header {
+        display: none;
+    }
+
+    .page-header > .left-text {
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    .page-header > .user-info {
+        top: 30px;
+        right: 30px;
+    }
+
+    .page-header > .user-info .user-name {
+        display: inline-block;
+        color: #42236a;
+    }
+
+    /*_____Page body _____*/
+    .main-container > .right .page-body {
+        padding: 5px 30px 5px 30px;
+        margin-top: 105px;
+    }
+
+    .main-container > .right .page-body .left {
+        margin-right: 0;
+    }
+
+    /*_____Right ____*/
+    .main-container > .right .page-body .right {
+        display: none;
+    }
+    /*_____Footer ____*/
+    app-footer .footer-1 {
+        padding: 20px 30px;
+    }
+}
+
+@media screen and (max-width: 1130px) {
+    /*____List card _____*/
+    .list-card-link .card-customize:nth-child(odd) {
+        padding-right: 0;
+        margin-right: 16px;
+    }
+
+    .list-card-link .card-link-wrapper {
+        max-width: none;
+    }
+
+    .list-card-link .card-customize {
+        display: inline-block;
+        width: 46%;
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+}
+
+@media only screen and (max-width: 1129px) {
+    /*_____Left container _____*/
+    .main-container > .left {
+        transition: all 0.3s ease;
+        transform: translateX(-270px);
+    }
+
+    /*_____Right ______*/
+    .main-container > .right {
+        margin-left: 0;
+    }
+
+    .page-header {
+        width: 100%;
+        padding: 24px 16px 24px 16px;
+    }
+
+    .page-header .top-header {
+        display: flex;
+    }
+    .page-header > .left-text {
+        margin-top: 65px;
+        margin-right: 0;
+    }
+
+    .page-header > .user-info {
+        top: 17px;
+        right: 16px;
+    }
+    .page-header > .user-info .user-name {
+        display: inline-block;
+        color: #ffffff;
+    }
+
+    /*_____Page body _____*/
+    .main-container > .right .page-body {
+        padding: 5px 16px 5px 16px;
+        margin-top: 169px;
+        min-height: calc(100vh - 395px);
+    }
+
+    .main-container > .right .page-body .left {
+        margin-right: 0;
+    }
+    /*_____Right _____*/
+    .main-container > .right .page-body .right {
+        display: none;
+    }
+
+    /*_____Footer ____*/
+    app-footer .footer-1 {
+        padding: 20px 16px;
+    }
+
+    app-footer .footer-2 {
+        padding: 15px 16px;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    /*_____Left container _____*/
+    .main-container > .left {
+        transition: all 0.3s ease;
+        transform: translateX(-270px);
+    }
+
+    /*_____Right ______*/
+    .main-container > .right {
+        margin-left: 0;
+    }
+
+    .page-header {
+        width: 100%;
+        padding: 16px 16px 16px 16px;
+    }
+
+    .page-header .top-header {
+        display: flex;
+    }
+
+    .page-header > .left-text {
+        margin-top: 65px;
+        margin-right: 0;
+    }
+
+    .page-header > .user-info {
+        top: 17px;
+        right: 16px;
+    }
+
+    .page-header > .user-info .user-name {
+        display: none;
+    }
+
+    /*_____Page body _____*/
+    .main-container > .right .page-body {
+        padding: 5px 16px 5px 16px;
+        margin-top: 153px;
+        min-height: calc(100vh - 500px);
+    }
+
+    .main-container > .right .page-body .left {
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    /*_____Right _____*/
+    .main-container > .right .page-body .right {
+        display: none;
+    }
+
+    /*_____Footer ____*/
+    app-footer .footer-1 {
+        padding: 20px 16px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    app-footer .footer-1 .phone-col {
+        text-align: center;
+    }
+    app-footer .footer-1 .phone-col .call-center-text {
+        display: block;
+    }
+    app-footer .footer-1 .phone-col .phone-1 {
+        margin-bottom: 8px;
+    }
+
+    app-footer .footer-1 .footer-column-2, app-footer .footer-1 .footer-column-3 {
+        display: none;
+    }
+
+    app-footer .footer-1 .footer-column-2, app-footer .footer-1 .footer-column-3 {
+        display: none;
+    }
+
+    app-footer .footer-1 .app-store-col {
+        text-align: center;
+        padding: 32px 0 12px 0;
+    }
+
+    app-footer .footer-1 .app-store-col .download-desc {
+        display: block;
+    }
+    app-footer .footer-2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    /*____List card _____*/
+
+    .list-card-link {
+        margin-right: 0;
+    }
+
+    .list-card-link .card-link-wrapper {
+        max-width: none;
+    }
+    .list-card-link .card-customize {
+        display: block;
+        width: 100%;
+        margin-bottom: 16px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    /*____Swipper_____*/
+    .acc-slider-container {
+        height: 160px;
+        margin-bottom: 10px;
+    }
+
+    .acc-slider-container .swiper-wrapper {
+        height: 131px;
+    }
+
+    .acc-slider-container .swiper-wrapper .acc-slider-slide.swiper-slide-active {
+        border: none;
+    }
+
+    .acc-slider-container .swiper-wrapper .acc-slider-slide {
+        width: 100%;
+    }
+
+    .acc-slider-container .swiper-pagination {
+        display: block;
+        width: 100%;
+        bottom: 0;
+    }
+
+    .acc-slider-container .swiper-pagination .swiper-pagination-bullet-active {
+        opacity: 1;
+        background: #42236a;
+        outline: 0;
+    }
+
+    .acc-slider-container .swiper-pagination .swiper-pagination-bullet {
+        background: #e2d8ee;
+        opacity: 1;
+        outline: 0;
+    }
+
+    .acc-slider-container .acc-slider-btn-next, .acc-slider-container .acc-slider-btn-prev, .acc-slider-container .acc-slider-left-blur, .acc-slider-container .acc-slider-right-blur {
+        display: none;
+    }
+}
