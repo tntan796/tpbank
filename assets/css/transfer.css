@@ -84,14 +84,11 @@ h1, h2, h3, h4, h5, h6 {
     overflow-y: auto;
 }
 
-.menu .menu-group .menu-item.active {
-    color: #ffffff;
-}
-
 .menu .menu-group .menu-item.parent {
     transition: color 0.3s linear;
     position: relative;
 }
+
 
 .menu .menu-group .menu-item {
     display: flex;
@@ -156,7 +153,17 @@ h1, h2, h3, h4, h5, h6 {
     content: "\f078";
 }
 
+.menu .menu-group .menu-item:hover {
+    opacity: 1;
+    background-color: #8d52c5;
+}
+.menu .menu-group .menu-item.active {
+    color: #ffffff;
+}
 
+.menu .menu-group .menu-item.active{
+    color: #ffffff;
+}
 /*_____Right ______*/
 .main-container > .right {
     margin-left: 270px;
@@ -196,7 +203,7 @@ h1, h2, h3, h4, h5, h6 {
 .page-header .page-title {
     margin-bottom: 0px;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: bolder;
     text-transform: capitalize;
     line-height: 28px;
     text-transform: capitalize;
@@ -265,6 +272,27 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 5px;
 }
 
+.page-header .breadcrumb {
+    margin-bottom: 8px;
+    padding: 0px;
+    background: transparent;
+}
+
+.breadcrumb a {
+    font-size: 13px;
+    color: #42236a;
+}
+
+.page-header .breadcrumb > a {
+    display: inline-block;
+    font-size: 13px;
+    text-transform: capitalize;
+}
+.page-header .breadcrumb > a i {
+    font-size: 13px;
+    color: #FF9800;
+    padding: 0 10px;
+}
 /*_____Page body _____*/
 .page-body {
     display: flex;
@@ -273,6 +301,8 @@ h1, h2, h3, h4, h5, h6 {
     padding: 5px 30px 5px 30px;
     min-height: calc(100vh - 330px);
 }
+
+/*Page body*/
 .page-body .left {
     flex-grow: 1;
     margin-right: 30px;
@@ -283,334 +313,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
 }
 
-
-/*____Swipper_____*/
-.acc-slider-container {
-    width: 100%;
-    height: 131px;
-    position: relative;
-    margin-bottom: 30px;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-}
-.swiper-container {
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-    list-style: none;
-    padding: 0;
-    z-index: 1;
-}
-
-.swiper-container-android .swiper-slide, .swiper-wrapper {
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-}
-
-.swiper-wrapper {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-transition-property: -webkit-transform;
-    transition-property: -webkit-transform;
-    -o-transition-property: transform;
-    transition-property: transform;
-    transition-property: transform,-webkit-transform;
-    -webkit-box-sizing: content-box;
-    box-sizing: content-box;
-}
-
-.acc-slider-slide.swiper-slide-active {
-    border: 1px solid #ad8ad8;
-}
-
-.swiper-slide {
-    -webkit-flex-shrink: 0;
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    -webkit-transition-property: -webkit-transform;
-    transition-property: -webkit-transform;
-    -o-transition-property: transform;
-    transition-property: transform;
-    transition-property: transform,-webkit-transform;
-}
-
-.acc-slider-slide {
-    box-sizing: border-box;
-    width: 50%;
-    border-radius: 5px;
-    box-shadow: 0 0 20px 0 rgb(0 0 0 / 3%);
-    background-color: #fff;
-}
-
-
-.acc-slider-card {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.71;
-    color: #42236a;
-    padding: 20px;
-}
-
-.acc-slider-card .card-number {
-    margin: 5px 0 10px;
-}
-
-.acc-slider-card .card-balances {
-    font-size: 20px;
-    line-height: 1.4;
-}
-
-.card-balances .eye {
-    margin-left: 5px;
-    margin-bottom: 3px;
-    width: 20px;
-    cursor: pointer;
-}
-
-.acc-slider-slide.swiper-slide-active .recharge-button {
-    visibility: visible;
-}
-
-.acc-slider-card .recharge-button {
-    visibility: hidden;
-    position: absolute;
-    right: 14px;
-    bottom: 15px;
-}
-
-.acc-slider-card .recharge-button a span {
-    font-size: 16px;
-    line-height: 1.5;
-    vertical-align: middle;
-}
-
-.text-link {
-    font-size: 14px;
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.71;
-    letter-spacing: normal;
-    color: #ff9800;
-}
-
-.acc-slider-card .recharge-button a img {
-    width: 30px;
-    height: 30px;
-}
-
-
-.swiper-pagination {
-    display: none;
-}
-
-.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
-    bottom: 10px;
-    left: 0;
-    width: 100%;
-}
-
-.swiper-pagination {
-    position: absolute;
-    text-align: center;
-    -webkit-transition: .3s opacity;
-    -o-transition: .3s opacity;
-    transition: .3s opacity;
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-    z-index: 10;
-}
-
-.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 0 4px;
-}
-
-.swiper-pagination-clickable .swiper-pagination-bullet {
-    cursor: pointer;
-}
-
-.swiper-pagination-bullet-active {
-    opacity: 1;
-    background: #007aff;
-}
-
-.swiper-pagination-bullet {
-    width: 8px;
-    height: 8px;
-    display: inline-block;
-    border-radius: 100%;
-    background: #000;
-    opacity: .2;
-}
-
-
-
-.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
-    opacity: .35;
-    cursor: auto;
-    pointer-events: none;
-}
-
-.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
-    background-image: url(../images/main/download_prev.svg);
-    left: 10px;
-    right: auto;
-}
-
-
-.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
-    background-image: url(../images/main/download.svg);
-    right: 10px;
-    left: auto;
-}
-.swiper-button-next, .swiper-button-prev {
-    position: absolute;
-    top: 50%;
-    width: 27px;
-    height: 44px;
-    margin-top: -22px;
-    z-index: 10;
-    cursor: pointer;
-    background-size: 27px 44px;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-
-.acc-slider-btn-prev {
-    left: 14%;
-    width: 44px;
-    background-image: url(../images/main/left.efead1f8ba004b811b68.svg);
-    background-size: contain;
-    outline: 0;
-}
-
-.acc-slider-btn-next {
-    right: 14%;
-    width: 44px;
-    background-image: url(https://ebank.tpb.vn/retail/vX/right.2ea3f338167de2bfbc23.svg);
-    background-size: contain;
-    outline: 0;
-}
-
-.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
-    opacity: .35;
-    cursor: auto;
-    pointer-events: none;
-}
-
-
-
-.acc-slider-left-blur {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: calc(25% - 25px);
-    height: 100%;
-    border-radius: 0 5px 5px 0;
-    background-image: linear-gradient(to left,rgba(255,255,255,.64),#ebebfa 40%,#ebebfa);
-    z-index: 2;
-}
-.acc-slider-right-blur {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: calc(25% - 25px);
-    height: 100%;
-    border-radius: 5px 0 0 5px;
-    background-image: linear-gradient(to right,rgba(255,255,255,.64),#ebebfa 40%,#ebebfa);
-    z-index: 2;
-}
-.swiper-container .swiper-notification {
-    position: absolute;
-    left: 0;
-    top: 0;
-    pointer-events: none;
-    opacity: 0;
-    z-index: -1000;
-}
-
-/*_____ Search ____*/
-.function-search {
-    position: relative;
-}
-
-.function-search .result-area {
-    position: absolute;
-    top: 45px;
-    left: 0;
-    width: 100%;
-    background-color: #fff;
-    border-radius: 4px;
-    box-shadow: 0 4px 24px rgb(0 0 0 / 10%);
-    z-index: 999;
-}
-
-.function-search input {
-    border: 1px solid #e2d8ee;
-    height: 44px;
-    background-image: url(https://ebank.tpb.vn/retail/vX/search_normal.3841bb54b2df9a8bde6c.svg);
-    background-position: 9px 13px;
-    background-repeat: no-repeat;
-    padding-left: 30px;
-    box-shadow: none;
-}
-
-.function-search .result-area {
-    position: absolute;
-    top: 45px;
-    left: 0;
-    width: 100%;
-    background-color: #fff;
-    border-radius: 4px;
-    box-shadow: 0 4px 24px rgb(0 0 0 / 10%);
-    z-index: 999;
-}
-.function-search .result-area .instruction {
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 14px;
-    color: #ad8ad8;
-}
-
-.form-control {
-    color: #42236a;
-    font-size: 14px;
-}
-
-.form-control {
-    display: block;
-    width: 100%;
-    height: calc(1.5em + 0.75rem + 2px);
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #495057;
-    background-color: #ffffff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: 0.25rem;
-    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-
-
-/*____List card _____*/
-
+/*List card*/
 .list-card-link {
     margin-right: -16px;
     margin-top: 5px;
@@ -662,7 +365,172 @@ a:not([href]):not([tabindex]) {
     color: #42236a;
 }
 
-/*_____Right _____*/
+/*End List card*/
+
+
+/*Transfer Favorite */
+.transfer-favorite {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #e6e9ee;
+    border-radius: .5px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    margin-top: 23px;
+}
+
+.transfer-detail {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -16px;
+}
+
+.list-mobile {
+    display: none;
+}
+
+.text-link {
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    color: #ff9800;
+}
+.icon-right {
+    background-image: url(https://ebank.tpb.vn/retail/vX/right.2ea3f338167de2bfbc23.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 10px;
+    display: inline-block;
+}
+.transfer-body {
+    width: 100%;
+}
+.empty-favorites {
+    margin: 0 auto!important;
+    display: flex;
+    flex-direction: column;
+    max-width: 496px;
+}
+.empty-favorites .title {
+    font-size: 14px;
+    font-weight: 700;
+}
+.empty-favorites .content {
+    font-size: 14px;
+    color: #ad8ad8;
+}
+.empty-favorites .hover-action {
+    cursor: pointer;
+}
+.empty-favorites .content-action {
+    font-size: 14px;
+    color: #ff9800;
+}
+
+.favorite-container {
+    height: 619px;
+    padding-top: 25px;
+    position: relative;
+}
+.favorite-padding {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.favorite-body {
+    display: flex;
+    text-align: center;
+}
+.favorite-tabs {
+    width: 25%;
+    padding-top: 12px;
+    padding-bottom: 15px;
+    color: #ad8ad8;
+    border-bottom: 1px solid #f2f4f6;
+}
+.favorite-actived {
+    color: #42236a;
+    border-bottom: 3px solid #42236a;
+}
+.favorite-key:hover {
+    color: #42236a;
+    transition: .4s;
+}
+.favorite-key {
+    cursor: pointer;
+}
+.favorite-content {
+    margin-top: 20px;
+}
+.searching-container {
+    border-radius: 5px;
+    border: 1px solid #e2d8ee;
+    display: flex;
+    align-items: center;
+    padding: 14px 31px 15px 10px;
+    height: 50px;
+}
+.searching-icon {
+    height: 15px;
+    width: 15px;
+    margin-right: 8px;
+}
+.searching-input {
+    width: 100%;
+    outline: 0;
+    border: 0;
+    height: 21px;
+}
+.favorite-scroll {
+    height: 400px;
+    overflow-y: auto;
+}
+.favorite-detail {
+    padding: 20px 40px 16px 20px;
+    border-bottom: 1px solid #f2f4f6;
+    text-align: left;
+}
+.favorite-margin-bottom {
+    margin-bottom: 4px;
+}
+.favorite-account, .favorite-name {
+    display: flex;
+    justify-content: space-between;
+}
+.favorite-text-size {
+    font-size: 14px;
+}
+.favorite-text-bold {
+    font-weight: 500;
+}
+.favorite-icon {
+    cursor: pointer;
+    width: 16px;
+}
+.icon-close {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    cursor: pointer;
+    color: #42236a;
+    width: 25px;
+    height: 25px;
+}
+.icon-add {
+    position: absolute;
+    bottom: 0;
+    right: 2px;
+    cursor: pointer;
+    width: 84px;
+    height: 82px;
+}
+/* End transfer favorite */
+
+
+/*Page body right*/
 .page-body .right {
     width: 270px;
     flex-shrink: 0;
@@ -684,7 +552,6 @@ a:not([href]):not([tabindex]) {
     position: relative;
     text-transform: capitalize;
 }
-
 .quick-links .body a i {
     position: absolute;
     right: 20px;
@@ -692,11 +559,44 @@ a:not([href]):not([tabindex]) {
     color: #FF9800;
 }
 
+
 .banner-swiper-container {
     width: 100%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
+}
+
+.swiper-container {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
+.swiper-container-android .swiper-slide, .swiper-wrapper {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
+    transition-property: transform;
+    transition-property: transform,-webkit-transform;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
 }
 
 .banner-swiper-container .swiper-slide {
@@ -707,6 +607,142 @@ a:not([href]):not([tabindex]) {
     justify-content: center;
     align-items: center;
 }
+
+.swiper-slide {
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
+    transition-property: transform;
+    transition-property: transform,-webkit-transform;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+}
+
+.banner-swiper-container .button-pag .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #fff;
+}
+
+.banner-swiper-container .button-pag .swiper-pagination-bullet {
+    background: #e2d8ee;
+    opacity: .8;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 4px;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #007aff;
+}
+
+.swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 100%;
+    background: #000;
+    opacity: .2;
+}
+
+.banner-swiper-container .button-pag .swiper-pagination-bullet {
+    background: #e2d8ee;
+    opacity: .8;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 4px;
+}
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    cursor: pointer;
+}
+.swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 100%;
+    background: #000;
+    opacity: .2;
+}
+
+.banner-swiper-container .btn-slider {
+    background-size: contain;
+    outline: 0;
+    background-color: #5d2e86;
+    opacity: .8;
+    filter: alpha(opacity=80);
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 55%;
+    z-index: 1;
+}
+
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    background-image: url(../images/main/download.svg);
+    right: 10px;
+    left: auto;
+}
+
+.banner-swiper-container .btn-slider.swiper-button-next {
+    right: 13px;
+    background-image: url(https://ebank.tpb.vn/retail/vX/right-banner.c634fdfa225425852c5a.svg);
+}
+
+.swiper-button-next, .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    width: 27px;
+    height: 44px;
+    margin-top: -22px;
+    z-index: 10;
+    cursor: pointer;
+    background-size: 27px 44px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    background-image: url(../images/main/download_prev.svg);
+    left: 10px;
+    right: auto;
+}
+
+.banner-swiper-container .btn-slider.swiper-button-prev {
+    left: 13px;
+    background-image: url(https://ebank.tpb.vn/retail/vX/left-banner.34837624e172d2200698.svg);
+}
+
+.swiper-container .swiper-notification {
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    opacity: 0;
+    z-index: -1000;
+}
+/*End Page body*/
+
+
+/*_____ End Page body ______*/
+
+
+
 
 
 /*_____Footer ____*/

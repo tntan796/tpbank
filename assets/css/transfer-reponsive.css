@@ -1,4 +1,5 @@
 @media only screen and (min-width: 1440px) { 
+    /*____Page body _____*/
     .page-header .top-header {
         display: none;
     }
@@ -6,10 +7,14 @@
         margin-top: 0;
         margin-right: calc(270px + 30px);
     }
+    /*____ End Page body _____*/
 
+
+    /*_____Footer _____*/
     app-footer .footer-1 {
         padding: 20px 30px;
     }
+    /*_____ End Footer _____*/
 }
 
 @media only screen and (max-width: 1439px) {
@@ -53,15 +58,19 @@
         padding: 5px 30px 5px 30px;
         margin-top: 105px;
     }
-
     .main-container > .right .page-body .left {
         margin-right: 0;
     }
 
-    /*_____Right ____*/
+    /*Page body right*/
     .main-container > .right .page-body .right {
         display: none;
     }
+    /*End Page body right*/
+
+
+    /*_____ End Page body _____*/
+   
     /*_____Footer ____*/
     app-footer .footer-1 {
         padding: 20px 30px;
@@ -131,10 +140,17 @@
     .main-container > .right .page-body .left {
         margin-right: 0;
     }
-    /*_____Right _____*/
+
+    /* Page body right */
     .main-container > .right .page-body .right {
         display: none;
     }
+    /* End Page body right */
+
+
+
+    /*_____End Page body _____*/
+    
 
     /*_____Footer ____*/
     app-footer .footer-1 {
@@ -193,11 +209,16 @@
         max-width: 100%;
         margin-right: 0;
     }
-
-    /*_____Right _____*/
+    
+    /*Page body right*/
     .main-container > .right .page-body .right {
         display: none;
     }
+    /*End Page body right*/
+
+
+   /*_____End Page Body _____*/
+
 
     /*_____Footer ____*/
     app-footer .footer-1 {
@@ -238,9 +259,9 @@
 }
 
 @media screen and (max-width: 576px) {
-    /*____List card _____*/
+     /*____List card _____*/
 
-    .list-card-link {
+     .list-card-link {
         margin-right: 0;
     }
 
@@ -252,46 +273,19 @@
         width: 100%;
         margin-bottom: 16px;
     }
+
+    /*Transfer Favorite */
+    .favorite-body-responsive {
+        width: 100%;
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
+    .favorite-body {
+        width: 500px;
+    }
+    /*End favorite */
 }
 
 @media screen and (max-width: 575px) {
-    /*____Swipper_____*/
-    .acc-slider-container {
-        height: 160px;
-        margin-bottom: 10px;
-    }
-
-    .acc-slider-container .swiper-wrapper {
-        height: 131px;
-    }
-
-    .acc-slider-container .swiper-wrapper .acc-slider-slide.swiper-slide-active {
-        border: none;
-    }
-
-    .acc-slider-container .swiper-wrapper .acc-slider-slide {
-        width: 100%;
-    }
-
-    .acc-slider-container .swiper-pagination {
-        display: block;
-        width: 100%;
-        bottom: 0;
-    }
-
-    .acc-slider-container .swiper-pagination .swiper-pagination-bullet-active {
-        opacity: 1;
-        background: #42236a;
-        outline: 0;
-    }
-
-    .acc-slider-container .swiper-pagination .swiper-pagination-bullet {
-        background: #e2d8ee;
-        opacity: 1;
-        outline: 0;
-    }
-
-    .acc-slider-container .acc-slider-btn-next, .acc-slider-container .acc-slider-btn-prev, .acc-slider-container .acc-slider-left-blur, .acc-slider-container .acc-slider-right-blur {
-        display: none;
-    }
+   
 }
