@@ -16,12 +16,13 @@ body {
 
 a {
     outline: none;
-}
-
-a {
     color: #7b35bb;
     text-decoration: none;
     background-color: transparent;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 img {
@@ -161,9 +162,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #ffffff;
 }
 
-.menu .menu-group .menu-item.active{
-    color: #ffffff;
-}
+
 /*_____Right ______*/
 .main-container > .right {
     margin-left: 270px;

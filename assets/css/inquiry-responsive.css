@@ -78,7 +78,22 @@
 }
 
 @media screen and (max-width: 1130px) {
-    
+     /*____List card _____*/
+     .list-card-link .card-customize:nth-child(odd) {
+        padding-right: 0;
+        margin-right: 16px;
+    }
+
+    .list-card-link .card-link-wrapper {
+        max-width: none;
+    }
+
+    .list-card-link .card-customize {
+        display: inline-block;
+        width: 46%;
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
 }
 
 @media only screen and (max-width: 1129px) {
@@ -244,7 +259,20 @@
 }
 
 @media screen and (max-width: 576px) {
-    
+    /*____List card _____*/
+
+    .list-card-link {
+        margin-right: 0;
+    }
+
+    .list-card-link .card-link-wrapper {
+        max-width: none;
+    }
+    .list-card-link .card-customize {
+        display: block;
+        width: 100%;
+        margin-bottom: 16px;
+    }
 }
 
 @media screen and (max-width: 575px) {

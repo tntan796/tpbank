@@ -16,12 +16,13 @@ body {
 
 a {
     outline: none;
-}
-
-a {
     color: #7b35bb;
     text-decoration: none;
     background-color: transparent;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 img {
@@ -152,6 +153,12 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 90%;
 }
 
+.menu .menu-group .menu-item:hover {
+    opacity: 1;
+    background-color: #8d52c5;
+}
+
+
 .fa-chevron-down:before {
     content: "\f078";
 }
@@ -265,6 +272,29 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 5px;
 }
 
+
+.page-header .breadcrumb {
+    margin-bottom: 8px;
+    padding: 0px;
+    background: transparent;
+}
+
+.breadcrumb a {
+    font-size: 13px;
+    color: #42236a;
+}
+
+.page-header .breadcrumb > a {
+    display: inline-block;
+    font-size: 13px;
+    text-transform: capitalize;
+}
+.page-header .breadcrumb > a i {
+    font-size: 13px;
+    color: #FF9800;
+    padding: 0 10px;
+}
+
 /*_____Page body _____*/
 .page-body {
     display: flex;
@@ -275,10 +305,65 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*Page body*/
-.page-body .left {
-    flex-grow: 1;
-    margin-right: 30px;
+
+.page-body .left .content-wrap {
+    max-width: 800px;
+    margin: 0 auto;
 }
+
+/*List card*/
+.list-card-link {
+    margin-right: -16px;
+    margin-top: 5px;
+}
+
+.card-customize {
+    display: inline-grid;
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+
+.list-card-link .card-link-wrapper {
+    display: inline-block;
+    width: 31%;
+    max-width: 256px;
+}
+
+.list-card-link .card-link-wrapper .card-link {
+    display: block;
+    background-color: #ffffff;
+    padding: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: capitalize;
+    height: 100px;
+    overflow: hidden;
+}
+
+a:not([href]):not([tabindex]) {
+    color: inherit;
+    text-decoration: none;
+}
+
+.shadow-btn {
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 3%);
+    cursor: pointer;
+}
+
+.shadow-btn:hover {
+    box-shadow: 0 6px 16px 0 rgb(173 138 216 / 40%);
+    text-decoration: none;
+}
+
+.list-card-link .card-link-wrapper .card-link .card-name {
+    margin-top: 5px;
+}
+
+.card-color {
+    color: #42236a;
+}
+
+/*End List card*/
 
 .page-body .right {
     width: 270px;
