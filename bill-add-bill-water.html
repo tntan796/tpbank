@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="./assets/css/bill-add-bill-water.css" rel="stylesheet" />
+    <link href="./assets/css/bill-add-bill-water-responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="main-container" ondragstart="return false;" ondrop="return false;">
+        <div class="left" id="main-menu">
+            <div class="main-logo">
+                <a href="https://tpb.vn" target="_blank">
+                    <img src="./assets/images/main/logo.png">
+                </a>
+            </div>
+            <div class="menu">
+                <div class="menu-group">
+                    <a class="menu-item parent active" href="/retail/vX/main">
+                        <div class="menu-icon">
+                            <img src="./assets/images/main/home-active.png">
+                        </div>
+                        <div class="menu-name">Trang chủ</div>
+                        <i class="fas fa-chevron-up"></i>
+                    </a>
+                    <div class="menu-item-list active">
+                        <a class="menu-item" href="./transfer.html">
+                            <div class="menu-icon"></div>
+                            <div class="menu-name">Chuyển khoản</div>
+                        </a>
+                        <a class="menu-item" href="/bill.html">
+                            <div class="menu-icon"></div>
+                            <div class="menu-name">Hoá đơn</div>
+                        </a>
+                        <a class="menu-item" href="/bill.html">
+                            <div class="menu-icon"></div>
+                            <div class="menu-name">Nạp tiền điện thoại</div>
+                        </a>
+                        <a class="menu-item" href="/retail/vX/main/saving">
+                            <div class="menu-icon"></div>
+                            <div class="menu-name">Tiết kiệm</div>
+                        </a>
+                        <a class="menu-item" href="/retail/vX/main/card">
+                            <div class="menu-icon"></div>
+                            <div class="menu-name">Quản lý thẻ</div>
+                        </a>
+                        <a class="menu-item" href="/loan.html">
+                            <div class="menu-icon"></div>
+                            <div class="menu-name">Khoản vay</div>
+                        </a>
+                        <a class="menu-item" href="/retail/vX/main/loyalty">
+                            <div class="menu-icon"></div>
+                            <div class="menu-name">Khách hàng thân thiết</div>
+                        </a>
+                        <a class="menu-item" href="./wallet.html">
+                            <div class="menu-icon"></div>
+                            <div class="menu-name">Ví điện tử</div>
+                        </a>
+                        <a class="menu-item" href="/retail/vX/main/overseas-study">
+                            <div class="menu-icon"></div>
+                            <div class="menu-name">Chuyển Tiền Du Học</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="menu-group">
+                    <a class="menu-item parent" href="/retail/vX/main/inquiry">
+                        <div class="menu-icon">
+                            <img src="./assets/images/main/inquiry-inactive.png">
+                        </div>
+                        <div class="menu-name">Tra cứu</div>
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="menu-item-list">
+                        <a class="menu-item" href="/retail/vX/main/inquiry/account">
+                            <div class="menu-icon"></div>
+                            <div class="menu-name">Tài khoản</div>
+                        </a>
+                        <a class="menu-item" href="/retail/vX/main/inquiry/saving">
+                            <div class="menu-icon"></div>
+                            <div class="menu-name">Tiết kiệm</div>
+                        </a>
+                        <a class="menu-item" href="/retail/vX/main/inquiry/loan">
+                            <div class="menu-icon"></div>
+                            <div class="menu-name">Khoản vay</div>
+                        </a>
+                        <a class="menu-item" href="/retail/vX/main/inquiry/credit-card">
+                            <div class="menu-icon"></div>
+                            <div class="menu-name">Thẻ tín dụng</div>
+                        </a>
+                        <a class="menu-item" href="/retail/vX/main/inquiry/transfer">
+                            <div class="menu-icon"></div>
+                            <div class="menu-name">Lệnh chuyển tiền</div>
+                        </a>
+                        <a class="menu-item" href="/retail/vX/main/inquiry/general">
+                            <div class="menu-icon"></div>
+                            <div class="menu-name">Thông Tin Tổng Hợp</div>
+                        </a>
+                        <a class="menu-item" href="/retail/vX/main/inquiry/vat">
+                            <div class="menu-icon"></div>
+                            <div class="menu-name">Hóa Đơn VAT</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="menu-group">
+                    <a class="menu-item parent" href="/retail/vX/main/setting">
+                        <div class="menu-icon">
+                            <img src="./assets/images/main/setting-inactive.png">
+                        </div>
+                        <div class="menu-name">Cài Đặt</div>
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="menu-item-list">
+                        <a class="menu-item" href="/retail/vX/main/setting/upgrade">
+                            <div class="menu-icon"></div>
+                            <div class="menu-name">Nâng cấp tài khoản</div>
+                        </a>
+                        <a class="menu-item" href="/retail/vX/main/setting/user">
+                            <div class="menu-icon"></div>
+                            <div class="menu-name">Thông tin tài khoản</div>
+                        </a>
+                        <a class="menu-item" href="/retail/vX/main/setting/change-password">
+                            <div class="menu-icon"></div>
+                            <div class="menu-name">Đổi mật khẩu</div>
+                        </a>
+                        <a class="menu-item" href="/retail/vX/main/setting/auth-method">
+                            <div class="menu-icon"></div>
+                            <div class="menu-name">Phương thức xác thực GD</div>
+                        </a>
+                        <a class="menu-item" href="/retail/vX/main/setting/default-account">
+                            <div class="menu-icon"></div>
+                            <div class="menu-name">Tài khoản liên kết với SĐT</div>
+                        </a>
+                        <a class="menu-item" href="/retail/vX/main/setting/device-management">
+                            <div class="menu-icon"></div>
+                            <div class="menu-name">Quản lý thiết bị</div>
+                        </a>
+                        <a class="menu-item" href="/retail/vX/main/setting/faq">
+                            <div class="menu-icon"></div>
+                            <div class="menu-name">Câu hỏi thường gặp</div>
+                        </a>
+                        <a class="menu-item" href="/retail/vX/main/setting/support">
+                            <div class="menu-icon"></div>
+                            <div class="menu-name">Liên hệ hỗ trợ</div>
+                        </a>
+                        <a class="menu-item" href="/retail/vX/main/setting/referring">
+                            <div class="menu-icon"></div>
+                            <div class="menu-name">Giới thiệu bạn bè</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-logo">
+                <img src="./assets/images/main/ic_menu_overlay.png">
+            </div>
+        </div>
+        <div class="right">
+            <div class="main-head-body">
+                <div class="page-header">
+                    <div class="top-header">
+                        <img id="hamburger-menu" src="./assets/images/main/ic_menu.png">
+                        <a href="https://tpb.vn" target="_blank">
+                            <img class="logo" src="./assets/images/main/logo.png">
+                        </a>
+                    </div>
+                    <div class="left-text">
+                        <div>
+                            <div class="back-btn">
+                                <a href="bill-add-bill.html">
+                                    <img src="https://ebank.tpb.vn/retail/vX/assets/icons/back.svg"> Trở về trang trước
+                                </a>
+                            </div>
+                            <h1 class="page-title">Tạo lệnh thanh toán định kỳ</h1>
+                        </div>
+                    </div>
+                    <div class="user-info" id="globalUserInfo">
+                        <i class="fas fa-bell" id="notification-btn" tabindex="0">
+                            <div class="notification-active-icon"></div>
+                        </i>
+                        <div id="user-btn">
+                            <span class="avatar">
+                                <div class="avatar-container" style="width: 30px; height: 30px;">
+                                    <div class="avatar-content"
+                                        style="text-align: center; border-radius: 100%; text-transform: uppercase; color: rgb(255, 255, 255); background-color: rgb(127, 140, 141); font-size: 12px; line-height: 30px; font-weight: 500;">
+                                        TT </div>
+                                </div>
+                            </span>
+                            <span class="user-name">TRAN NGOC TAN</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="user-menu" hidden>
+                            <a>
+                                <i class="fas fa-power-off"></i> Thoát
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-body">
+                    <div class="left">
+                    
+                    
+                        <div class="content-wrap">
+                            <div class="mx-auto d-none" style="margin-bottom: 18px; max-width: 496px">
+                                <div class="debit-acc-selector">
+                                    <div class="label-color">Từ tài khoản</div>
+                                    <div class="fw-500 mt-2"> TRAN NGOC TAN </div>
+                                    <div class="fw-500"> 0210 5921 501 </div>
+                                    <div class="fw-500 mt-2" style="font-size: 20px;"> 706,555 VND </div>
+                                </div>
+                            </div>
+                            <div class="container-bill">
+                                <div class="container-list-provider">
+                                    <div class="list-provider">
+                                        <ul class="list-card-link">
+                                            <li class="card-link-wrapper">
+                                                <div class="card-link card-provider">
+                                                    <a class="content-card" href="bill-add-bill-schedule.html">
+                                                        <div class="container-icon-provider">
+                                                            <img alt="" class="icon-logo"
+                                                                src="https://ebank.tpb.vn/gateway/api/contentservices/api/contentstream-id/contentRepository/89b6a7cb-5051-4b57-80b4-c636abf79ac5?_=1554954495211">
+                                                        </div>
+                                                        <div class="content-name-provider">
+                                                            <span class="name-provider">Cấp nước Bến
+                                                                thành</span>
+                                                            <span class="icon-arrow-right"></span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="card-link-wrapper">
+                                                <div class="card-link card-provider">
+                                                    <a class="content-card"  href="bill-add-bill-schedule.html">
+                                                        <div class="container-icon-provider">
+                                                            <img alt="" class="icon-logo"
+                                                                src="https://ebank.tpb.vn/gateway/api/contentservices/api/contentstream-id/contentRepository/e08b037e-2f8a-45c5-89ea-2242c6867ac3?_=1554954560170">
+                                                        </div>
+                                                        <div class="content-name-provider">
+                                                            <span class="name-provider">Cấp nước Hải
+                                                                Phòng</span>
+                                                            <span class="icon-arrow-right"></span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="card-link-wrapper">
+                                                <div class="card-link card-provider">
+                                                    <a class="content-card" href="bill-add-bill-schedule.html">
+                                                        <div class="container-icon-provider">
+                                                            <img alt="" class="icon-logo"
+                                                                src="https://ebank.tpb.vn/gateway/api/contentservices/api/contentstream-id/contentRepository/329df2cc-5f3b-46e5-8ee5-a16614f0bec1?_=1554954585764">
+                                                        </div>
+                                                        <div class="content-name-provider">
+                                                            <span class="name-provider">Cấp nước
+                                                                Huế</span><span class="icon-arrow-right"></span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="card-link-wrapper">
+                                                <div class="card-link card-provider">
+                                                    <a class="content-card" href="bill-add-bill-schedule.html">
+                                                        <div class="container-icon-provider">
+                                                            <img alt="" class="icon-logo"
+                                                                src="https://ebank.tpb.vn/gateway/api/contentservices/api/contentstream-id/contentRepository/d3c76cc7-8d12-40fa-ac7a-a37c89b2ea1a?_=1554954599872">
+                                                        </div>
+                                                        <div class="content-name-provider">
+                                                            <span class="name-provider">Cấp nước Nhà
+                                                                Bè</span>
+                                                            <span class="icon-arrow-right"></span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="card-link-wrapper">
+                                                <div class="card-link card-provider">
+                                                    <a class="content-card" href="bill-add-bill-schedule.html">
+                                                        <div class="container-icon-provider">
+                                                            <img alt="" class="icon-logo"
+                                                                src="https://ebank.tpb.vn/gateway/api/contentservices/api/contentstream-id/contentRepository/8d0db88c-8e23-4620-bed4-62ca497b030a?_=1554954531178">
+                                                        </div>
+                                                        <div class="content-name-provider">
+                                                            <span class="name-provider">Cấp nước Trung
+                                                                An</span>
+                                                            <span class="icon-arrow-right"></span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="card-link-wrapper">
+                                                <div class="card-link card-provider">
+                                                    <a class="content-card" href="bill-add-bill-schedule.html">
+                                                        <div class="container-icon-provider">
+                                                            <img alt="" class="icon-logo"
+                                                                src="https://ebank.tpb.vn/gateway/api/contentservices/api/contentstream-id/contentRepository/68713e71-5f26-4b6f-bb9d-7f57873bb298?_=1554954606846">
+                                                        </div>
+                                                        <div class="content-name-provider">
+                                                            <span class="name-provider">Cấp nước Thủ
+                                                                Đức</span>
+                                                            <span class="icon-arrow-right"></span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="card-link-wrapper">
+                                                <div class="card-link card-provider">
+                                                    <div class="content-card">
+                                                        <div class="container-icon-provider">
+                                                            <img alt="" class="icon-logo"
+                                                                src="https://ebank.tpb.vn/gateway/api/contentservices/api/contentstream-id/contentRepository/a5c3ff9e-1201-4577-a0f4-6d7c32f7c979?_=1554954625063">
+                                                        </div>
+                                                        <div class="content-name-provider">
+                                                            <span class="name-provider">Cấp nước Tân
+                                                                Hòa</span>
+                                                            <span class="icon-arrow-right"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="card-link-wrapper">
+                                                <div class="card-link card-provider">
+                                                    <div class="content-card">
+                                                        <div class="container-icon-provider"><img alt="" class="icon-logo"
+                                                                src="https://ebank.tpb.vn/gateway/api/contentservices/api/contentstream-id/contentRepository/05a7aac5-62bd-4b56-9a92-8ef267eb2f11?_=1554954571444">
+                                                        </div>
+                                                        <div class="content-name-provider">
+                                                            <span class="name-provider">Cấp nước Phú Hòa
+                                                                Tân</span>
+                                                            <span class="icon-arrow-right"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="card-link-wrapper">
+                                                <div class="card-link card-provider">
+                                                    <div class="content-card">
+                                                        <div class="container-icon-provider">
+                                                            <img alt="" class="icon-logo"
+                                                                src="https://ebank.tpb.vn/gateway/api/contentservices/api/contentstream-id/contentRepository/4aebf0de-f401-4b54-9135-074800fd7edc?_=1554954614216">
+                                                        </div>
+                                                        <div class="content-name-provider">
+                                                            <span class="name-provider">Cấp nước
+                                                                Viwaco</span>
+                                                            <span class="icon-arrow-right"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="card-link-wrapper">
+                                                <div class="card-link card-provider">
+                                                    <div class="content-card">
+                                                        <div class="container-icon-provider">
+                                                            <img alt="" class="icon-logo"
+                                                                src="https://ebank.tpb.vn/gateway/api/contentservices/api/contentstream-id/contentRepository/5980b2b9-7d77-4d94-9239-1a301d610ec1?_=1554954550472">
+                                                        </div>
+                                                        <div class="content-name-provider">
+                                                            <span class="name-provider">Cấp nước Chợ
+                                                                Lớn</span>
+                                                            <span class="icon-arrow-right"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="card-link-wrapper">
+                                                <div class="card-link card-provider">
+                                                    <div class="content-card">
+                                                        <div class="container-icon-provider">
+                                                            <img alt="" class="icon-logo"
+                                                                src="https://ebank.tpb.vn/gateway/api/renditionservice/content/a597b026-9995-46ce-9980-84630938bd99?_=1586514163277">
+                                                        </div>
+                                                        <div class="content-name-provider">
+                                                            <span class="name-provider">Cấp Nước Đà
+                                                                Nẵng</span>
+                                                            <span class="icon-arrow-right"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="card-link-wrapper">
+                                                <div class="card-link card-provider">
+                                                    <div class="content-card">
+                                                        <div class="container-icon-provider">
+                                                            <img alt="" class="icon-logo"
+                                                                src="https://ebank.tpb.vn/gateway/api/contentservices/api/contentstream-id/contentRepository/80e89b3f-8c08-4d2d-9629-8591b79f3b1c">
+                                                        </div>
+                                                        <div class="content-name-provider">
+                                                            <span class="name-provider">Nước Sạch Số 3 Hà
+                                                                Nội</span>
+                                                            <span class="icon-arrow-right"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="card-link-wrapper">
+                                                <div class="card-link card-provider">
+                                                    <div class="content-card">
+                                                        <div class="container-icon-provider">
+                                                            <img alt="" class="icon-logo"
+                                                                src="https://ebank.tpb.vn/gateway/api/contentservices/api/contentstream-id/contentRepository/a2935c4b-949a-4720-84d4-c558e03f0161">
+                                                        </div>
+                                                        <div class="content-name-provider">
+                                                            <span class="name-provider">Nước Sạch Hà
+                                                                Nội</span>
+                                                            <span class="icon-arrow-right"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="card-link-wrapper">
+                                                <div class="card-link card-provider">
+                                                    <div class="content-card">
+                                                        <div class="container-icon-provider">
+                                                            <img alt="" class="icon-logo"
+                                                                src="https://ebank.tpb.vn/gateway/api/contentservices/api/contentstream-id/contentRepository/80771bb0-a037-43de-88d1-3f680b7e2b56">
+                                                        </div>
+                                                        <div class="content-name-provider">
+                                                            <span class="name-provider">Cấp Nước Sơn
+                                                                Tây</span>
+                                                            <span class="icon-arrow-right"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="card-link-wrapper">
+                                                <div class="card-link card-provider">
+                                                    <div class="content-card">
+                                                        <div class="container-icon-provider">
+                                                            <img alt="" class="icon-logo"
+                                                                src="https://ebank.tpb.vn/gateway/api/contentservices/api/contentstream-id/contentRepository/b524d138-9490-4c5d-90aa-7ed687d1ba07">
+                                                        </div>
+                                                        <div class="content-name-provider">
+                                                            <span class="name-provider">Nước Sạch
+                                                                VTS</span>
+                                                            <span class="icon-arrow-right"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="card-link-wrapper">
+                                                <div class="card-link card-provider">
+                                                    <div class="content-card">
+                                                        <div class="container-icon-provider">
+                                                            <img alt="" class="icon-logo"
+                                                                src="https://ebank.tpb.vn/gateway/api/contentservices/api/contentstream-id/contentRepository/70a07c1f-ea33-4bc1-84a3-90a6afaa8389">
+                                                        </div>
+                                                        <div class="content-name-provider">
+                                                            <span class="name-provider">Công Ty Nước Sạch Tây
+                                                                Hà Nội</span>
+                                                            <span class="icon-arrow-right"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="card-link-wrapper">
+                                                <div class="card-link card-provider">
+                                                    <div class="content-card">
+                                                        <div class="container-icon-provider">
+                                                            <img alt="" class="icon-logo"
+                                                                src="https://ebank.tpb.vn/gateway/api/contentservices/api/contentstream-id/contentRepository/f4b222bf-e0e8-4741-b8a2-13dd986f2bb1">
+                                                        </div>
+                                                        <div class="content-name-provider">
+                                                            <span class="name-provider">Cấp Nước Số 2 Hà
+                                                                Nội</span>
+                                                            <span class="icon-arrow-right"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="card-link-wrapper">
+                                                <div class="card-link card-provider">
+                                                    <div class="content-card">
+                                                        <div class="container-icon-provider">
+                                                            <img alt="" class="icon-logo"
+                                                                src="https://ebank.tpb.vn/gateway/api/contentservices/api/contentstream-id/contentRepository/6ee21867-355e-4d93-bc94-91c97edf5817">
+                                                        </div>
+                                                        <div class="content-name-provider">
+                                                            <span class="name-provider">Xí Nghiệp Cấp Nước Sinh
+                                                                Hoạt Nông Thôn</span>
+                                                            <span class="icon-arrow-right"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="card-link-wrapper">
+                                                <div class="card-link card-provider">
+                                                    <div class="content-card">
+                                                        <div class="container-icon-provider">
+                                                            <img alt="" class="icon-logo"
+                                                                src="https://ebank.tpb.vn/gateway/api/contentservices/api/contentstream-id/contentRepository/805d40c3-6df5-42ee-85d8-d63ba5898a04">
+                                                        </div>
+                                                        <div class="content-name-provider">
+                                                            <span class="name-provider">SAIGONWATER</span>
+                                                            <span class="icon-arrow-right"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="card-link-wrapper">
+                                                <div class="card-link card-provider">
+                                                    <div class="content-card">
+                                                        <div class="container-icon-provider">
+                                                            <img alt="" class="icon-logo"
+                                                                src="https://ebank.tpb.vn/gateway/api/contentservices/api/contentstream-id/contentRepository/26777dfc-8dc4-4997-b266-ad143e7af220?_=1591351318684">
+                                                        </div>
+                                                        <div class="content-name-provider">
+                                                            <span class="name-provider">Cấp nước Gia
+                                                                Định</span>
+                                                            <span class="icon-arrow-right"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    
+                    </div>
+                    <div class="right">
+                        <div class="quick-links">
+                            <div class="title"> Tiện ích nhanh </div>
+                            <div class="body">
+                                <a routerlink="/main/transfer/internal" href="/retail/vX/main/transfer/internal">Chuyển
+                                    tiền trong TPBank
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                                <a routerlink="/main/transfer/interbank"
+                                    href="/retail/vX/main/transfer/interbank">Chuyển tiền liên ngân hàng
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                                <a routerlink="/main/bill" href="/retail/vX/main/bill">Thanh toán hoá đơn
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                                <a routerlink="/main/inquiry/credit-card" href="/retail/vX/main/inquiry/credit-card">Tra
+                                    cứu thẻ tín dụng
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                                <a routerlink="/main/mobile" href="/retail/vX/main/mobile">Nạp tiền điện thoại
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <div
+                                class="banner-swiper-container swiper-container swiper-container-initialized swiper-container-horizontal">
+                                <div class="swiper-wrapper"
+                                    style="transition-duration: 0ms; transform: translate3d(-300px, 0px, 0px);">
+                                    <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active swiper-slide-prev swiper-slide-duplicate-next"
+                                        data-swiper-slide-index="1" style="width: 270px; margin-right: 30px;">
+                                        <a target="_blank"
+                                            href="https://tpb.vn/khuyen-mai/ebanking/vui-tet-moi-ca-nam-phoi-phoi-khi-gui-tiet-kiem-tren-app-tpbank">
+                                            <img alt="" class="w-100" style="border-radius: 5px; height: 100%;"
+                                                src="https://ebank.tpb.vn/gateway/api/contentservices/api/contentstream-id/contentRepository/86a4d975-712f-49f0-9ae0-bded776fc4d7"></a>
+
+                                    </div>
+                                    <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0"
+                                        style="width: 270px; margin-right: 30px;">
+                                        <a target="_blank"
+                                            href="https://tpb.vn/khuyen-mai/ebanking/tung-con-hung-54665-mon-qua-gia-tri-tren-app-tpbank">
+                                            <img alt="" class="w-100" style="border-radius: 5px; height: 100%;"
+                                                src="https://ebank.tpb.vn/gateway/api/contentservices/api/contentstream-id/contentRepository/acdd6d66-7b82-4265-95ee-c6d4021e9c28"></a>
+                                    </div>
+                                    <div class="swiper-slide swiper-slide-next swiper-slide-duplicate-prev"
+                                        data-swiper-slide-index="1" style="width: 270px; margin-right: 30px;">
+                                        <a target="_blank"
+                                            href="https://tpb.vn/khuyen-mai/ebanking/vui-tet-moi-ca-nam-phoi-phoi-khi-gui-tiet-kiem-tren-app-tpbank">
+                                            <img alt="" class="w-100" style="border-radius: 5px; height: 100%;"
+                                                src="https://ebank.tpb.vn/gateway/api/contentservices/api/contentstream-id/contentRepository/86a4d975-712f-49f0-9ae0-bded776fc4d7"></a>
+
+                                    </div>
+                                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0"
+                                        style="width: 270px; margin-right: 30px;">
+                                        <a target="_blank"
+                                            href="https://tpb.vn/khuyen-mai/ebanking/tung-con-hung-54665-mon-qua-gia-tri-tren-app-tpbank">
+                                            <img alt="" class="w-100" style="border-radius: 5px; height: 100%;"
+                                                src="https://ebank.tpb.vn/gateway/api/contentservices/api/contentstream-id/contentRepository/acdd6d66-7b82-4265-95ee-c6d4021e9c28"></a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="swiper-pagination button-pag swiper-pagination-clickable swiper-pagination-bullets">
+                                    <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0"
+                                        role="button" aria-label="Go to slide 1"></span>
+                                    <span class="swiper-pagination-bullet" tabindex="0" role="button"
+                                        aria-label="Go to slide 2"></span>
+                                </div>
+                                <div class="button-area">
+                                    <div class="btn-slider swiper-button-next" tabindex="0" role="button"
+                                        aria-label="Next slide">
+                                        <div class="circle right"></div>
+                                    </div>
+                                    <div class="btn-slider swiper-button-prev" tabindex="0" role="button"
+                                        aria-label="Previous slide">
+                                        <div class="circle left"></div>
+                                    </div>
+                                </div>
+                                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <app-footer>
+                <div>
+                    <div class="footer-1 d-flex justify-content-between">
+                        <div class="phone-col">
+                            <div class="call-center-text">Tổng đài hỗ trợ</div>
+                            <div class="phone-1">
+                                <a href="tel:1900585885">1900 58 58 85</a>
+                                <span class="c247">24/7</span>
+                            </div>
+                            <div>
+                                <a href="tel:02437683683">(024) 37
+                                    683683</a>
+                            </div>
+                        </div>
+                        <div class="footer-column-2">
+                            <div>
+                                <a routerlink="/main/setting/faq" href="/retail/vX/main/setting/faq">Câu hỏi thường
+                                    gặp</a>
+                            </div>
+                            <div class="mt-1">
+                                <a href="https://tpb.vn/quy-dinh-su-dung" target="_blank">Điều khoản
+                                    sử dụng</a>
+                            </div>
+                            <div class="mt-1">
+                                <a href="https://tpb.vn/bao-mat-thong-tin-khach-hang" target="_blank">Bảo mật thông
+                                    tin khách hàng</a>
+                            </div>
+                        </div>
+                        <div class="footer-column-3">
+                            <div>
+                                <a href="https://tpb.vn/lien-he/tim-diem-giao-dich" target="_blank">Tìm điểm giao
+                                    dịch</a>
+                            </div>
+                            <div class="mt-1">
+                                <a href="https://tpb.vn/lien-he/tim-vi-tri-live-bank" target="_blank">Tìm kiếm vị
+                                    trí livebank</a>
+                            </div>
+                        </div>
+                        <div class="app-store-col">
+                            <div class="download-desc">Tải và cài đặt ứng dụng TPBank eBank
+                                lên thiết bị di động</div>
+                            <a href="https://itunes.apple.com/vn/app/tpbank-mobile/id450464147?mt=8" target="_blank">
+                                <img src="./assets/images/main/download-ios.png">
+                            </a>
+                            <a class="ml-4"
+                                href="https://play.google.com/store/apps/details?id=com.tpb.mb.gprsandroid&amp;hl=en"
+                                target="_blank">
+                                <img src="./assets/images/main/download-android.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-2">
+                        <div class="copyright-text"> © 2019 Ngân hàng TMCP Tiên Phong (TPBank)
+                            | www.tpb.vn </div>
+                        <div class="social text-right">
+                            <a href="https://www.facebook.com/TPBank" target="_blank">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                            <a class="ml-3" href="https://www.youtube.com/user/TienPhongBank" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a class="ml-3" href="https://www.linkedin.com/company/tpbank" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </app-footer>
+        </div>
+    </div>
+    <div class="loading" hidden>
+        <!-- <img src="./assets/images/main/loading2.gif"> -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./assets/js/bill-add-bill-water.js"></script>
+</body>
+
+</html>
