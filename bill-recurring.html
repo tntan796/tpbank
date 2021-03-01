@@ -7,8 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link href="./assets/css/transfer.css" rel="stylesheet" />
-    <link href="./assets/css/transfer-reponsive.css" rel="stylesheet" />
+    <link href="./assets/css/bill-recurring.css" rel="stylesheet" />
+    <link href="./assets/css/bill-recurring-responsive.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -173,10 +173,10 @@
                                 <a class="cursor-pointer">Trang chủ 
                                     <i class="fas fa-chevron-right"></i>
                                 </a>
-                                <a class="cursor-pointer">Chuyển khoản 
+                                <a class="cursor-pointer">Thanh toán hóa đơn
                                 </a>
                             </div>
-                            <h1 class="page-title">Chuyển Khoản</h1>
+                            <h1 class="page-title">Thanh toán hóa đơn</h1>
                         </div>
                     </div>
                     <div class="user-info" id="globalUserInfo">
@@ -204,14 +204,35 @@
                 <div class="page-body">
                     <div class="left">
                         
-
-
-
-
-
-
-
-
+                        <div class="content-wrap">
+                            <div class="tab-main">
+                                <div class="nav-tab">
+                                    <a href="bill.html" class="nav-tab-button" routerlinkactive="active" tabindex="0">Thanh toán
+                                        hoá đơn </a>
+                                    <a href="bill-recurring.html" class="nav-tab-button active" routerlinkactive="active" style="display: flex" tabindex="0">Lệnh
+                                        định kỳ
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="recurring-content">
+                                <div class="intro-content">
+                                    <img alt="" src="./assets/images/icons/bill/bill-recurring/thanh-toan-dinh-ky.png">
+                                    <span class="slogan">Đặt lệnh hôm nay, Hàng tháng rảnh tay!</span>
+                                    <a href="bill-add-bill.html" class="recurring-item-add shadow-btn" tabindex="0">
+                                        <div class="icon-add-recurring">
+                                            <img class="icon-oder" src="./assets/images/icons/bill/bill-recurring/icons-add-orange.svg">
+                                        </div>
+                                        <span class="text-add-recurring">Đặt Lệnh Định Kỳ</span>
+                                    </a>
+                                </div>
+                                <div class="content-description" style="font-size: 12px; margin: 16px 0; color: #AD8AD8; text-align: center">
+                                    <div>Các lệnh thanh toán định kỳ hiện có</div>
+                                    <img class="icon-oder" src="./assets/images/icons/bill/bill-recurring/icons-order.svg"
+                                        style="width: 29px; height: 34px; margin: 40px auto 6px;">
+                                    <p class="text">Quý khách hiện chưa có lệnh thanh toán định kỳ</p>
+                                </div>
+                            </div>
+                        </div>
                         
                     </div>
                     <div class="right">
@@ -374,7 +395,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="./assets/js/transfer.js"></script>
+    <script src="./assets/js/bill-recurring.js"></script>
 </body>
 
 </html>
