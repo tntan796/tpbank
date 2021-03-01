@@ -58,6 +58,7 @@
         padding: 5px 30px 5px 30px;
         margin-top: 105px;
     }
+
     .main-container > .right .page-body .left {
         margin-right: 0;
     }
@@ -78,7 +79,20 @@
 }
 
 @media screen and (max-width: 1130px) {
-    
+    .list-card-link .card-link-wrapper {
+        max-width: none;
+    }
+    .list-card-link .card-customize:nth-child(odd) {
+        padding-right: 0;
+        margin-right: 16px;
+    }
+
+    .list-card-link .card-customize {
+        display: inline-block;
+        width: 48%;
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
 }
 
 @media only screen and (max-width: 1129px) {
@@ -144,6 +158,12 @@
 
     app-footer .footer-2 {
         padding: 15px 16px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .search-area {
+        display: block;
     }
 }
 
@@ -248,5 +268,19 @@
 }
 
 @media screen and (max-width: 575px) {
-   
+   /* Search Area*/
+   .nav-tab {
+        width: max-content;
+        padding: 0;
+    }
+   /* End Search Area */
+
+   .list-card-link .card-link-wrapper {
+        max-width: none;
+    }
+    .list-card-link .card-customize {
+        display: block;
+        width: 100%;
+        margin-bottom: 16px;
+    }
 }
