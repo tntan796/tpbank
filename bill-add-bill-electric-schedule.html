@@ -7,8 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link href="./assets/css/bill-add-bill-electric.css" rel="stylesheet" />
-    <link href="./assets/css/bill-add-bill-electric-responsive.css" rel="stylesheet" />
+    <link href="./assets/css/bill-add-bill-electric-schedule.css" rel="stylesheet" />
+    <link href="./assets/css/bill-add-bill-electric-schedule-reponsive.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -170,7 +170,7 @@
                     <div class="left-text">
                         <div>
                             <div class="back-btn">
-                                <a href="bill-add-bill.html">
+                                <a href="bill-add-bill-electric.html">
                                     <img src="https://ebank.tpb.vn/retail/vX/assets/icons/back.svg"> Trở về trang trước
                                 </a>
                             </div>
@@ -201,10 +201,9 @@
                 </div>
                 <div class="page-body">
                     <div class="left">
-                        
-
+                    
                         <div class="content-wrap">
-                            <div class="mx-auto d-none" style="margin-bottom: 18px; max-width: 496px">
+                            <div class="mx-auto" style="margin-bottom: 18px; max-width: 496px">
                                 <div class="debit-acc-selector">
                                     <div class="label-color">Từ tài khoản</div>
                                     <div class="fw-500 mt-2"> TRAN NGOC TAN </div>
@@ -213,92 +212,122 @@
                                 </div>
                             </div>
                             <div>
-                                <div>
-                                    <div class="list-provider">
-                                        <ul class="list-card-link">
-                                            <li class="card-link-wrapper">
-                                                <a class="card-link card-provider"  href="bill-add-bill-electric-schedule.html">
-                                                    <div class="content-card">
-                                                        <div class="container-icon-provider">
-                                                            <img alt="" class="icon-logo"
-                                                                src="https://ebank.tpb.vn/gateway/api/contentservices/api/contentstream-id/contentRepository/6d549869-dca9-403d-927c-efe38216c51f?_=1554954768300">
-                                                        </div>
-                                                        <div class="content-name-provider">
-                                                            <span class="name-provider">Điện lực TP Hà
-                                                                Nội</span>
-                                                            <span class="icon-arrow-right"></span>
-                                                        </div>
+                                <div class="content-input ng-untouched ng-pristine ng-valid">
+                                    <div class="container-input">
+                                        <div class="info-content">
+                                            <div class="title">Thanh toán hoá đơn</div>
+                                            <div class="text-provider">
+                                                <img alt="" class="icon-logo-provider"
+                                                    src="https://ebank.tpb.vn/gateway/api/contentservices/api/contentstream-id/contentRepository/6d549869-dca9-403d-927c-efe38216c51f?_=1554954768300">
+                                                <span class="name-provider">Điện lực TP Hà Nội</span>
+                                            </div>
+                                        </div>
+                                        <div class="input-customer-code">
+                                            <div class="input-content">
+                                                <input formcontrolname="customer" maxlength="25" placeholder="Nhập mã khách hàng"
+                                                    class="ng-untouched ng-pristine ng-valid">
+                                                <div class="content-tooltip"  data-toggle="modal" data-target="#guide-get-code"> Cách lấy mã
+                                                    <img alt="" class="icon-question" src="https://ebank.tpb.vn/retail/vX/assets/icons/icons-question-fill.svg">
+                                                </div>
+                                            </div>
+                                            <div class="content-date">
+                                                <div class="select-date">
+                                                    <input class="input-date ng-untouched ng-pristine ng-valid" formcontrolname="date"
+                                                        type="text" placeholder="Chọn ngày thanh toán hàng tháng">
+                                                    <img class="icon-calendar" src="https://ebank.tpb.vn/retail/vX/assets/icons/calendar.svg">
+                                                    <ul class="list-date" hidden>
+                                                        <li class="date">Ngày 1</li>
+                                                        <li class="date">Ngày 2</li>
+                                                        <li class="date">Ngày 3</li>
+                                                        <li class="date">Ngày 4</li>
+                                                        <li class="date">Ngày 5</li>
+                                                        <li class="date">Ngày 6</li>
+                                                        <li class="date">Ngày 7</li>
+                                                        <li class="date">Ngày 8</li>
+                                                        <li class="date">Ngày 9</li>
+                                                        <li class="date">Ngày 10</li>
+                                                        <li class="date">Ngày 11</li>
+                                                        <li class="date">Ngày 12</li>
+                                                        <li class="date">Ngày 13</li>
+                                                        <li class="date">Ngày 14</li>
+                                                        <li class="date">Ngày 15</li>
+                                                        <li class="date">Ngày 16</li>
+                                                        <li class="date">Ngày 17</li>
+                                                        <li class="date">Ngày 18</li>
+                                                        <li class="date">Ngày 19</li>
+                                                        <li class="date">Ngày 20</li>
+                                                        <li class="date">Ngày 21</li>
+                                                        <li class="date">Ngày 22</li>
+                                                        <li class="date">Ngày 23</li>
+                                                        <li class="date">Ngày 24</li>
+                                                        <li class="date">Ngày 25</li>
+                                                        <li class="date">Ngày 26</li>
+                                                        <li class="date">Ngày 27</li>
+                                                        <li class="date">Ngày 28</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="text-secondary mt-3 cursor-pointer" style="font-size: 12px; text-align: center"  data-toggle="modal" data-target="#guide-choose-date">
+                                                Hướng dẫn chọn ngày
+                                                <i aria-hidden="true" class="fa fa-info-circle"></i>
+                                            </div>
+                                        </div>
+                                        <div class="btn-payment">
+                                            <button class="btn btn-primary btn-next-step" disabled="">
+                                                <span>Tiếp tục</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal fade" id="guide-get-code" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                                            aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Hướng Dẫn Cách Lấy Mã</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
                                                     </div>
-                                                </a>
-                                            </li>
-                                            <li class="card-link-wrapper">
-                                                <a class="card-link card-provider"  href="bill-add-bill-electric-schedule.html">
-                                                    <div class="content-card">
-                                                        <div class="container-icon-provider">
-                                                            <img alt="" class="icon-logo"
-                                                                src="https://ebank.tpb.vn/gateway/api/contentservices/api/contentstream-id/contentRepository/6d549869-dca9-403d-927c-efe38216c51f?_=1554954768300">
-                                                        </div>
-                                                        <div class="content-name-provider">
-                                                            <span class="name-provider">Điện lực miền
-                                                                Bắc</span>
-                                                            <span class="icon-arrow-right"></span>
-                                                        </div>
+                                                    <div class="modal-body">
+                                                        <div>Thanh toán được cho hóa đơn điện của tất cả các khu vực thuộc TP. Hà Nội<br><br>Mã khách hàng
+                                                            là mã định danh duy nhất đại diện cho từng khách hàng, mã từ 11 đến 13 ký tự và bắt đầu bằng chữ “PD”. Quý khách có
+                                                            thể tìm thấy mã khách hàng bằng cách sau:<br><b>Cách 1:</b> Xem trên giáy báo cước (thông báo tiền điện) hàng
+                                                            tháng<br><b>Cách 2:</b> Xem trên hóa đơn thanh toán hóa đơn tiền điện hàng tháng<br><b>Cách 3:</b> Xem trên tin nhắn
+                                                            SMS nhắc thanh toán tiền điện hàng tháng từ NCC<br><b>Cách 4:</b> Xem trên hợp đồng cung cấp điện lực<br><b>Cách
+                                                                5:</b> Liên hệ trung tâm chăm sóc khách hàng của Tổng công ty điện lực TP. Hà Nội, số điện thoại 1900 1288 hoặc
+                                                            024 222 22000, cung cấp đầy đủ thông tin chủ hộ để được hỗ trợ tra mã khách hàng.</div>
                                                     </div>
-                                                </a>
-                                            </li>
-                                            <li class="card-link-wrapper">
-                                                <a class="card-link card-provider"  href="bill-add-bill-electric-schedule.html">
-                                                    <div class="content-card">
-                                                        <div class="container-icon-provider">
-                                                            <img alt="" class="icon-logo"
-                                                                src="https://ebank.tpb.vn/gateway/api/contentservices/api/contentstream-id/contentRepository/6d549869-dca9-403d-927c-efe38216c51f?_=1554954768300">
-                                                        </div>
-                                                        <div class="content-name-provider">
-                                                            <span class="name-provider">Điện lực miền
-                                                                Nam</span>
-                                                            <span class="icon-arrow-right"></span>
-                                                        </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal fade" id="guide-choose-date" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                                            aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Hướng Dẫn Chọn Ngày</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
                                                     </div>
-                                                </a>
-                                            </li>
-                                            <li class="card-link-wrapper">
-                                                <a class="card-link card-provider"  href="bill-add-bill-electric-schedule.html">
-                                                    <div class="content-card">
-                                                        <div class="container-icon-provider">
-                                                            <img alt="" class="icon-logo"
-                                                                src="https://ebank.tpb.vn/gateway/api/contentservices/api/contentstream-id/contentRepository/6d549869-dca9-403d-927c-efe38216c51f?_=1554954768300">
-                                                        </div>
-                                                        <div class="content-name-provider">
-                                                            <span class="name-provider">Điện lực miền
-                                                                Trung</span>
-                                                            <span class="icon-arrow-right"></span>
-                                                        </div>
+                                                    <div class="modal-body">
+                                                        <div>Để tránh việc hóa đơn của Quý khách sẽ không thể thanh toán do chưa phát sinh cước nợ vì chưa
+                                                            đến kỳ thanh toán của NCC<br>Quý khách nên lựa chọn ngày thanh toán theo các cách sau: <br><b>Cách 1:</b> Tìm thông
+                                                            tin kỳ thanh toán từ ngày, đến ngày trên giấy báo cước hoặc hóa đơn thanh toán hàng tháng và đặt ngày thanh toán
+                                                            định kỳ sau 3 đến 5 ngày kể từ ngày kết thúc kỳ thanh toán<br><b>Cách 2:</b> Xem trên tin nhắn SMS nhắc thanh toán
+                                                            hàng tháng từ NCC và đặt ngày thanh toán định kỳ sau 3 đến 5 ngày kể từ ngày nhận được tin nhắn<br><br>Ví dụ: <br>  
+                                                            - &nbsp; Quý khách nhận được tin nhắn SMS nhắc thanh toán hóa đơn vào ngày 8/10/2020 thì Quý khách nên đặt lệnh định
+                                                            kỳ trong khoản thời gian từ 10 đến 12/10/2020<br>   - &nbsp; Hoặc trên hóa đơn thanh toán tiền điện hiển thị kỳ
+                                                            thanh toán tháng 10 bắt đầu từ 07/09/2020 đến 06/10/2020 thì Quý khách nên đặt lệnh định kỳ trong khoảng thời gian
+                                                            từ 08/10/2020 đến 10/10/2020</div>
                                                     </div>
-                                                </a>
-                                            </li>
-                                            <li class="card-link-wrapper">
-                                                <a class="card-link card-provider" href="bill-add-bill-electric-schedule.html">
-                                                    <div class="content-card">
-                                                        <div class="container-icon-provider">
-                                                            <img alt="" class="icon-logo"
-                                                                src="https://ebank.tpb.vn/gateway/api/contentservices/api/contentstream-id/contentRepository/6d549869-dca9-403d-927c-efe38216c51f?_=1554954768300">
-                                                        </div>
-                                                        <div class="content-name-provider">
-                                                            <span class="name-provider">Điện lực TP
-                                                                HCM</span>
-                                                            <span class="icon-arrow-right"></span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                        </ul>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-
-                        
+                    
                     </div>
                     <div class="right">
                         <div class="quick-links">
@@ -460,7 +489,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="./assets/js/bill-add-bill-electric.js"></script>
+    <script src="./assets/js/bill-add-bill-electric-schedule.js"></script>
 </body>
 
 </html>
