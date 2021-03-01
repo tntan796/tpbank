@@ -9,7 +9,9 @@
     }
     /*____ End Page body _____*/
 
-
+    .main-container > .right .page-body .left {
+        margin-right: 30px;
+    }
     /*_____Footer _____*/
     app-footer .footer-1 {
         padding: 20px 30px;
