@@ -78,22 +78,21 @@
 }
 
 @media screen and (max-width: 1130px) {
-    /*____List card _____*/
-    .list-card-link .card-customize:nth-child(odd) {
+  /*Loan*/
+    .card-customize:nth-child(odd) {
         padding-right: 0;
         margin-right: 16px;
     }
-
-    .list-card-link .card-link-wrapper {
+    .card-link-wrapper {
         max-width: none;
     }
-
-    .list-card-link .card-customize {
+    .card-customize {
         display: inline-block;
-        width: 46%;
+        width: 48%;
         margin-right: 0;
         margin-bottom: 16px;
     }
+  /*End Loan*/
 }
 
 @media only screen and (max-width: 1129px) {
@@ -139,13 +138,6 @@
 
     .main-container > .right .page-body .left {
         margin-right: 0;
-    }
-
-    
-    /*Mobile*/
-        .history-transaction .list-recent-transaction .list-card-link {
-        margin: 0;
-        display: block;
     }
 
     /* Page body right */
@@ -216,13 +208,6 @@
         max-width: 100%;
         margin-right: 0;
     }
-
-    /*Mobile */
-     .history-transaction .list-recent-transaction .list-card-link {
-        margin: 0;
-        display: block;
-    }
-    /*End Mobile */
     
     /*Page body right*/
     .main-container > .right .page-body .right {
@@ -273,41 +258,21 @@
 }
 
 @media screen and (max-width: 576px) {
-     /*____List card _____*/
-
+     /*Loan */
      .list-card-link {
         margin-right: 0;
     }
-
-    .list-card-link .card-link-wrapper {
+    .card-link-wrapper {
         max-width: none;
     }
-    .list-card-link .card-customize {
+    .card-customize {
         display: block;
         width: 100%;
         margin-bottom: 16px;
     }
-
-    /*Transfer Favorite */
-    .favorite-body-responsive {
-        width: 100%;
-        overflow-y: hidden;
-        overflow-x: auto;
-    }
-    .favorite-body {
-        width: 500px;
-    }
-    /*End favorite */
+     /*End Loan*/
 }
 
 @media screen and (max-width: 575px) {
-   /*Mobile*/
-   .btn-action .btn-next {
-    width: 100%;
-}
-
-.history-transaction .list-recent-transaction .list-card-link {
-    margin: 0;
-    display: block;
-}
+   
 }
