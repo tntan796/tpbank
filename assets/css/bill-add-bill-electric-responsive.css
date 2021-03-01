@@ -278,5 +278,12 @@
 }
 
 @media screen and (max-width: 575px) {
-   
+   /*List link card */
+   .list-provider .list-card-link .card-link-wrapper {
+        width: 100%;
+    }
+    .list-provider .list-card-link .card-link-wrapper .card-provider {
+        margin: 0;
+    }
+   /*End list link card */
 }

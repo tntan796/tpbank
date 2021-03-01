@@ -1,0 +1,20 @@
+<!--<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">-->
+<!--    <defs>-->
+<!--        <path id="a" d="M8.273.889a.625.625 0 0 1 .005.884L2.33 7.79h16.212a.625.625 0 0 1 0 1.25H2.33l5.948 6.02a.625.625 0 1 1-.89.878L.65 9.12a1 1 0 0 1 0-1.405L7.39.894a.625.625 0 0 1 .884-.005z"/>-->
+<!--    </defs>-->
+<!--    <g fill="none" fill-rule="evenodd" transform="translate(0 2)">-->
+<!--        <mask id="b" fill="#fff">-->
+<!--            <use xlink:href="#a"/>-->
+<!--        </mask>-->
+<!--        <use fill="#FFF" fill-rule="nonzero" xlink:href="#a"/>-->
+<!--        <g fill="#FF9800" mask="url(#b)">-->
+<!--            <path d="M0-2h20v20H0z"/>-->
+<!--        </g>-->
+<!--    </g>-->
+<!--</svg>-->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  width="20" height="20" viewBox="0 0 20 20">
+<path fill="#FF9800" fill-rule="evenodd"  clip-rule="evenodd" id="a" d="M8.273.889a.625.625 0 0 1 .005.884L2.33 7.79h16.212a.625.625 0 0 1 0 1.25H2.33l5.948 6.02a.625.625 0 1 1-.89.878L.65 9.12a1 1 0 0 1 0-1.405L7.39.894a.625.625 0 0 1 .884-.005z"/>
+<mask id="b" maskUnits="userSpaceOnUse" fill-rule="evenodd">
+  <path fill="#fff" fill-rule="evenodd"  clip-rule="evenodd" id="a" d="M8.273.889a.625.625 0 0 1 .005.884L2.33 7.79h16.212a.625.625 0 0 1 0 1.25H2.33l5.948 6.02a.625.625 0 1 1-.89.878L.65 9.12a1 1 0 0 1 0-1.405L7.39.894a.625.625 0 0 1 .884-.005z"/>
+</mask>
+</svg>
