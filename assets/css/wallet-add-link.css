@@ -518,6 +518,7 @@ input {
     padding: 15px;
     font-weight: 500;
 }
+
 .select-container__wrap-top .select-container__icon {
     margin-right: 16px;
     transition: all .2s;
@@ -556,6 +557,10 @@ input {
     border-radius: 4px;
     background-color: #fff;
     box-shadow: 0 0 20px 0 rgb(0 0 0 / 3%);
+}
+.select-container__wrap-items--height {
+    max-height: 0;
+    transition: max-height .2s;
 }
 .ewallet-link-content .input-container {
     width: 100%;
@@ -600,6 +605,72 @@ input {
     width: 100%;
     margin: 24px auto 0;
 }
+
+/*Change wallet */
+.modal-body{
+    padding: 16px 8px 24px 24px!important;
+    background: #ebebfa;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow-y: auto;
+}
+
+.change-acc-modal-content-wrapper {
+    max-height: 500px;
+    overflow-y: auto;
+    padding-right: 16px;
+}
+.modal-body .account-info:last-child {
+    margin-bottom: 0;
+}
+
+.modal-body .account-info {
+    background: #fff;
+    border-radius: 5px;
+    padding: 12px 16px;
+    color: #42236a;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.modal-body .account-info .acc-name {
+    margin-bottom: 7px;
+}
+.modal-body .account-info .acc-number {
+    line-height: 1.57;
+    margin-bottom: 11px;
+}
+.modal-body .account-info .acc-balance-line {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.modal-body .account-info .acc-balance-line .acc-balance {
+    font-size: 20px;
+    line-height: 1.4;
+    flex-grow: 1;
+    word-break: break-word;
+}
+.modal-body .account-info .acc-balance-line .change-acc-btn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.modal-body .account-info .acc-balance-line .change-acc-btn .text-change {
+    font-size: 16px;
+    margin-right: -4px;
+    font-weight: 400;
+}
+.modal-body .account-info .acc-balance-line .change-acc-btn img {
+    width: 27px;
+    height: 27px;
+    margin-right: -9px;
+}
+/* End change wallet */
 
 /* End Wallet Add Link*/
 

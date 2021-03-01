@@ -173,8 +173,10 @@
                                 <a class="cursor-pointer">Trang chủ
                                     <i class="fas fa-chevron-right"></i>
                                 </a>
-                                <a class="cursor-pointer">Ví điện tử
+                                <a class="cursor-pointer" href="./wallet.html">Ví điện tử
+                                    <i class="fas fa-chevron-right"></i>
                                 </a>
+                                <a class="cursor-pointer">Thêm liên kết ví</a>
                             </div>
                             <h1 class="page-title">Ví điện tử</h1>
                         </div>
@@ -213,11 +215,14 @@
                                             <div class="title">Từ tài khoản</div>
                                             <div class="acc-name">TRAN NGOC TAN</div>
                                             <div class="acc-number">0210 5921 501</div>
-                                            <div class="acc-balance-line"><span class="acc-balance">706,555
-                                                    VND</span><span class="change-acc-btn"><span
-                                                        class="text-change text-link">Đổi</span><img
-                                                        src="./assets/images/icons/wallet/right.svg"></span></div>
-                                        </div>
+                                            <div class="acc-balance-line">
+                                                <span class="acc-balance">706,555VND</span>
+                                                <span class="change-acc-btn">
+                                                    <span class="text-change text-link" data-toggle="modal" data-target="#ewallet-choose-account-wrap">Đổi</span>
+                                                    <img src="./assets/images/icons/wallet/right.svg">
+                                                </span>
+                                            </div>
+                                            </div>
                                     </div>
                                     <form novalidate="" class="ng-dirty ng-touched ng-valid">
                                         <select-container formcontrolname="provider"
@@ -229,7 +234,8 @@
                                                         src="./assets/images/icons/wallet/chevron-right-solid.svg" width="8px">
                                                 </div>
                                                 <div
-                                                    class="select-container__wrap-items select-container__wrap-items--height">
+                                                    class="select-container__wrap-items select-container__wrap-items--height"> 
+                                                    <!--Class display item dropdown: select-container__wrap-items--height -->
                                                     <div class="select-container__select-option">
                                                         AirPay
                                                     </div>
@@ -272,6 +278,34 @@
                                     <button class="btn btn-primary btn-next" disabled="">Tiếp tục</button>
                                 </div>
                             </div>
+                            <div class="modal fade" id="ewallet-choose-account-wrap" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Chọn tài khoản</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="change-acc-modal-content-wrapper">
+                                                <div class="account-info">
+                                                    <div class="acc-name">TRAN NGOC TAN</div>
+                                                    <div class="acc-number">0210 5921 501</div>
+                                                    <div class="acc-balance-line">
+                                                        <span class="acc-balance">706,555 VND</span>
+                                                        <span class="change-acc-btn">
+                                                            <span class="text-change text-link">Chọn</span>
+                                                            <img src="https://ebank.tpb.vn/retail/vX/assets/icons/right.svg"></span>
+                                                        </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
 
 
