@@ -7,8 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link href="./assets/css/saving-term-deposit-detail.css" rel="stylesheet" />
-    <link href="./assets/css/saving-term-deposit-detail-responsive.css" rel="stylesheet" />
+    <link href="./assets/css/saving-edit-saving-name.css" rel="stylesheet" />
+    <link href="./assets/css/saving-edit-saving-name-responsive.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -169,14 +169,12 @@
                     </div>
                     <div class="left-text">
                         <div>
-                            <div class="breadcrumb">
-                                <a class="cursor-pointer">Trang chủ 
-                                    <i class="fas fa-chevron-right"></i>
-                                </a>
-                                <a class="cursor-pointer" href="saving.html">Tiết Kiệm 
+                            <div class="back-btn">
+                                <a href="saving-term-deposit-detail.html">
+                                    <img src="https://ebank.tpb.vn/retail/vX/assets/icons/back.svg"> Trở về trang trước
                                 </a>
                             </div>
-                            <h1 class="page-title">Tiết Kiệm Kỳ Hạn Điện Tử</h1>
+                            <h1 class="page-title">Đổi Tên Gói Tiết Kiệm</h1>
                         </div>
                     </div>
                     <div class="user-info" id="globalUserInfo">
@@ -203,94 +201,24 @@
                 </div>
                 <div class="page-body">
                     <div class="left">
+                    
                         <div class="content-wrap">
-                            <div>
-                                <div>
-                                    <div class="detail-saving">
-                                        <div>
-                                            <div class="show-header-button mobile">
-                                                <div class="header-btn">
-                                                    <div class="button-right-header">
-                                                        <div class="content">
-                                                            <div style="cursor: pointer;">
-                                                                <span class="btn-header text-link">Tất toán</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="content-detail-top">
-                                                    <h4>Thống kê</h4>
-                                                    <div class="card-statistical">
-                                                        <div class="package-value">
-                                                            <div class="item-left">
-                                                                <p>Giá trị gói</p>
-                                                                <p class="amount"> 2,500,000 <span>VND</span></p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="progress-tooltip">
-                                                            <div class="date row">
-                                                                <h6>17/02/2021</h6>
-                                                                <h6>17/03/2021</h6>
-                                                            </div>
-                                                            <div class="my-progress my-tooltip">
-                                                                <span class="tooltiptext" style="left: 36.2069%;">15 Ngày tới kỳ hạn</span>
-                                                                <div class="progress-content" style="width: 48.2759%;"></div>
-                                                            </div>
-                                                            <div class="fromTo row">
-                                                                <p>Bắt đầu</p>
-                                                                <p>Kết thúc</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="saving-info-card">
-                                                <h4>Thông tin gói</h4>
-                                                <div class="content-package row">
-                                                    <div class="content-package-left col-md-6">
-                                                        <div class="detail-package">
-                                                            <h5>Tên gói</h5>
-                                                            <div class="name-saving">
-                                                                <h6>TK Điện Tử 10/02/2021</h6>
-                                                                <button>
-                                                                    <a href="saving-edit-saving-name.html">Đổi tên</a>
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                        <div class="detail-package">
-                                                            <h5>Số tài khoản</h5>
-                                                            <h6>0210 5921 06N</h6>
-                                                        </div>
-                                                        <div class="detail-package">
-                                                            <h5>Lãi tạm tính</h5>
-                                                            <h6>6,904 <span>VND</span>
-                                                            </h6>
-                                                        </div>
-                                                    </div>
-                                                    <div class="content-package-right col-md-6">
-                                                        <div class="detail-package">
-                                                            <h5>Kỳ hạn và lãi suất</h5>
-                                                            <h6>1 Tháng &amp; 3.6%/Năm</h6>
-                                                        </div>
-                                                        <div class="detail-package desc">
-                                                            <h5>Khi đến kỳ hạn</h5>
-                                                            <h6>Nhận lãi, chuyển gốc sang kỳ hạn mới
-                                                                <span class="pointer">Chỉnh sửa</span>
-                                                            </h6>
-                                                        </div>
-                                                        <div class="detail-package acc-accept">
-                                                            <h5>Tài khoản nhận</h5>
-                                                            <h6>TRAN NGOC TAN</h6>
-                                                            <p>0210 5921 501</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                            <div class="edit-new-name">
+                                <div class="input-new-name">
+                                    <span class="title-action">Đổi tên gói tiết kiệm</span>
+                                    <span class="description-action">Nhập tên mới cho gói tiết kiệm</span>
+                                    <div class="txtNewName" maxlength="100">
+                                        <div class="position-relative">
+                                            <input class="form-control form-control-default fw-500" type="text"
+                                                placeholder="Tên gói tiết kiệm" maxlength="100" style="padding-right: 12px;">
+                                            <div class="right-content"></div>
                                         </div>
                                     </div>
+                                    <button class="btn-default btn btn-primary ml-3">Cập nhật</button>
                                 </div>
                             </div>
                         </div>
+                    
                     </div>
                     <div class="right">
                         <div class="quick-links">
@@ -452,7 +380,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="./assets/js/saving-term-deposit-detail.js"></script>
+    <script src="./assets/js/saving-edit-saving-name.js"></script>
 </body>
 
 </html>

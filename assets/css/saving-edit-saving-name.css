@@ -328,10 +328,25 @@ input {
     margin: 0 auto;
 }
 
+.back-btn {
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: #42236a;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.back-btn img {
+    margin-top: 1px;
+    margin-right: 3px;
+}
+
 .page-header .page-title {
     margin-bottom: 0px;
     font-size: 20px;
-    font-weight: bolder;
+    font-weight: 500;
     text-transform: capitalize;
     line-height: 28px;
     text-transform: capitalize;
@@ -443,296 +458,78 @@ input {
     max-width: 800px;
     margin: 0 auto;
 }
-/*Saving detail*/
-.detail-saving {
-    position: relative;
-}
 
-.show-header-button {
-    padding-top: 24px;
-    position: relative;
+/*Edit saving name*/
+.edit-new-name {
+    width: 496px;
+    margin: 0 auto;
 }
-
-.show-header-button .button-right-header {
-    position: absolute;
-    top: -55px;
-    right: 0;
-    color: #ff9800;
-    font-size: 16px;
-    z-index: 99;
-    width: 100%;
-}
-
-.show-header-button .button-right-header .content {
-    position: fixed;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-    max-width: 800px;
-}
-.btn-header {
-    font-size: 14px;
-    font-weight: 500;
-    text-transform: capitalize;
-}
-.text-link {
-    font-size: 14px;
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.71;
-    letter-spacing: normal;
-    color: #ff9800;
-}
-.content-detail-top {
-    width: 100%;
-    max-width: 496px;
-    margin: auto auto 16px;
-}
-.content-detail-top h4 {
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.71;
-    letter-spacing: 1.3px;
-    color: #ad8ad8;
-}
-.content-detail-top .card-statistical {
-    background-color: #fff;
-    padding: 24px 24px 16px;
-    text-decoration: none;
-    border-radius: 5px;
-    text-transform: capitalize;
-    position: relative;
-}
-.content-detail-top .card-statistical .package-value {
-    display: flex;
-}
-.package-value {
-    position: relative;
-}
-.content-detail-top .card-statistical .package-value .item-left {
-    flex: 1;
+.edit-new-name .input-new-name {
     display: flex;
     flex-direction: column;
-    margin-right: 16px;
+    align-items: center;
 }
-.content-detail-top .card-statistical .package-value p:first-child {
-    text-transform: initial;
-    font-size: 14px;
-    font-weight: 400;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.71;
-    letter-spacing: normal;
-    margin-bottom: 4px;
-}
-.content-detail-top .card-statistical .package-value .amount {
-    font-size: 30px;
-    font-weight: 300;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    margin-bottom: 32px;
-    word-break: break-all;
-}
-.content-detail-top .card-statistical .progress-tooltip .date {
-    margin-bottom: 8px;
-    margin-left: 0;
-    margin-right: 0;
-}
-.content-detail-top .card-statistical .progress-tooltip .row {
-    justify-content: space-between;
-}
-.content-detail-top .card-statistical .progress-tooltip .date h6 {
-    font-size: 14px;
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.71;
-    letter-spacing: normal;
-    margin-bottom: 0;
-}
-.content-detail-top .card-statistical .progress-tooltip .my-progress {
-    background: #d7dadf;
-    height: 6px;
-    border-radius: 5px;
-}
-
-.content-detail-top .card-statistical .progress-tooltip .my-progress .progress-content {
-    background: #7b35bb;
-    height: 6px;
-    border-radius: 5px;
-    padding-left: 6px;
-}
-.content-detail-top .card-statistical .progress-tooltip .fromTo {
-    margin-top: 8px;
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.content-detail-top .card-statistical .progress-tooltip .fromTo p {
-    text-transform: initial;
-    margin-bottom: 0;
-    font-size: 14px;
-    font-weight: 400;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #ad8ad8;
-}
-
-.my-tooltip {
-    position: relative;
-}
-
-.my-tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
-}
-
-.my-tooltip .tooltiptext {
-    visibility: hidden;
-    width: auto;
-    background-color: #42236a;
-    color: #fff;
+.edit-new-name .input-new-name .title-action {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
     text-align: center;
-    border-radius: 6px;
-    padding: 4px 8px;
-    position: absolute;
-    z-index: 1;
-    bottom: 40px;
-    opacity: 0;
-    transition: opacity .3s;
-    font-size: 14px;
+    color: #42236a;
+    margin-bottom: 8px;
+}
+.edit-new-name .input-new-name .description-action {
     font-weight: 400;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.71;
-    letter-spacing: normal;
-    text-transform: initial;
-}
-
-.saving-info-card h4 {
-    font-size: 14px;
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.71;
-    letter-spacing: 1.3px;
-    color: #ad8ad8;
-    text-transform: uppercase;
-}
-.saving-info-card .content-package {
-    background-color: #fff;
-    padding: 0;
-    text-decoration: none;
-    border-radius: 5px;
-    text-transform: capitalize;
-    overflow: hidden;
-    margin-left: 0;
-    margin-right: 0;
-}
-.saving-info-card .content-package .content-package-left {
-    border-right: .5px solid rgba(225,227,232,.6);
-}
-.saving-info-card .content-package .detail-package {
-    border-bottom: 1px solid rgba(225,227,232,.6);
-    padding-top: 24px;
-    padding-bottom: 16px;
-}
-.saving-info-card .content-package .detail-package h5 {
-    font-size: 14px;
-    font-weight: 400;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.71;
-    letter-spacing: normal;
-    color: #ad8ad8;
-    text-transform: initial;
-    margin-bottom: 5px;
-}
-.saving-info-card .content-package .detail-package .name-saving {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    text-transform: none;
-}
-.saving-info-card .content-package .detail-package .name-saving h6 {
-    padding: 0;
-}
-.saving-info-card .content-package .detail-package h5, .saving-info-card .content-package .detail-package h6 {
-    font-size: 14px;
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.71;
-    letter-spacing: normal;
-    margin-bottom: 0;
-}
-.saving-info-card .content-package .detail-package .name-saving button {
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 24px;
-    color: #ff9800;
-    margin-left: 8px;
-    white-space: nowrap;
-    background-color: #fff;
-    border: none;
-    outline: 0;
+    text-align: center;
+    color: #42236a;
 }
-.saving-info-card .content-package .detail-package .name-saving button a{
-    color: #ff9800;
+.edit-new-name .input-new-name .txtNewName {
+    width: 100%;
+    margin: 20px 0 24px;
 }
-
-.saving-info-card .content-package .detail-package:last-child {
-    border: none;
+.edit-new-name .input-new-name .form-control {
+    text-overflow: ellipsis;
 }
-
-.saving-info-card .content-package .content-package-right {
-    border-left: .5px solid rgba(225,227,232,.6);
+.form-control-default {
+    height: 44px;
+    border: 1px solid #E2D8EE;
 }
-.saving-info-card .content-package .content-package-left, .saving-info-card .content-package .content-package-right {
-    padding-left: 24px;
-    padding-right: 24px;
+.fw-500 {
+    font-weight: 500;
 }
-
-.saving-info-card .content-package .content-package-right .detail-package.desc h6 {
-    display: flex;
-    justify-content: space-between;
-    text-transform: initial;
-    word-break: break-word;
+.form-control {
+    color: #42236a;
+    font-size: 14px;
 }
-.saving-info-card .content-package .content-package-right .detail-package.desc h6 span {
-    color: #ff9800;
-    min-width: -webkit-fit-content;
-    min-width: -moz-fit-content;
-    min-width: fit-content;
-    text-align: right;
-}
-.pointer {
-    cursor: pointer;
-}
-
-.saving-info-card .content-package .content-package-right .detail-package.acc-accept h6 {
-    text-transform: uppercase;
-    margin-bottom: 5px;
-}
-
-.saving-info-card .content-package .content-package-right .detail-package.acc-accept p {
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
     font-weight: 400;
-    margin-bottom: 0;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-/*End saving detail*/
+.right-content {
+    position: absolute;
+    top: 0;
+    right: 12px;
+    height: 100%;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.edit-new-name .input-new-name button {
+    width: 344px;
+}
+/*End edit saving name*/
 
 .page-body .right {
     width: 270px;
