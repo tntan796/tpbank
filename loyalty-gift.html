@@ -7,8 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link href="./assets/css/loyalty.css" rel="stylesheet" />
-    <link href="./assets/css/loyalty-responsive.css" rel="stylesheet" />
+    <link href="./assets/css/loyalty-gif.css" rel="stylesheet" />
+    <link href="./assets/css/loyalty-gift-responsive.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -169,14 +169,12 @@
                     </div>
                     <div class="left-text">
                         <div>
-                            <div class="breadcrumb">
-                                <a class="cursor-pointer" href="main.html">Trang chủ 
-                                    <i class="fas fa-chevron-right"></i>
-                                </a>
-                                <a class="cursor-pointer">Khách Hàng Thân Thiết 
+                            <div class="back-btn">
+                                <a href="loyalty.html">
+                                    <img src="https://ebank.tpb.vn/retail/vX/assets/icons/back.svg"> Trở về trang trước
                                 </a>
                             </div>
-                            <h1 class="page-title">Khách Hàng Thân Thiết </h1>
+                            <h1 class="page-title">Tạo lệnh thanh toán định kỳ</h1>
                         </div>
                     </div>
                     <div class="user-info" id="globalUserInfo">
@@ -203,240 +201,39 @@
                 </div>
                 <div class="page-body">
                     <div class="left">
-                    
                         <div class="content-wrap">
-                            <div>
-                                <div class="loyalty show-header-button">
-                                    <div class="button-right-header">
-                                        <div class="content">
-                                            <div style="cursor: pointer;">
-                                                <a class="txt-rule" target="_blank"
-                                                    href="https://tpb.vn/wps/wcm/connect/7d8ed4b8-2383-4955-84b0-8d86cd0c5cd9/QUY+%C4%90%E1%BB%8ANH+V%E1%BB%80+C%C6%A0+CH%E1%BA%BE+T%C3%8DCH+%C4%90I%E1%BB%82M+%C4%90%E1%BB%94I+QU%C3%80+LOYALTY_2018+%28v4%29.pdf?MOD=AJPERES&amp;CVID=muGzY7B&amp;CVID=muGzY7B&amp;CVID=moJ.bDw&amp;CVID=moJ.bDw&amp;CVID=moJ.bDw">Thể lệ</a>
-                                                <img alt="" class="icon-rule" src="./assets/images/icons/loyalty/icons-question-fill.svg">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="point-info">
-                                        <div class="point-card">
-                                            <div class="point-detail">
-                                                <div class="title">Điểm thưởng sẵn có</div>
-                                                <div class="point">0 điểm</div>
-                                                <div class="expired_point">0 điểm sẽ hết hạn 31/12/2021</div>
-                                            </div>
-                                            <div class="point-image">
-                                                <div class="avatar">
-                                                    <div class="avatar-container" style="width: 45px; height: 45px;">
-                                                        <div class="avatar-content"
-                                                            style="text-align: center; border-radius: 100%; text-transform: uppercase; color: rgb(255, 255, 255); background-color: rgb(127, 140, 141); font-size: 18px; line-height: 45px; font-weight: 500;">
-                                                            TT </div>
-                                                    </div>
-                                                </div>
-                                                <div class="rank">CLASSIC</div>
-                                            </div>
-                                        </div>
-                                    </div>
+                            <div class="view-gift-detail">
+                                <div class="detail-section-1 col-md-5">
+                                    <img alt="" src="./assets/images/icons/loyalty/gif.png">
                                     <div class="gift-info">
-                                        <div class="tab-section">
-                                            <div class="nav-tab-button search active">
-                                                <span>Danh sách quà tặng</span>
-                                            </div>
-                                            <div class="nav-tab-button detail">
-                                                <span>Lịch sử đổi quà</span>
+                                        <div class="gift-common">
+                                            <span class="txt-title row">Điểm của quà</span>
+                                            <div class="point row">3,300
+                                                <span>điểm
+                                                </span>
                                             </div>
                                         </div>
-                                        <div>
-                                            <div class="list-gift-card">
-                                                <div class="category-section">
-                                                    <div class="option active">
-                                                        <div class="selection-card-image">
-                                                            <img alt="" class="img-default" src="./assets/images/icons/loyalty/ic_gift_active.svg">
-                                                            <img alt="" class="img-hide" src="./assets/images/icons/loyalty/ic_gift_active.svg">
-                                                        </div>
-                                                        <div class="selection-card-title">
-                                                            <span>Tất cả</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="option">
-                                                        <div class="selection-card-image">
-                                                            <img alt="" class="img-default" src="./assets/images/icons/loyalty/ic_shopping.svg">
-                                                            <img alt="" class="img-hide" src="./assets/images/icons/loyalty/ic_shopping_active.svg">
-                                                        </div>
-                                                        <div class="selection-card-title">
-                                                            <span>Mua sắm</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="option">
-                                                        <div class="selection-card-image">
-                                                            <img alt="" class="img-default" src="./assets/images/icons/loyalty/ic_cuisine.svg">
-                                                            <img alt="" class="img-hide" src="./assets/images/icons/loyalty/ic_cuisine_active.svg">
-                                                        </div>
-                                                        <div class="selection-card-title">
-                                                            <span>Ẩm thực</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="option">
-                                                        <div class="selection-card-image">
-                                                            <img alt="" class="img-default" src="./assets/images/icons/loyalty/ic_utility.svg">
-                                                            <img alt="" class="img-hide" src="./assets/images/icons/loyalty/ic_utility_active.svg">
-                                                        </div>
-                                                        <div class="selection-card-title">
-                                                            <span>Tiện ích</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="option">
-                                                        <div class="selection-card-image">
-                                                            <img alt="" class="img-default" src="./assets/images/icons/loyalty/ic_service.svg">
-                                                            <img alt="" class="img-hide" src="./assets/images/icons/loyalty/ic_service_active.svg">
-                                                        </div>
-                                                        <div class="selection-card-title">
-                                                            <span>Dịch vụ</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="option">
-                                                        <div class="selection-card-image">
-                                                            <img alt="" class="img-default" src="./assets/images/icons/loyalty/ic_travel.svg">
-                                                            <img alt="" class="img-hide" src="./assets/images/icons/loyalty/ic_travel_active.svg">
-                                                        </div>
-                                                        <div class="selection-card-title">
-                                                            <span>Du lịch</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="filter-section">
-                                                    <div class="total_item col-md-4">Có <span>10</span> kết quả
-                                                    </div>
-                                                    <div class="select-dropdown col-md-8 ng-untouched ng-valid ng-dirty">
-                                                        <div class="filter-point">
-                                                            <select-container formcontrolname="filter"
-                                                                class="ng-untouched ng-valid ng-dirty">
-                                                                <div class="select-container">
-                                                                    <div class="select-container__wrap-top">
-                                                                        <span class="select-container__item-selected">Toàn bộ
-                                                                            quà</span>
-                                                                        <img class="select-container__icon"
-                                                                            src="./assets/images/icons/loyalty/chevron-right-solid.svg" width="8px">
-                                                                    </div>
-                                                                    <div
-                                                                        class="select-container__wrap-items select-container__wrap-items--height">
-                                                                        <div class="select-container__select-option">
-                                                                            Toàn bộ quà
-                                                                        </div>
-                                                                        <div class="select-container__select-option">
-                                                                            Quà đủ điểm nhận
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </select-container>
-                                                        </div>
-                                                        <div class="sort-point">
-                                                            <select-container formcontrolname="sort"
-                                                                class="ng-untouched ng-pristine ng-valid">
-                                                                <div class="select-container">
-                                                                    <div class="select-container__wrap-top">
-                                                                        <span class="select-container__item-selected">Từ thấp đến
-                                                                            cao</span>
-                                                                        <img class="select-container__icon"
-                                                                            src="./assets/images/icons/loyalty/chevron-right-solid.svg" width="8px">
-                                                                    </div>
-                                                                    <div
-                                                                        class="select-container__wrap-items select-container__wrap-items--height">
-                                                                        <div class="select-container__select-option">
-                                                                            Từ thấp đến cao
-                                                                        </div>
-                                                                        <div class="select-container__select-option">
-                                                                            Từ cao đến thấp
-                    
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </select-container>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="list-gift-section row " infinite-scroll="">
-                                                    <div class="gift-card col-md-6">
-                                                        <div class="gift-info">
-                                                            <div class="gift-image">
-                                                                <img alt="" src="./assets/images/icons/loyalty/gif.png">
-                                                            </div>
-                                                            <div class="gift-detail">
-                                                                <div class="title">Voucher Grab trị giá
-                                                                    30.000
-                                                                    đồng</div>
-                                                                <div class="partner">Đối tác TPBank</div>
-                                                                <div class="wrap-button">
-                                                                    <div class="point">3,300
-                                                                        <span class="point-txt">điểm</span>
-                                                                    </div>
-                                                                    <a class="exchange-gift" href="loyalty-gift.html">
-                                                                        <span class="text-link text-link-size">
-                                                                            Đổi quà
-                                                                            <img class="common-image" src="./assets/images/icons/loyalty/right.svg">
-                                                                        </span>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="gift-card-border"></div>
-                                                    </div>
-                                                    <div class="gift-card col-md-6">
-                                                        <div class="gift-info">
-                                                            <div class="gift-image">
-                                                                <img alt="" src="./assets/images/icons/loyalty/gif.png">
-                                                            </div>
-                                                            <div class="gift-detail">
-                                                                <div class="title">Voucher Grab trị giá
-                                                                    50.000
-                                                                    đồng</div>
-                                                                <div class="partner">Đối tác TPBank</div>
-                                                                <div class="wrap-button">
-                                                                    <div class="point">5,500
-                                                                        <span class="point-txt">điểm</span>
-                                                                    </div>
-                                                                    <a class="exchange-gift" href="loyalty-gift.html">
-                                                                        <span class="text-link text-link-size">
-                                                                            Đổi quà
-                                                                            <img class="common-image" src="./assets/images/icons/loyalty/right.svg">
-                                                                        </span>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="gift-card-border"></div>
-                                                    </div>
-                                                    <div class="gift-card col-md-6">
-                                                        <div class="gift-info">
-                                                            <div class="gift-image">
-                                                                <img alt="" src="./assets/images/icons/loyalty/gif.png">
-                                                            </div>
-                                                            <div class="gift-detail">
-                                                                <div class="title">Voucher tại hệ thống
-                                                                    Nhà
-                                                                    hàng Lotteria trị giá 50k</div>
-                                                                <div class="partner">Đối tác TPBank</div>
-                                                                <div class="wrap-button">
-                                                                    <div class="point">5,500
-                                                                        <span class="point-txt">điểm</span>
-                                                                    </div>
-                    
-                                                                    <div class="exchange-gift">
-                                                                        <a class="text-link text-link-size" href="loyalty-gift.html">
-                                                                            Đổi quà
-                                                                            <img class="common-image" src="./assets/images/icons/loyalty/right.svg">
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="gift-card-border"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div class="gift-common">
+                                            <span class="txt-title row">Mã quà</span>
+                                            <span class="txt-content text-uppercase row">GRAB30</span>
+                                        </div>
+                                        <div class="gift-common remove-border">
+                                            <span class="txt-title row">Số quà còn lại</span>
+                                            <span class="txt-content row">996597</span>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="detail-section-2 col-md-7">
+                                    <div class="gift-content">
+                                        <span class="gift-content-title row">Nội dung ưu đãi</span>
+                                        <span class="gift-content-detail row">Voucher Grab trị giá 30.000 đồng</span>
+                                    </div>
+                                    <button class="btn btn-primary btn-change-gift" type="button">Đổi
+                                        quà</button>
+                                </div>
                             </div>
                         </div>
+                    
                     
                     </div>
                     <div class="right">
@@ -599,7 +396,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="./assets/js/loyalty.js"></script>
+    <script src="./assets/js/loyalty-gif.js"></script>
 </body>
 
 </html>
