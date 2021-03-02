@@ -182,6 +182,17 @@ input {
     background: #fcfcfc;
     font-weight: 500;
 }
+.btn-secondary {
+    border-radius: 5px !important;
+    text-transform: capitalize !important;
+    background-color: #e2d8ee !important;
+    color: #42236a !important;
+    border: none;
+}
+.btn-secondary:hover {
+    background-color: #c4bad1 !important;
+    cursor: pointer;
+}
 /*End common element*/
 
 
@@ -646,9 +657,7 @@ label {
 .select-container__wrap-top .select-container__icon {
     margin-right: 16px;
     transition: all .2s;
-    transform: rotate(
-90deg
-);
+    transform: rotate(90deg);
 }
 
 .select-container__wrap-items {
