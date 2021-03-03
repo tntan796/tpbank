@@ -7,8 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link href="./assets/css/inquiry.css" rel="stylesheet" />
-    <link href="./assets/css/inquiry-responsive.css" rel="stylesheet" />
+    <link href="./assets/css/inquiry-vat.css" rel="stylesheet" />
+    <link href="./assets/css/inquiry-vat-responsive.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -169,7 +169,14 @@
                     </div>
                     <div class="left-text">
                         <div>
-                            <h1 class="page-title">Tra cứu</h1>
+                            <div class="breadcrumb">
+                                <a class="cursor-pointer" href="/inquiry.html"> Tra Cứu
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>s
+                                <a class="cursor-pointer">Hóa Đơn VAT
+                                </a>
+                            </div>
+                            <h1 class="page-title">Hóa Đơn VAT</h1>
                         </div>
                     </div>
                     <div class="user-info" id="globalUserInfo">
@@ -197,62 +204,15 @@
                 <div class="page-body">
                     <div class="left">
                         <div class="content-wrap">
-                            <div class="list-card-link">
-                                <div class="card-link-wrapper card-customize">
-                                    <a class="card-link shadow-btn" style="position: relative" href="/inquiry-account.html">
-                                        <div class="card-img">
-                                            <img src="https://ebank.tpb.vn/retail/vX/assets/images/card-links/bank.svg">
-                                        </div>
-                                        <div class="card-name card-color">Tài khoản</div>
-                                    </a>
-                                </div>
-                                <div class="card-link-wrapper card-customize">
-                                    <a class="card-link shadow-btn" style="position: relative" href="/inquiry-saving.html">
-                                        <div class="card-img">
-                                            <img src="https://ebank.tpb.vn/retail/vX/assets/images/card-links/saving.svg">
-                                        </div>
-                                        <div class="card-name card-color">Tiết kiệm</div>
-                                    </a>
-                                </div>
-                                <div class="card-link-wrapper card-customize">
-                                    <a class="card-link shadow-btn" style="position: relative" href="/inquiry-account.html">
-                                        <div class="card-img">
-                                            <img src="https://ebank.tpb.vn/retail/vX/assets/images/card-links/loan.svg">
-                                        </div>
-                                        <div class="card-name card-color">Khoản vay</div>
-                                    </a>
-                                </div>
-                                <div class="card-link-wrapper card-customize">
-                                    <a class="card-link shadow-btn" style="position: relative" href="/inquiry-credit-card.html">
-                                        <div class="card-img">
-                                            <img src="https://ebank.tpb.vn/retail/vX/assets/images/card-links/card.svg">
-                                        </div>
-                                        <div class="card-name card-color">Thẻ tín dụng</div>
-                                    </a>
-                                </div>
-                                <div class="card-link-wrapper card-customize">
-                                    <a class="card-link shadow-btn" style="position: relative" href="/inquiry-transfer.html">
-                                        <div class="card-img">
-                                            <img src="https://ebank.tpb.vn/retail/vX/assets/images/card-links/list.svg">
-                                        </div>
-                                        <div class="card-name card-color">Lệnh chuyển tiền</div>
-                                    </a>
-                                </div>
-                                <div class="card-link-wrapper card-customize">
-                                    <a class="card-link shadow-btn" style="position: relative" href="/inquiry-general.html">
-                                        <div class="card-img">
-                                            <img src="https://ebank.tpb.vn/retail/vX/assets/images/card-links/ic_in_ge_home.svg">
-                                        </div>
-                                        <div class="card-name card-color">Thông Tin Tổng Hợp</div>
-                                    </a>
-                                </div>
-                                <div class="card-link-wrapper card-customize">
-                                    <a class="card-link shadow-btn" style="position: relative" href="/inquiry-vat.html">
-                                        <div class="card-img">
-                                            <img src="https://ebank.tpb.vn/retail/vX/assets/images/card-links/ic_inquiry_vat.svg">
-                                        </div>
-                                        <div class="card-name card-color">Hóa Đơn VAT</div>
-                                    </a>
+                            <div class="vat-home">
+                                <div class="title">Quý khách vui lòng chọn tài khoản mong muốn</div>
+                                <div class="card-acc-info">
+                                    <div class="acc-name">TRAN NGOC TAN</div>
+                                    <div class="acc-number">0210 5921 501</div>
+                                    <div class="acc-item">
+                                        <span class="amount">706,555 VND</span>
+                                        <span class="action" tabindex="0">Chọn</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -417,7 +377,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="./assets/js/inquiry.js"></script>
+    <script src="./assets/js/inquiry-vat.js"></script>
 </body>
 
 </html>
