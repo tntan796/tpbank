@@ -7,8 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link href="./assets/css/inquiry-general.css" rel="stylesheet" />
-    <link href="./assets/css/inquiry-general-responsive.css" rel="stylesheet" />
+    <link href="./assets/css/inquiry-general-person-info.css" rel="stylesheet" />
+    <link href="./assets/css/inquiry-general-person-info-responsive.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -170,13 +170,16 @@
                     <div class="left-text">
                         <div>
                             <div class="breadcrumb">
-                                <a class="cursor-pointer" href="/index.html"> Trang chủ 
+                                <a class="cursor-pointer" href="/inquiry.html"> Tra Cứu
                                     <i class="fas fa-chevron-right"></i>
                                 </a>
-                                <a class="cursor-pointer">Chuyển khoản 
+                                <a class="cursor-pointer" href="/inquiry-general.html">Thông Tin Tổng Hợp
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                                <a class="cursor-pointer">Thông Tin Cá Nhân 
                                 </a>
                             </div>
-                            <h1 class="page-title">Chuyển Khoản</h1>
+                            <h1 class="page-title">Thông Tin Cá Nhân </h1>
                         </div>
                     </div>
                     <div class="user-info" id="globalUserInfo">
@@ -205,55 +208,115 @@
                     <div class="left">
                     
                         <div class="content-wrap">
-                            <div class="search-input"><input class="form-control" type="text" placeholder="Tìm kiếm thông tin"></div>
-                            <hr>
-                            <div class="content-card-link">
-                                <div class="content-card-link-item" routerlink="/main/inquiry/general/personal-info" tabindex="0">
-                                    <a class="content-card-link-item-container shadow-btn" href="/inquiry-general-person-info.html">
-                                        <img alt="" src="https://ebank.tpb.vn/retail/vX/assets/icons/inquiry/ic_personal_info.svg">
-                                        <span>Thông tin cá nhân</span>
-                                        <i class="fas fa-chevron-right"></i>
-                                    </a>
+                            <div class="personal-info">
+                                <div class="personal-info-completed">
+                                    <div class="title">Tài khoản đã hoàn thiện thông tin</div>
+                                    <div class="upgrade-account-info">
+                                        <span class="txt-item-upgrade">
+                                            <i class="fas fa-check icon-check-upgrade"></i> Hạn mức giao dịch tối đa</span>
+                                        <span class="txt-item-upgrade">
+                                            <i class="fas fa-check icon-check-upgrade"></i> Đăng ký mở thẻ ghi nợ quốc tế</span>
+                                        <span class="txt-item-upgrade">
+                                            <i class="fas fa-check icon-check-upgrade"></i> Đăng ký vay và ứng tiền
+                                        </span>
+                                        <span class="txt-item-upgrade">
+                                            <i class="fas fa-check icon-check-upgrade"></i> Nhiều ưu đãi hấp dẫn từ TPBank
+                                        </span>
+                                    </div>
                                 </div>
-                                <div class="content-card-link-item" routerlink="/main/inquiry/general/periodic" tabindex="0">
-                                    <div class="content-card-link-item-container shadow-btn">
-                                        <img alt="" src="https://ebank.tpb.vn/retail/vX/assets/icons/inquiry/ic_periodic.svg">
-                                        <span>Danh sách hóa đơn/lệnh chuyển tiền</span>
-                                        <i class="fas fa-chevron-right"></i>
+                            </div>
+                            <div class="customer">
+                                <div class="customer-left">
+                                    <div class="customer-left-item user-name" id="personal_information_username">
+                                        <div class="customer-left-item-content">
+                                            <div class="header">
+                                                <span class="txt-label">Tên đăng nhập</span>
+                                                <span class="txt-action" tabindex="0">Thay đổi</span>
+                                            </div>
+                                            <span>0123654</span>
                                         </div>
                                     </div>
-                                    <div class="content-card-link-item" routerlink="/main/inquiry/general/financial-overview" tabindex="0">
-                                        <div class="content-card-link-item-container shadow-btn">
-                                            <img alt="" src="https://ebank.tpb.vn/retail/vX/assets/icons/inquiry/ic_financial_overview.svg"><span>Tổng quan tài
-                                                chính</span>
-                                            <i class="fas fa-chevron-right"></i>
+                                    <div class="customer-left-item" id="personal_information_fullname">
+                                        <div class="customer-left-item-content">
+                                            <div class="header">
+                                                <span class="txt-label">Họ và tên</span>
+                                            </div>
+                                            <span class="txt-value">TRAN NGOC TAN</span>
                                         </div>
                                     </div>
-                                    <div class="content-card-link-item" routerlink="/main/inquiry/general/ewallet" tabindex="0">
-                                        <div class="content-card-link-item-container shadow-btn">
-                                            <img alt="" src="https://ebank.tpb.vn/retail/vX/assets/icons/inquiry/ic_wallet.svg">
-                                            <span>Ví điện tử liên kết</span><i class="fas fa-chevron-right"></i>
+                                    <div class="customer-left-item" id="personal_information_phonenumber">
+                                        <div class="customer-left-item-content">
+                                            <div class="header">
+                                                <span class="txt-label">Số điện thoại</span>
+                                                <span class="tooltip"><span class="txt-action">Thay đổi</span>
+                                                    <span class="tooltip-text">
+                                                        <strong>Thay đổi số điện thoại</strong>
+                                                        <br>Nếu quý khách muốn thay đổi số điện thoại vui
+                                                        lòng đến quầy TPBank để được hướng dẫn thêm.<br>
+                                                        <a href="https://tpb.vn/lien-he/tim-diem-giao-dich" target="_blank">
+                                                            <img src="assets/icons/ic_search_location.svg">
+                                                            <strong>Tìm quầy TPBank</strong>
+                                                        </a>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                            <span class="txt-value">*** *** *796</span>
                                         </div>
                                     </div>
-                                    <div class="content-card-link-item" routerlink="/main/inquiry/general/limit" tabindex="0">
-                                        <div class="content-card-link-item-container shadow-btn">
-                                            <img alt="" src="https://ebank.tpb.vn/retail/vX/assets/icons/inquiry/ic_limit.svg">
-                                            <span>Thông tin hạn mức</span>
-                                            <i class="fas fa-chevron-right"></i>
+                                    <div class="customer-left-item" id="personal_information_icnumber">
+                                        <div class="customer-left-item-content non-border-bottom">
+                                            <div class="header">
+                                                <span class="txt-label">Số CMND/Hộ chiếu/Thẻ CCCD</span>
+                                            </div>
+                                            <span class="txt-value">0123456789</span>
                                         </div>
                                     </div>
-                                    <div class="content-card-link-item" routerlink="/main/inquiry/general/app" tabindex="0">
-                                        <div class="content-card-link-item-container shadow-btn">
-                                            <img alt="" src="https://ebank.tpb.vn/retail/vX/assets/icons/inquiry/ic_app_used.svg">
-                                            <span>Ứng dụng của TPBank</span>
-                                            <i class="fas fa-chevron-right"></i>
+                                </div>
+                                <div class="customer-right">
+                                    <div class="customer-right-item-provider">
+                                        <div class="item-left" id="personal_information_daterofic">
+                                            <div class="date-provide">
+                                                <div class="header">
+                                                    <span class="txt-label">Ngày cấp</span>
+                                                </div>
+                                                <span class="txt-value">01/01/2020</span>
+                                            </div>
+                                        </div>
+                                        <div class="item-right" id="personal_information_addressofic">
+                                            <div class="place-provide">
+                                                <div class="header">
+                                                    <span class="txt-label">Nơi cấp</span>
+                                                </div>
+                                                <span class="txt-value">HA NOI</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="customer-right-item" id="personal_information_address">
+                                        <div class="customer-left-item-content">
+                                            <div class="header">
+                                                <span class="txt-label">Địa Chỉ</span>
+                                                <span class="txt-action" tabindex="0">Chỉnh sửa
+                                                </span>
+                                            </div>
+                                            <span class="txt-value">AD TH TT Ha Noi</span>
+                                        </div>
+                                    </div>
+                                    <div class="customer-right-item" id="personal_information_email">
+                                        <div class="customer-left-item-content non-border-bottom">
+                                            <div class="header">
+                                                <span class="txt-label">Email
+                    
+                                                </span>
+                                                <span class="txt-action" tabindex="0">Chỉnh sửa</span>
+                                            </div>
+                                            <span class="txt-value">tntan796@gmail.com</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                    
-                    
                         </div>
+                    
+                    </div>
                     <div class="right">
                         <div class="quick-links">
                             <div class="title"> Tiện ích nhanh </div>
@@ -414,7 +477,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="./assets/js/inquiry-general.js"></script>
+    <script src="./assets/js/inquiry-general-person-info.js"></script>
 </body>
 
 </html>
