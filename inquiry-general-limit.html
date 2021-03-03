@@ -7,8 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link href="./assets/css/inquiry-general.css" rel="stylesheet" />
-    <link href="./assets/css/inquiry-general-responsive.css" rel="stylesheet" />
+    <link href="./assets/css/inquiry-general-limit.css" rel="stylesheet" />
+    <link href="./assets/css/inquiry-general-limit-responsive.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -205,55 +205,102 @@
                     <div class="left">
                     
                         <div class="content-wrap">
-                            <div class="search-input"><input class="form-control" type="text" placeholder="Tìm kiếm thông tin"></div>
-                            <hr>
-                            <div class="content-card-link">
-                                <div class="content-card-link-item" routerlink="/main/inquiry/general/personal-info" tabindex="0">
-                                    <a class="content-card-link-item-container shadow-btn" href="/inquiry-general-person-info.html">
-                                        <img alt="" src="https://ebank.tpb.vn/retail/vX/assets/icons/inquiry/ic_personal_info.svg">
-                                        <span>Thông tin cá nhân</span>
-                                        <i class="fas fa-chevron-right"></i>
-                                    </a>
-                                </div>
-                                <div class="content-card-link-item" routerlink="/main/inquiry/general/periodic" tabindex="0">
-                                    <div class="content-card-link-item-container shadow-btn">
-                                        <img alt="" src="https://ebank.tpb.vn/retail/vX/assets/icons/inquiry/ic_periodic.svg">
-                                        <span>Danh sách hóa đơn/lệnh chuyển tiền</span>
-                                        <i class="fas fa-chevron-right"></i>
+                                <div class="limit">
+                                    <div class="limit-left">
+                                        <div class="limit-left-transfer"><span
+                                                class="limit-title">HẠN MỨC CHUYỂN TIỀN</span>
+                                            <div class="limit-left-transfer-info">
+                                                <div class="limit-left-transfer-info-item"
+                                                    id="limit_information_fund_internal">
+                                                    <div class="border-customize"
+                                                        id="limit_information_fund_internal_child"><span
+                                                            class="label">Trong TPBank</span>
+                                                        <div class="limit-info">
+                                                            <span>50,000,000 VND/lần</span>
+                                                            <span>100,000,000 VND/ngày</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="limit-left-transfer-info-item" id="limit_information_fund_interbank247">
+                                                    <div class="border-customize" id="limit_information_fund_interbank247_child">
+                                                        <span class="label">Liên ngân hàng (nhanh 24/7)</span>
+                                                        <div class="limit-info">
+                                                            <span>50,000,000 VND/lần</span>
+                                                            <span>100,000,000 VND/ngày</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="limit-left-transfer-info-item"
+                                                    id="limit_information_fund_interbank_normal">
+                                                    <div class="border-customize"
+                                                        id="limit_information_fund_interbank_normal_child"><span
+                                                            class="label">Liên ngân hàng (thông thường)</span>
+                                                        <div class="limit-info"><span>50,000,000
+                                                                VND/lần</span><span>100,000,000 VND/ngày</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="limit-left-transfer-info-item"
+                                                    id="limit_information_billing">
+                                                    <div class="border-customize"
+                                                        id="limit_information_billing_child">
+                                                        <span class="label">Thanh toán hóa đơn</span>
+                                                        <div class="limit-info">
+                                                            <span>50,000,000 VND/lần</span>
+                                                            <span>100,000,000 VND/ngày</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="limit-left-topup">
+                                            <span class="limit-title">HẠN MỨC NẠP TIỀN</span>
+                                            <div class="limit-left-topup-info mb-0">
+                                                <div class="limit-left-topup-info-item"
+                                                    id="limit_information_funtopup_account">
+                                                    <div class="border-customize"
+                                                        id="limit_information_funtopup_account_child">
+                                                        <span class="label">Vào tài khoản</span>
+                                                        <div class="topup-info">
+                                                            <span>10,000,000 VND/lần</span>
+                                                            <span>30,000,000 VND/ngày</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="content-card-link-item" routerlink="/main/inquiry/general/financial-overview" tabindex="0">
-                                        <a class="content-card-link-item-container shadow-btn" href="./inquiry-general-financial-overview.html">
-                                            <img alt="" src="https://ebank.tpb.vn/retail/vX/assets/icons/inquiry/ic_financial_overview.svg">\
-                                            <span>Tổng quan tài chính</span>
-                                            <i class="fas fa-chevron-right"></i>
-                                        </a>
-                                    </div>
-                                    <div class="content-card-link-item" routerlink="/main/inquiry/general/ewallet" tabindex="0">
-                                        <a class="content-card-link-item-container shadow-btn" href="./inquiry-general-ewallet.html">
-                                            <img alt="" src="https://ebank.tpb.vn/retail/vX/assets/icons/inquiry/ic_wallet.svg">
-                                            <span>Ví điện tử liên kết</span><i class="fas fa-chevron-right"></i>
-                                        </a>
-                                    </div>
-                                    <div class="content-card-link-item" routerlink="/main/inquiry/general/limit" tabindex="0">
-                                        <a class="content-card-link-item-container shadow-btn" href="inquiry-general-limit.html">
-                                            <img alt="" src="https://ebank.tpb.vn/retail/vX/assets/icons/inquiry/ic_limit.svg">
-                                            <span>Thông tin hạn mức</span>
-                                            <i class="fas fa-chevron-right"></i>
-                                        </a>
-                                    </div>
-                                    <div class="content-card-link-item" routerlink="/main/inquiry/general/app" tabindex="0">
-                                        <div class="content-card-link-item-container shadow-btn">
-                                            <img alt="" src="https://ebank.tpb.vn/retail/vX/assets/icons/inquiry/ic_app_used.svg">
-                                            <span>Ứng dụng của TPBank</span>
-                                            <i class="fas fa-chevron-right"></i>
+                                    <div class="limit-right">
+                                        <div class="limit-right-napas">
+                                            <span class="limit-title">HẠN MỨC GIAO DỊCH THẺ</span>
+                                            <div class="limit-right-napas-list">
+                                                <div class="card-item">
+                                                    <div class="card-item-container">
+                                                        <img alt="" src="https://ebank.tpb.vn/retail/vX/assets/icons/inquiry/ic_in_ge_atm.svg">
+                                                        <span>Thẻ ATM (1)</span>
+                                                        <i class="fas fa-chevron-up"></i>
+                                                    </div>
+                                                    <div class="card-item-detail show-info">
+                                                        <div class="card-item-detail-info">
+                                                            <span class="card-no">SỐ THẺ: 9704 23** **** 0461</span>
+                                                            <div class="card-item-detail-info-limit">
+                                                                <div class="card-item-detail-info-limit-row">
+                                                                    <span class="label">Hạn mức rút tiền</span>
+                                                                    <div class="limit-amount">
+                                                                        <span>5,000,000 VND/lần</span>
+                                                                        <span>20,000,000 VND/ngày</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                    
-                    
                         </div>
+                    
+                    </div>
                     <div class="right">
                         <div class="quick-links">
                             <div class="title"> Tiện ích nhanh </div>
@@ -404,7 +451,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="./assets/js/inquiry-general.js"></script>
+    <script src="./assets/js/inquiry-general-limit.js"></script>
 </body>
 
 </html>
