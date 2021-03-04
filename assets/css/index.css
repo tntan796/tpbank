@@ -147,6 +147,25 @@ button:disabled {
     border-color: #7b35bb;
 }
 
+.btn-secondary {
+    border-radius: 5px !important;
+    text-transform: capitalize !important;
+    background-color: #e2d8ee !important;
+    color: #42236a !important;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #c4bad1 !important;
+    cursor: pointer;
+}
+
+.btn-secondary-disable {
+    border: 1px solid #e2d8ee;
+    background-color: #e2d8ee;
+    color: white !important;
+}
+
 input {
     -webkit-writing-mode: horizontal-tb !important;
     text-rendering: auto;
