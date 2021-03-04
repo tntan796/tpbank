@@ -7,8 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link href="./assets/css/setting.css" rel="stylesheet" />
-    <link href="./assets/css/setting-responsive.css" rel="stylesheet" />
+    <link href="./assets/css/setting-device-management.css" rel="stylesheet" />
+    <link href="./assets/css/setting-device-management-responsive.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -169,7 +169,14 @@
                     </div>
                     <div class="left-text">
                         <div>
-                            <h1 class="page-title">Chuyển Khoản</h1>
+                            <div class="breadcrumb">
+                                <a class="cursor-pointer" href="/setting.html"> Cài Đặt
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                                <a class="cursor-pointer">Quản Lý Thiết Bị 
+                                </a>
+                            </div>
+                            <h1 class="page-title">Quản Lý Thiết Bị</h1>
                         </div>
                     </div>
                     <div class="user-info" id="globalUserInfo">
@@ -196,146 +203,61 @@
                 </div>
                 <div class="page-body">
                     <div class="left">
+                    
                         <div class="content-wrap">
-                            <div class="setting">
-                                <div class="setting__wrap-item-top">
-                                    <div class="setting__wrap-card">
-                                        <a class="setting__card-setting" tabindex="0" href="/setting-upgrade.html">
-                                            <div class="card-setting-container shadow-btn">
-                                                <img src="https://ebank.tpb.vn/retail/vX/assets/icons/Icons_Profile.svg">
-                                                <div class="card-setting-container__content">
-                                                    <div class="wrap-update-account">
-                                                        <div class="setting__upgrade-account-title title-card">
-                                                            Nâng cấp tài khoản</div>
-                                                    </div>
-                                                </div>
-                                                <i class="card-setting-container__icon-right fas fa-chevron-right"></i>
+                                <div class="device-content">
+                                    <div class="title">
+                                        <img src="https://ebank.tpb.vn/retail/vX/assets/icons/ic_device_lock.svg">
+                                        <p>Các thiết bị quý khách từng sử dụng để đăng nhập vào ebank</p>
+                                    </div>
+                                    <div class="device-items">
+                                        <div class="item">
+                                            <img src="https://ebank.tpb.vn/retail/vX/assets/icons/ic_device_web.svg">
+                                            <div class="info">
+                                                <p>Chrome</p>
+                                                <h4 style="color: #17C37B;">Đang đăng nhập</h4>
                                             </div>
-                                        </a>
-                                    </div><span class="setting__part-title">Cá nhân</span>
-                                    <div class="setting__wrap-card">
-                                        <a class="setting__card-setting" tabindex="0" href="/setting-change-password.html">
-                                            <div class="card-setting-container shadow-btn">
-                                                <img src="https://ebank.tpb.vn/retail/vX/assets/icons/setting/unlock.svg">
-                                                <div class="card-setting-container__content">
-                                                    <div class="title-card">Đổi mật khẩu</div>
+                                            <span>Huỷ liên kết</span>
+                                        </div>
+                                        <div class="line"></div>
+                                        <div>
+                                            <p class="otherDeviceTitle">Thiết bị khác</p>
+                                            <div class="item">
+                                                <img src="https://ebank.tpb.vn/retail/vX/assets/icons/ic_device_web.svg">
+                                                <div class="info">
+                                                    <p>Chrome</p>
+                                                    <h4>Đăng nhập lần cuối 21:37 02/03/2021</h4>
                                                 </div>
-                                                <i class="card-setting-container__icon-right fas fa-chevron-right"></i>
+                                                <span>Huỷ liên kết</span>
                                             </div>
-                                        </a>
-                                        <div class="setting__card-setting" tabindex="0">
-                                            <a class="card-setting-container shadow-btn" href="/setting-auth-method.html">
-                                                <img src="https://ebank.tpb.vn/retail/vX/assets/icons/setting/shield.svg">
-                                                <div class="card-setting-container__content">
-                                                    <div class="title-card">Phương thức xác thực giao dịch</div>
-                                                </div>
-                                                <i class="card-setting-container__icon-right fas fa-chevron-right"></i>
-                                            </a>
+                                            <div class="line"></div>
                                         </div>
-                                        <div class="setting__card-setting" routerlink="/main/setting/user" tabindex="0">
-                                            <a class="card-setting-container shadow-btn" href="/setting-user.html">
-                                                <img src="https://ebank.tpb.vn/retail/vX/assets/icons/Icons_Badge.svg">
-                                                <div class="card-setting-container__content">
-                                                    <div class="title-card">Thông tin tài khoản</div>
+                                        <div>
+                                            <div class="item">
+                                                <img src="https://ebank.tpb.vn/retail/vX/assets/icons/ic_device_mobile.svg">
+                                                <div class="info">
+                                                    <p>M2010J19CG</p>
+                                                    <h4>Đăng nhập lần cuối 23:21 26/02/2021</h4>
                                                 </div>
-                                                <i class="card-setting-container__icon-right fas fa-chevron-right"></i>
-                                            </a>
-                                        </div>
-                                        <div class="setting__card-setting" tabindex="0">
-                                            <a class="card-setting-container shadow-btn" href="/setting-default.html">
-                                                <img src="https://ebank.tpb.vn/retail/vX/assets/icons/Icons_Default_Account.svg">
-                                                <div class="card-setting-container__content">
-                                                    <div class="title-card">Tài khoản liên kết với số điện thoại
-                                                    </div>
-                                                </div>
-                                                <i class="card-setting-container__icon-right fas fa-chevron-right"></i>
-                                            </a>
-                                        </div>
-                                        <div class="setting__card-setting" tabindex="0">
-                                            <a class="card-setting-container shadow-btn" href="/setting-device-management.html">
-                                                <img src="https://ebank.tpb.vn/retail/vX/assets/icons/Icons_Manage_Device.svg">
-                                                <div class="card-setting-container__content">
-                                                    <div class="title-card">Quản lý thiết bị</div>
-                                                </div>
-                                                <i class="card-setting-container__icon-right fas fa-chevron-right"></i>
-                                            </a>
-                                        </div>
-                                        <div class="setting__card-setting" tabindex="0">
-                                            <div class="card-setting-container shadow-btn">
-                                                <img src="https://ebank.tpb.vn/retail/vX/assets/icons/Icons_SMS_Banking.svg">
-                                                <div class="card-setting-container__content">
-                                                    <div class="title-card">SMS Banking</div>
-                                                </div>
-                                                <i class="card-setting-container__icon-right fas fa-chevron-right"></i>
+                                                <span>Huỷ liên kết</span>
                                             </div>
+                                            <div class="line"></div>
+                                        </div>
+                                        <div>
+                                            <div class="item">
+                                                <img src="https://ebank.tpb.vn/retail/vX/assets/icons/ic_device_mobile.svg">
+                                                <div class="info">
+                                                    <p>MI 8</p>
+                                                    <h4>Đăng nhập lần cuối 08:39 30/11/2020</h4>
+                                                </div>
+                                                <span>Huỷ liên kết</span>
+                                            </div>
+                                            <div class="line"></div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="setting__wrap-item-center">
-                                    <span class="setting__part-title title-card">Chung</span>
-                                    <div class="setting__wrap-card">
-                                        <div class="setting__card-setting" tabindex="0">
-                                            <div class="card-setting-container shadow-btn">
-                                                <img src="https://ebank.tpb.vn/retail/vX/assets/icons/Icons_Question _ Outline.svg">
-                                                <div class="card-setting-container__content">
-                                                    <div class="title-card">Câu hỏi thường gặp</div>
-                                                </div>
-                                                <i class="card-setting-container__icon-right fas fa-chevron-right"></i>
-                                            </div>
-                                        </div>
-                                        <div class="setting__card-setting" tabindex="0">
-                                            <div class="card-setting-container shadow-btn">
-                                                <img src="https://ebank.tpb.vn/retail/vX/assets/icons/Icons_Phone_Calling.svg">
-                                                <div class="card-setting-container__content">
-                                                    <div class="title-card">Liên hệ hỗ trợ</div>
-                                                </div>
-                                                <i class="card-setting-container__icon-right fas fa-chevron-right"></i>
-                                            </div>
-                                        </div>
-                                        <div class="setting__card-setting" tabindex="0">
-                                            <div class="card-setting-container shadow-btn">
-                                                <img src="https://ebank.tpb.vn/retail/vX/assets/icons/Icons_Share.svg">
-                                                <div class="card-setting-container__content">
-                                                    <div class="title-card">Giới thiệu bạn bè</div>
-                                                </div>
-                                                <i class="card-setting-container__icon-right fas fa-chevron-right"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="setting__wrap-item-bottom">
-                                    <span class="setting__part-title">Ứng Dụng</span>
-                                    <div class="setting__wrap-card">
-                                        <div class="setting__card-setting setting__card-setting-style-1">
-                                            <div class="card-setting-container shadow-btn">
-                                                <img src="https://ebank.tpb.vn/retail/vX/assets/icons/Icons_World.svg">
-                                                <div class="card-setting-container__content">
-                                                    <form class="setting__wrap-lanuage ng-untouched ng-pristine ng-valid" novalidate="">
-                                                        <div class="setting__language-title title-card">Ngôn ngữ
-                                                        </div>
-                                                        <div class="setting__language-item">
-                                                            <span>Tiếng Việt</span>
-                                                            <label class="wrap-input-radio">
-                                                                <input formcontrolname="language" type="radio"
-                                                                    value="vi" class="ng-untouched ng-pristine ng-valid">
-                                                                    <span class="new-radio-button radio-checked"></span>
-                                                                </label>
-                                                            </div>
-                                                        <div class="setting__language-item">
-                                                            <span>Tiếng Anh</span>
-                                                            <label class="wrap-input-radio">
-                                                                <input formcontrolname="language" type="radio" value="en" class="ng-untouched ng-pristine ng-valid">
-                                                                <span class="new-radio-button"></span>
-                                                            </label>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
+                    
                     </div>
                     <div class="right">
                         <div class="quick-links">
@@ -487,7 +409,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="./assets/js/setting.js"></script>
+    <script src="./assets/js/setting-device-management.js"></script>
 </body>
 
 </html>
