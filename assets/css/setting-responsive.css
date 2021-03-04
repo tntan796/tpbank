@@ -259,6 +259,14 @@
         display: none;
     }
 }
+@media only screen and (max-width: 768px) and (min-width: 577px) {
+    .setting__wrap-lanuage {
+        flex-direction: column;
+    }
+    .setting__wrap-lanuage .setting__language-item {
+        justify-content: start!important;
+    }
+}
 
 @media screen and (max-width: 576px) {
     /*Setting */
@@ -267,6 +275,8 @@
     }
     .setting__card-setting {
         margin: 15px;
+        width: calc(100% - 15px);
+        max-width: 100%;
     }
     .setting__wrap-card {
         display: block;
