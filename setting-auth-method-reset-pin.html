@@ -7,8 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link href="./assets/css/setting-auth-method.css" rel="stylesheet" />
-    <link href="./assets/css/setting-auth-method-responsive.css" rel="stylesheet" />
+    <link href="./assets/css/setting-auth-method-reset-pin.css" rel="stylesheet" />
+    <link href="./assets/css/setting-auth-method-reset-pin-responsive.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -170,13 +170,16 @@
                     <div class="left-text">
                         <div>
                             <div class="breadcrumb">
-                                <a class="cursor-pointer" href="/setting.html"> Cài đặt
+                                <a class="cursor-pointer" href="/index.html"> Cài Đặt
                                     <i class="fas fa-chevron-right"></i>
                                 </a>
-                                <a class="cursor-pointer">Phương Thức Xác Thực Giao Dịch
+                                <a class="cursor-pointer" href="/index.html"> Phương Thức Xác Thực Giao Dịch
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                                <a class="cursor-pointer">Cài Đặt Lại Mã Pin Giao Dịch
                                 </a>
                             </div>
-                            <h1 class="page-title">Phương Thức Xác Thực Giao Dịch</h1>
+                            <h1 class="page-title">Cài Đặt Lại Mã Pin Giao Dịch</h1>
                         </div>
                     </div>
                     <div class="user-info" id="globalUserInfo">
@@ -203,117 +206,24 @@
                 </div>
                 <div class="page-body">
                     <div class="left">
-                    
                         <div class="content-wrap">
-                            <div class="show-header-button">
-                                <div class="button-right-header">
-                                    <div class="content">
-                                        <div style="cursor: pointer;"> Chính sách Phương Thức Xác Thực 
-                                            <img class="icon-rule" data-toggle="modal" data-target="#auth-policy"
-                                                src="https://ebank.tpb.vn/retail/vX/assets/icons/icons-question-fill.svg">
-                                        </div>
+                            <div>
+                                <div class="content-container-2 text-center mt-4">
+                                    <div class="fw-500 value-color" style="font-size: 20px;"> Nhập mật khẩu </div>
+                                    <div class="mt-3 label-color txt-16"> Quý khách vui lòng nhập mật khẩu để xác thực </div>
+                                    <div class="mt-3 confirm-password-form__wrap-current-password"><input
+                                            autocapitalize="off" autocomplete="off" autocorrect="off"
+                                            class="app-input-default confirm-password-form__input-current-pass" spellcheck="off"
+                                            type="password" placeholder="Mật khẩu">
+                                        <img src="https://ebank.tpb.vn/retail/vX/assets/icons/icons_eye.svg">
+                                        <img hidden src="https://ebank.tpb.vn/retail/vX/assets/icons/icons_unEye.svg">
                                     </div>
-                                </div>
-                                <div class="content-container-2">
-                                    <div class="fw-500 txt-16"> Phương Thức Xác Thực Đang Sử Dụng </div>
-                                    <div>
-                                        <div>
-                                            <div class="content-container child-2-side fw-500">
-                                                <div class="txt-16">
-                                                    <div>
-                                                        <img class="mr-1" src="https://ebank.tpb.vn/retail/vX/assets/icons/setting/sms-otp.svg"> SMS/OTP 
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <a class="text-secondary" routerlink="/main/setting/auth-method/change-high-risk"
-                                                        href="https://ebank.tpb.vn/retail/vX/main/setting/auth-method/change-high-risk">Thay đổi
-                                                        <i class="fas fa-chevron-right"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="label-color mt-2">Phí sử dụng SMS OTP là 20,000 VND/tháng.
-                                                Quý khách có thể thay đổi sang eToken để tiết kiệm chi phí này.</div>
-                                        </div>
-                                    </div>
-                                    <div class="mt-4 bg-light px-4 py-3 child-2-side rounded-top">
-                                        <div class="txt-16 fw-500 value-color"> Xác thực nhanh </div>
-                                        <div>
-                                            <label class="app-switch">
-                                                <input type="checkbox">
-                                                <span class="app-slider"></span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="rounded-bottom bg-light px-4 py-3 child-2-side" style="margin-top: 1px;">
-                                        <div class="value-color">
-                                            <img class="mr-1" src="https://ebank.tpb.vn/retail/vX/assets/icons/setting/pin-code.svg"> Mã PIN </div>
-                                        <div class="text-secondary">
-                                            <i class="fas fa-check" style="font-size: 20px;">
-                                        </i>
-                                    </div>
-                                    </div>
-                                    <div class="label-color mt-2"> Sử dụng cho các giao dịch giá trị dưới 1,000,000 VND </div>
-                                    <div class="bg-light px-4 py-3 mt-3 cursor-pointer text-secondary rounded" tabindex="0">
-                                        <a href="/setting-auth-method-reset-pin.html"> Cài đặt lại mã PIN </a>
-                                    </div>
+                                    <div class="mt-3"><button
+                                            class="btn btn-primary btn-default finish-btn" disabled="">Xác nhận</button></div>
                                 </div>
                             </div>
-                            <div class="modal fade" id="auth-policy" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Hướng Dẫn Cách Lấy Mã</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="high-security__modal-scroll">
-                                                <div class="high-security__modal-content">
-                                                    <div class="auth-method-intro-content">
-                                                        <ul>
-                                                            <li>
-                                                                <p> Mã PIN Giao dịch / Touch ID / Face ID: </p>
-                                                                <p> - Mã PIN Giao dịch sẽ được Quý khách thiết lập ngay trên ứng
-                                                                    dụng eBank, cho phép xác thực nhanh các giao dịch giá trị thấp. </p>
-                                                                <p> - Tính năng Touch ID/ Face ID sử dụng cảm biến vân tay trên
-                                                                    điện thoại di động và máy tính bảng, giúp đăng nhập cũng như xác thực giao dịch thay
-                                                                    cho mật khẩu/mã PIN một cách tiện lợi và dễ dàng. </p>
-                                                            </li>
-                                                            <li>
-                                                                <p> SMS OTP / eToken/ Hard Token: </p>
-                                                                <p> - OTP-SMS: Mã OTP sẽ được gửi tới Quý khách thông qua tin nhắn
-                                                                    đến số điện thoại đã đăng ký với TPBank cho mỗi giao dịch được thực hiện. </p>
-                                                                <p> - eToken: Quý khách có thể nhận mã eToken thông qua ứng dụng
-                                                                    di động TPBank eToken. Mã eToken được đăng ký và sử dụng hoàn toàn miễn phí, mang
-                                                                    tính bảo mật cao và có thể xác thực giao dịch ngay cả khi ở nước ngoài. Để đăng ký
-                                                                    eToken, Quý khách vui lòng truy cập ứng dụng TPBank eBank và chọn Cài đặt Phương
-                                                                    thức bảo mật. </p>
-                                                                <p> - Hard Token: Là một thiết bị nhỏ gọn như chiếc USB có thể
-                                                                    mang đi mọi nơi, cung cấp mã xác thực mỗi khi Quý khách thực hiện một giao dịch </p>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div style="display: flex;flex-direction: column;">
-                                                        <span style="margin-top: 16px;margin-bottom: 8px;"> Download Ứng dụng eToken tại đây </span>
-                                                        <div class="wrap-link">
-                                                            <a href="#" target="_blank">
-                                                                <img src="https://ebank.tpb.vn/retail/vX/assets/images/download-ios.svg" style="margin-right: 16px"></a>
-                                                                <a href="#" target="_blank">
-                                                                    <img src="https://ebank.tpb.vn/retail/vX/assets/images/download-android.svg">
-                                                                </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     
-                    </div>
+                        </div>
                     <div class="right">
                         <div class="quick-links">
                             <div class="title"> Tiện ích nhanh </div>
@@ -464,7 +374,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="./assets/js/setting-auth-method.js"></script>
+    <script src="./assets/js/setting-auth-method-reset-pin.js"></script>
 </body>
 
 </html>
