@@ -322,6 +322,130 @@ input {
 }
 
 
+
+/*Transfer template*/
+.template-content {
+    margin-top: 20px;
+}
+
+.template-padding {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.searching-container {
+    border-radius: 5px;
+    border: 1px solid #e2d8ee;
+    display: flex;
+    align-items: center;
+    padding: 14px 31px 15px 10px;
+    height: 50px;
+}
+
+.searching-icon {
+    height: 15px;
+    width: 15px;
+    margin-right: 8px;
+}
+
+.searching-input {
+    width: 100%;
+    outline: 0;
+    border: 0;
+    height: 21px;
+}
+
+.template-scroll {
+    height: 400px;
+    overflow-y: auto;
+}
+
+.template-detail {
+    padding: 20px 40px 16px 20px;
+    border-bottom: 1px solid #f2f4f6;
+    text-align: left;
+}
+
+.template-name {
+    display: flex;
+    justify-content: space-between;
+    color: #ad8ad8;
+}
+
+.template-text-bold {
+    font-weight: 500;
+}
+
+.template-text-size {
+    font-size: 14px;
+}
+
+.favorite-inactive {
+    color: #696969;
+}
+
+.template-margin-bottom i {
+    cursor: pointer;
+}
+
+.template-text-normal {
+    display: flex;
+    justify-content: space-between;
+    color: #5d2e86;
+}
+
+.template-margin-bottom {
+    margin-bottom: 4px;
+}
+
+.template-action {
+    display: flex;
+    justify-content: space-between;
+}
+
+.template-text-size {
+    font-size: 14px;
+}
+
+.template-action span {
+    cursor: pointer;
+}
+
+.template-action .action-name {
+    color: #ff9800;
+}
+
+.template-icon {
+    cursor: pointer;
+    width: 16px;
+}
+
+.template-detail {
+    padding: 20px 40px 16px 20px;
+    border-bottom: 1px solid #f2f4f6;
+    text-align: left;
+}
+
+.icon-close {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    cursor: pointer;
+    color: #42236a;
+    width: 25px;
+    height: 25px;
+}
+
+.template-text-bold {
+    font-weight: bold;
+}
+/*End Transfer template*/
+
+
+
+
+
+
 /*_____Right ______*/
 .main-container > .right {
     margin-left: 270px;
