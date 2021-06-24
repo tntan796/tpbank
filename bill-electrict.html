@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link href="./assets/css/bill.css" rel="stylesheet" />
-    <link href="./assets/css/bill-responsive.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="./assets/css/bill-electrict.css" rel="stylesheet" />
+    <link href="./assets/css/bill-electrict-responsive.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -170,13 +172,16 @@
                     <div class="left-text">
                         <div>
                             <div class="breadcrumb">
-                                <a class="cursor-pointer" href="/index.html"> Trang chủ 
+                                <a class="cursor-pointer" href="/index.html"> Trang Chủ
                                     <i class="fas fa-chevron-right"></i>
                                 </a>
-                                <a class="cursor-pointer">Chuyển khoản 
+                                <a class="cursor-pointer" href="bill">Thanh Toán Hóa Đơn
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                                <a class="cursor-pointer" href="javascript:void(0);">Thanh Toán Điện
                                 </a>
                             </div>
-                            <h1 class="page-title">Chuyển Khoản</h1>
+                            <h1 class="page-title">Thanh Toán Điện</h1>
                         </div>
                     </div>
                     <div class="user-info" id="globalUserInfo">
@@ -203,127 +208,103 @@
                 </div>
                 <div class="page-body">
                     <div class="left">
+
+
                         <div class="content-wrap">
-                            <div class="search-area">
-                                <div class="app-navigation-tab">
-                                    <div class="tab-main">
-                                        <div class="nav-tab">
-                                            <a href="bill.html" class="nav-tab-button active" routerlinkactive="active" tabindex="0">Thanh toán hoá đơn </a>
-                                            <a href="bill-recurring.html" class="nav-tab-button" routerlinkactive="active" style="display: flex" tabindex="0">Lệnh định kỳ</a>
-                                        </div>
-                                    </div>
+                            <div class="mx-auto d-none" style="margin-bottom: 18px; max-width: 496px">
+                                <div class="debit-acc-selector">
+                                    <div class="label-color">Từ tài khoản</div>
+                                    <div class="fw-500 mt-2"> TRAN NGOC TAN </div>
+                                    <div class="fw-500"> 0210 5921 501 </div>
+                                    <div class="fw-500 mt-2" style="font-size: 20px;"> 5,283 VND </div>
                                 </div>
                             </div>
-                            <div class="mt-4"></div>
                             <div class="container-bill">
-                                <div style="width: 50%; margin-bottom: 20px">
-                                    <div class="search-input">
-                                        <input class="form-control" type="text" placeholder="Tìm kiếm dịch vụ">
+                                <div class="container-list-provider">
+                                    <div class="list-provider">
+                                        <ul class="list-card-link">
+                                            <li class="card-link-wrapper">
+                                                <div class="card-link card-provider">
+                                                    <div class="content-card">
+                                                        <div class="container-icon-provider">
+                                                            <img alt="" class="icon-logo"
+                                                                src="https://ebank.tpb.vn/gateway/api/contentservices/api/contentstream-id/contentRepository/6d549869-dca9-403d-927c-efe38216c51f?_=1554954768300">
+                                                        </div>
+                                                        <div class="content-name-provider">
+                                                            <span class="name-provider">Điện lực TP Hà Nội</span>
+                                                            <span class="icon-arrow-right"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="card-link-wrapper">
+                                                <div class="card-link card-provider">
+                                                    <div class="content-card">
+                                                        <div class="container-icon-provider">
+                                                            <img alt="" class="icon-logo"
+                                                                src="https://ebank.tpb.vn/gateway/api/contentservices/api/contentstream-id/contentRepository/6d549869-dca9-403d-927c-efe38216c51f?_=1554954768300">
+                                                        </div>
+                                                        <div class="content-name-provider"><span
+                                                                class="name-provider">Điện lực miền Bắc</span><span
+                                                                class="icon-arrow-right"></span></div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="card-link-wrapper">
+                                                <div class="card-link card-provider">
+                                                    <div class="content-card">
+                                                        <div class="container-icon-provider">
+                                                            <img alt="" class="icon-logo"
+                                                                src="https://ebank.tpb.vn/gateway/api/contentservices/api/contentstream-id/contentRepository/6d549869-dca9-403d-927c-efe38216c51f?_=1554954768300">
+                                                        </div>
+                                                        <div class="content-name-provider">
+                                                            <span class="name-provider">Điện lực miền Nam</span>
+                                                            <span class="icon-arrow-right"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="card-link-wrapper">
+                                                <div class="card-link card-provider">
+                                                    <div class="content-card">
+                                                        <div class="container-icon-provider">
+                                                            <img alt="" class="icon-logo"
+                                                                src="https://ebank.tpb.vn/gateway/api/contentservices/api/contentstream-id/contentRepository/6d549869-dca9-403d-927c-efe38216c51f?_=1554954768300">
+                                                        </div>
+                                                        <div class="content-name-provider">
+                                                            <span class="name-provider">Điện lực miền Trung</span>
+                                                            <span class="icon-arrow-right"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="card-link-wrapper">
+                                                <div class="card-link card-provider">
+                                                    <div class="content-card">
+                                                        <div class="container-icon-provider">
+                                                            <img alt="" class="icon-logo"
+                                                                src="https://ebank.tpb.vn/gateway/api/contentservices/api/contentstream-id/contentRepository/6d549869-dca9-403d-927c-efe38216c51f?_=1554954768300">
+                                                        </div>
+                                                        <div class="content-name-provider"><span
+                                                                class="name-provider">Điện lực TP HCM</span><span
+                                                                class="icon-arrow-right"></span></div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
                                     </div>
-                                </div>
-                                <div class="list-card-link">
-                                    <div class="card-link-wrapper card-customize shadow-btn">
-                                        <a class="card-link" style="position: relative" href="bill-electrict.html">
-                                            <div class="card-img">
-                                                <img src="./assets/images/icons/bill/electricity.png">
-                                            </div>
-                                            <div class="card-name card-color">Điện</div>
-                                        </a>
-                                    </div>
-                                    <div class="card-link-wrapper card-customize shadow-btn">
-                                        <a class="card-link" style="position: relative">
-                                            <div class="card-img">
-                                                <img src="./assets/images/icons/bill/water.png">
-                                            </div>
-                                            <div class="card-name card-color">Nước</div>
-                                        </a>
-                                    </div>
-                                    <div class="card-link-wrapper card-customize shadow-btn">
-                                        <a class="card-link" style="position: relative">
-                                            <div class="card-img">
-                                                <img src="./assets/images/icons/bill/landline-phone.png">
-                                            </div>
-                                            <div class="card-name card-color">Điện thoại cố định</div>
-                                        </a>
-                                    </div>
-                                    <div class="card-link-wrapper card-customize shadow-btn">
-                                        <a class="card-link" style="position: relative">
-                                            <div class="card-img">
-                                                <img src="./assets/images/icons/bill/phone-bill.png">
-                                            </div>
-                                            <div class="card-name card-color">Điện thoại di động trả sau</div>
-                                        </a>
-                                    </div>
-                                    <div class="card-link-wrapper card-customize shadow-btn">
-                                        <a class="card-link" style="position: relative">
-                                            <div class="card-img">
-                                                <img src="./assets/images/icons/bill/adsl-internet.png">
-                                            </div>
-                                            <div class="card-name card-color">Cước Internet ADSL</div>
-                                        </a>
-                                    </div>
-                                    <div class="card-link-wrapper card-customize shadow-btn">
-                                        <a class="card-link" style="position: relative">
-                                            <div class="card-img">
-                                                <img src="./assets/images/icons/bill/cable-tv.png">
-                                            </div>
-                                            <div class="card-name card-color">Cước Truyền hình</div>
-                                        </a>
-                                    </div>
-                                    <div class="card-link-wrapper card-customize shadow-btn">
-                                        <a class="card-link" style="position: relative">
-                                            <div class="card-img">
-                                                <img src="./assets/images/icons/bill/train-ticket.png">
-                                            </div>
-                                            <div class="card-name card-color">Vé tàu</div>
-                                        </a>
-                                    </div>
-                                    <div class="card-link-wrapper card-customize shadow-btn">
-                                        <a class="card-link" style="position: relative">
-                                            <div class="card-img">
-                                                <img src="./assets/images/icons/bill/air-ticket.png">
-                                            </div>
-                                            <div class="card-name card-color">Vé máy bay trả sau</div>
-                                        </a>
-                                    </div>
-                                    <div class="card-link-wrapper card-customize shadow-btn">
-                                        <a class="card-link" style="position: relative">
-                                            <div class="card-img">
-                                                <img src="./assets/images/icons/bill/mask_group.svg">
-                                            </div>
-                                            <div class="card-name card-color">Bảo hiểm Sun Life</div>
-                                            <img src="./assets/images/icons/bill/ic_new.svg" style="position: absolute; top: 15px; right: 20px;">
-                                        </a>
-                                    </div>
-                                    <div class="card-link-wrapper card-customize  shadow-btn">
-                                        <a class="card-link" style="position: relative">
-                                            <div class="card-img">
-                                                <img src="./assets/images/icons/bill/tuition.png">
-                                            </div>
-                                            <div class="card-name card-color">Học phí</div>
-                                        </a>
-                                    </div>
-                                    <div class="card-link-wrapper card-customize shadow-btn">
-                                        <a class="card-link"
-                                            style="position: relative">
-                                            <div class="card-img">
-                                                <img src="./assets/images/icons/bill/hospital-fee.png">
-                                            </div>
-                                            <div class="card-name card-color">Viện phí</div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div style="background: #E6E9EE;width: 100%; height: 3px; margin-bottom: 30px">
                                 </div>
                             </div>
                         </div>
-                    </div>
 
+
+                    </div>
                     <div class="right">
                         <div class="quick-links">
                             <div class="title"> Tiện ích nhanh </div>
                             <div class="body">
-                                <a routerlink="/main/transfer/internal" href="/retail/vX/main/transfer/internal">Chuyển tiền trong ngân hàng
+                                <a routerlink="/main/transfer/internal" href="/retail/vX/main/transfer/internal">Chuyển
+                                    tiền trong ngân hàng
                                     <i class="fas fa-chevron-right"></i>
                                 </a>
                                 <a routerlink="/main/transfer/interbank"
@@ -333,7 +314,8 @@
                                 <a routerlink="/main/bill" href="/retail/vX/main/bill">Thanh toán hoá đơn
                                     <i class="fas fa-chevron-right"></i>
                                 </a>
-                                <a routerlink="/main/inquiry/credit-card" href="/retail/vX/main/inquiry/credit-card">Tra cứu thẻ tín dụng
+                                <a routerlink="/main/inquiry/credit-card" href="/retail/vX/main/inquiry/credit-card">Tra
+                                    cứu thẻ tín dụng
                                     <i class="fas fa-chevron-right"></i>
                                 </a>
                                 <a routerlink="/main/mobile" href="/retail/vX/main/mobile">Nạp tiền điện thoại
@@ -348,31 +330,27 @@
                                     style="transition-duration: 0ms; transform: translate3d(-300px, 0px, 0px);">
                                     <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active swiper-slide-prev swiper-slide-duplicate-next"
                                         data-swiper-slide-index="1" style="width: 270px; margin-right: 30px;">
-                                        <a target="_blank"
-                                            href="#">
+                                        <a target="_blank" href="#">
                                             <img alt="" class="w-100" style="border-radius: 5px; height: 100%;"
                                                 src="https://ebank.tpb.vn/gateway/api/contentservices/api/contentstream-id/contentRepository/86a4d975-712f-49f0-9ae0-bded776fc4d7"></a>
 
                                     </div>
                                     <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0"
                                         style="width: 270px; margin-right: 30px;">
-                                        <a target="_blank"
-                                            href="#">
+                                        <a target="_blank" href="#">
                                             <img alt="" class="w-100" style="border-radius: 5px; height: 100%;"
                                                 src="https://ebank.tpb.vn/gateway/api/contentservices/api/contentstream-id/contentRepository/acdd6d66-7b82-4265-95ee-c6d4021e9c28"></a>
                                     </div>
                                     <div class="swiper-slide swiper-slide-next swiper-slide-duplicate-prev"
                                         data-swiper-slide-index="1" style="width: 270px; margin-right: 30px;">
-                                        <a target="_blank"
-                                            href="#">
+                                        <a target="_blank" href="#">
                                             <img alt="" class="w-100" style="border-radius: 5px; height: 100%;"
                                                 src="https://ebank.tpb.vn/gateway/api/contentservices/api/contentstream-id/contentRepository/86a4d975-712f-49f0-9ae0-bded776fc4d7"></a>
 
                                     </div>
                                     <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0"
                                         style="width: 270px; margin-right: 30px;">
-                                        <a target="_blank"
-                                            href="#">
+                                        <a target="_blank" href="#">
                                             <img alt="" class="w-100" style="border-radius: 5px; height: 100%;"
                                                 src="https://ebank.tpb.vn/gateway/api/contentservices/api/contentstream-id/contentRepository/acdd6d66-7b82-4265-95ee-c6d4021e9c28"></a>
                                     </div>
@@ -415,7 +393,7 @@
                         </div>
                         <div class="footer-column-2">
                             <div>
-                                <a  href="#">Câu hỏi thường gặp</a>
+                                <a href="#">Câu hỏi thường gặp</a>
                             </div>
                             <div class="mt-1">
                                 <a href="#" target="_blank">Điều khoản sử dụng</a>
@@ -433,13 +411,11 @@
                             </div>
                         </div>
                         <div class="app-store-col">
-                            <div class="download-desc">Tải và cài đặt ứng dụng TPBank eBank  lên thiết bị di động</div>
+                            <div class="download-desc">Tải và cài đặt ứng dụng TPBank eBank lên thiết bị di động</div>
                             <a href="#" target="_blank">
                                 <img src="./assets/images/main/download-ios.png">
                             </a>
-                            <a class="ml-4"
-                                href="#"
-                                target="_blank">
+                            <a class="ml-4" href="#" target="_blank">
                                 <img src="./assets/images/main/download-android.png">
                             </a>
                         </div>
@@ -466,10 +442,16 @@
         <!-- <img src="./assets/images/main/loading2.gif"> -->
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="./assets/js/bill.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/bill-electrict.js"></script>
 </body>
 
 </html>
