@@ -474,7 +474,66 @@ input {
     max-width: 800px;
     margin: 0 auto;
 }
+/*Bath*/
+.debit-acc-selector {
+    padding: 12px 16px;
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative;
+}
 
+.label-color {
+    color: #AD8AD8;
+}
+
+.upload-document-container .upload-document-wrap {
+    background: left top/25px 1px repeat-x,left bottom/25px 1px repeat-x,left top/1px 25px repeat-y,right top/1px 25px repeat-y #fff;
+    width: 100%;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 20px 15px;
+    min-height: 150px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s ease 0s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -o-transition: .5s;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    background-image: linear-gradient(to right,#ad8ad8 50%,transparent 50%),linear-gradient(to right,#ad8ad8 50%,transparent 50%),linear-gradient(to bottom,#ad8ad8 50%,transparent 50%),linear-gradient(to bottom,#ad8ad8 50%,transparent 50%);
+}
+
+.upload-document-container .upload-document-wrap .upload-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s ease 0s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -o-transition: .5s;
+}
+
+.upload-document-container .upload-title {
+    font-weight: 500;
+}
+
+.upload-document-container .upload-icon {
+    width: 50px;
+    height: 64px;
+    margin: 22px 0;
+}
+
+.upload-document-container .upload-document-wrap input {
+    display: none;
+}
+/*End Bath*/
 
 
 /*__End Body left__*/
