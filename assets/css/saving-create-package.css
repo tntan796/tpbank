@@ -464,7 +464,7 @@ input {
 
 /*Page body*/
 
-/*Saving*/
+/*__Body left__*/
 .page-body .left {
     flex-grow: 1;
     margin-right: 30px;
@@ -475,70 +475,18 @@ input {
     margin: 0 auto;
 }
 
-.saving-home-normal .saving-action-inquiry {
-    width: 400px;
-    min-height: 77px;
-    background-color: #fff;
-    border-radius: 5px;
+/*Create Package*/
+.create-saving-package .select-package-type {
+    width: 496px;
     margin: auto;
-    padding: 16px;
-    display: flex;
 }
-.saving-home-normal .saving-action-inquiry .icon-inquiry {
-    width: 45px;
-    height: 45px;
-    border-radius: 100px;
-    background-color: #ad8ad8;
-    padding: 10px;
-    margin-right: 8px;
-}
-.saving-home-normal .saving-action-inquiry .icon-inquiry img {
-    width: 24px;
-    height: 24px;
-}
-.saving-home-normal .list-saving {
-    width: 400px;
-    margin: 16px auto auto;
-}
-
-.saving-home-normal .saving-action-inquiry .content .title {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-}
-.saving-home-normal .saving-action-inquiry .content .action-link {
-    color: #ff9800;
-    cursor: pointer;
-    outline: 0;
-}
-.saving-home-normal .list-saving .image-cover {
-    height: 124px;
+.create-saving-package .select-package-type .title {
+    font-weight: 700;
+    font-size: 20px;
     text-align: center;
-    padding: 24px 48px;
-    color: #fff;
-    background-image: url(../images/icons/saving/saving-home-cover-2.4ee69270ca6f9bfa026c.png);
+    line-height: 28px;
 }
-.saving-home-normal .list-saving .image-cover .create-package {
-    outline: 0;
-    margin: 16px auto auto;
-    width: 166px;
-    height: 40px;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #fff;
-    color: #ff9800;
-    text-align: center;
-    cursor: pointer;
-}
-.saving-home-normal .list-saving .title {
-    text-align: center;
-    color: #ad8ad8;
-    font-weight: 400;
-    font-size: 12px;
-    margin-top: 16px;
-}
-
-.saving-home-normal .list-saving .card-saving-item {
+.create-saving-package .select-package-type .card-select-package {
     background-color: #fff;
     border-radius: 5px;
     padding: 16px 18px;
@@ -546,37 +494,55 @@ input {
     margin-top: 8px;
 }
 
-.saving-home-normal .list-saving .card-saving-item .icon-saving {
+.create-saving-package .select-package-type .card-select-package .icon-package {
     margin-right: 16px;
     align-self: center;
 }
 
-.saving-home-normal .list-saving .card-saving-item .icon-saving img {
+.create-saving-package .select-package-type .card-select-package .icon-package img {
     width: 24px;
     height: 24px;
 }
-.saving-home-normal .list-saving .card-saving-item .saving-info {
+
+.create-saving-package .select-package-type .card-select-package .package-info {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
-.saving-home-normal .list-saving .card-saving-item .saving-info .saving-name {
+
+.create-saving-package .select-package-type .card-select-package .package-info .package-name {
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
 }
-.saving-home-normal .list-saving .card-saving-item .saving-info .saving-amount, .saving-home-normal .list-saving .card-saving-item .saving-info .saving-finalization, .saving-home-normal .list-saving .card-saving-item .saving-info .saving-number {
+
+.create-saving-package .select-package-type .card-select-package .package-info .package-period {
     font-size: 12px;
 }
-.saving-home-normal .list-saving .card-saving-item .saving-info .saving-finalization {
+
+.create-saving-package .select-package-type .card-select-package .package-info .txt-color-2 {
+    color: #ad8ad8;
+}
+
+.create-saving-package .select-package-type .card-select-package .package-info .package-interest-rate {
     display: flex;
     justify-content: space-between;
+    font-size: 12px;
 }
-.saving-home-normal .list-saving .card-saving-item .saving-info .saving-finalization .action {
+
+.create-saving-package .select-package-type .card-select-package .package-info .package-interest-rate .action {
     color: #ff9800;
     cursor: pointer;
 }
-/*End Saving*/
+/*End create package*/
+
+/*__End Body left__*/
+
+
+
+
+
+/*__BOdy right__*/
 
 .page-body .right {
     width: 270px;
@@ -783,6 +749,8 @@ input {
     opacity: 0;
     z-index: -1000;
 }
+/*__BOdy right__*/
+
 /*End Page body*/
 
 
