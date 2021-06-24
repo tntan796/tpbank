@@ -215,16 +215,14 @@
                                 <div>
                                     <div class="batch-upload-file">
                                         <div class="slide-section mx-auto mb-4" style="max-width: 500px">
-                                            <app-debit-account-selector>
-                                                <div class="debit-acc-selector">
-                                                    <div class="label-color">Từ tài khoản</div>
-                                                    <div class="fw-500 mt-2"> TRAN NGOC TAN </div>
-                                                    <div class="fw-500"> 0210 5921 501 </div>
-                                                    <div class="fw-500 mt-2" style="font-size: 20px;"> 5,283 VND </div>
-                                                </div>
-                                                <app-modal>
-                                                </app-modal>
-                                            </app-debit-account-selector>
+                                            <div class="debit-acc-selector">
+                                                <div class="label-color">Từ tài khoản</div>
+                                                <div class="fw-500 mt-2"> TRAN NGOC TAN </div>
+                                                <div class="fw-500"> 0210 5921 501 </div>
+                                                <div class="fw-500 mt-2" style="font-size: 20px;"> 5,283 VND </div>
+                                            </div>
+                                            <app-modal>
+                                            </app-modal>
                                         </div>
                                         <div class="row">
                                             <span class="text-1"> * Quý khách có thể chuyển tiền theo danh sách bằng
@@ -232,17 +230,16 @@
                                                 TPBank. </span>
                                         </div>
                                         <div class="row">
-                                            <span class="text-2"> ** Giới hạn tối đa là 200 giao dịch/lần chuyển theo
-                                                danh sách. </span>
+                                            <span class="text-2"> ** Giới hạn tối đa là 200 giao dịch/lần chuyển theo danh sách. </span>
                                         </div>
                                         <div class="row">
                                             <a class="file-upload">
-                                                <img class="icon-download" src="assets/images/icons/transfer/Icons_DownLoad.svg"> Tải
-                                                xuống file mẫu </a>
+                                                <img class="icon-download"
+                                                    src="assets/images/icons/transfer/Icons_DownLoad.svg"> Tải xuống file mẫu </a>
                                         </div>
                                         <div class="row">
                                             <div class="file-section">
-                                                <app-upload-file uploadtype="upload-excel" _nghost-dhv-c15="">
+                                                <div class="app-upload-file" uploadtype="upload-excel">
                                                     <div class="upload-document-container">
                                                         <div class="upload-document-wrap">
                                                             <div class="upload-inner">
@@ -260,11 +257,12 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </app-upload-file>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <button class="btn-default btn-primary" disabled="disabled">Tiếp tục</button>
+                                            <button class="btn-default btn-primary" disabled="disabled">Tiếp
+                                                tục</button>
                                         </div>
                                     </div>
                                 </div>

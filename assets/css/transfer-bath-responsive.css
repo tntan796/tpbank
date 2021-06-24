@@ -30,6 +30,14 @@
         width: 100%;
     }
 
+    .batch-upload-file .row {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        font-size: 14px;
+        text-align: center;
+    }
+    
     .batch-upload-file .row .text-1 {
         padding-left: 10px;
         padding-right: 10px;
@@ -58,6 +66,12 @@
     .batch-upload-file .row .file-section {
         width: 500px;
         margin-top: 30px;
+    }
+
+    .batch-upload-file .row .btn-default {
+        width: 345px;
+        height: 48px;
+        margin-top: 25px;
     }
     /* End Bath */
 
@@ -319,6 +333,16 @@
         margin-left: 0;
     }
 
+    .batch-upload-file .row {
+        padding-left: 16px;
+        padding-right: 16px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        font-size: 14px;
+        text-align: center;
+    }
+
     .batch-upload-file .row .text-1 {
         padding-left: 10px;
         padding-right: 10px;
@@ -347,6 +371,13 @@
     .batch-upload-file .row .file-section {
         width: 500px;
         margin-top: 30px;
+    }
+
+    .batch-upload-file .row .btn-default {
+        width: 100%;
+        font-weight: 500;
+        height: 48px;
+        margin-top: 24px;
     }
     /*End Bath*/
 }
