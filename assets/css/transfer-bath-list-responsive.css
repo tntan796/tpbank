@@ -1,0 +1,1216 @@
+@media only screen and (min-width: 1440px) { 
+    /*____Page body _____*/
+    .page-header .top-header {
+        display: none;
+    }
+    .page-header > .left-text {
+        margin-top: 0;
+        margin-right: calc(270px + 30px);
+    }
+    /*____ End Page body _____*/
+
+    .main-container > .right .page-body .left {
+        margin-right: 30px;
+    }
+    /*_____Footer _____*/
+    app-footer .footer-1 {
+        padding: 20px 30px;
+    }
+    /*_____ End Footer _____*/
+}
+
+@media only screen and (max-width: 1439px) {
+    /*_____Left container _____*/
+    .main-container > .left {
+        transition: none;
+        transform: none;
+    }
+    /*___End left container ____*/
+
+
+
+    /*Bath*/
+    .batch-verify .account-info-section {
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        background-color: #fff;
+        border-radius: 5px;
+        display: flex;
+    } 
+
+    .batch-verify .account-info-section .left-section {
+        width: 50%;
+    }
+
+    .batch-verify .account-info-section .left-section {
+        width: 50%;
+    }
+
+    .batch-verify .account-info-section .left-section .item1 {
+        width: 100%;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+    }
+
+    .batch-verify .account-info-section .left-section .item1 .transfer-info-card {
+        height: 100%;
+        padding-left: 5%;
+    }
+
+    .batch-verify .account-info-section .left-section .item1 .transfer-info-card .title {
+        font-weight: 500;
+    }
+
+    .batch-verify .account-info-section .left-section .item3 {
+        width: 100%;
+        height: 105px;
+    }
+
+    .batch-verify .account-info-section .left-section .item3 .transfer-info-card {
+        min-height: 100%;
+    }
+
+    section .left-section .item3 .transfer-info-card .message {
+        font-size: 14px;
+        font-weight: 500;
+        height: 24px;
+    }
+
+    .batch-verify .account-info-section .right-section {
+        width: 50%;
+        border-left: 1px solid #e6e9ee;
+    }
+
+    .batch-verify .account-info-section .right-section .item2 {
+        width: 100%;
+        height: 127px;
+    }
+
+    .batch-verify .account-info-section .right-section .item2 .line-vertical {
+        height: 0!important;
+    }
+
+    .batch-verify .account-info-section .right-section .item2 .account-card {
+        height: 100%;
+    }
+
+    .batch-verify .account-info-section .right-section .item2 .account-card .account-name {
+        font-size: 14px;
+        font-weight: 500;
+        height: 24px;
+        margin-top: 5px;
+    }
+
+    .batch-verify .account-info-section .right-section .item2 .account-card .account-number {
+        font-size: 14px;
+        font-weight: 400;
+        height: 24px;
+        margin-top: 5px;
+    }
+
+    .batch-verify .account-info-section .right-section .item4 {
+        width: 100%;
+        min-height: 105px;
+    }
+
+    .batch-verify .account-info-section .right-section .item4 .transfer-info-card {
+        height: 100%;
+    }
+    .batch-verify .account-info-section .right-section .item4 .transfer-info-card .message {
+        font-size: 14px;
+        font-weight: 500;
+        height: 24px;
+    }
+
+    .batch-verify .action-section {
+        margin-top: 25px;
+    }
+
+    .batch-verify .action-section .btn-left {
+        width: 192px;
+        height: 48px;
+        margin-left: calc(50% - 308px);
+    }
+
+    .batch-verify .line-vertical-full {
+        height: 1px;
+        background-color: #e6e9ee;
+        margin-top: 30px;
+    }
+
+    .batch-verify .list-account-section .input-display-type {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 3px;
+    }
+
+    .batch-verify .list-account-section .input-display-type .select-container {
+        min-width: 140px;
+        margin-top: 20px;
+        height: 50px;
+    }
+
+    .batch-verify .list-account-section .table-section {
+        margin-top: 30px;
+    }
+
+    .batch-verify .list-account-section .table-section .table-scroll {
+        overflow-x: auto;
+        width: 800px;
+    }
+
+    .batch-verify .list-account-section .table-section table {
+        width: 100%;
+    }
+    .batch-verify .list-account-section .table-section table tbody .highlight-row {
+        background-color: #e2d8ee;
+    }
+
+    .batch-verify .list-account-section .table-section table tbody tr {
+        min-height: 57px;
+        background-color: #fff;
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .batch-verify .list-account-section .table-section table tbody tr .table-text {
+        min-height: 57px;
+        padding: 10px 0;
+        word-wrap: break-word;
+    }
+
+    .batch-verify .list-account-section .table-section table tbody .error-message {
+        font-weight: 500;
+        color: #ff3b30;
+        text-align: center;
+        padding: 5px;
+    }
+    .batch-verify .list-account-section .table-bottom {
+        margin-left: 2px;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .batch-verify .list-account-section .table-bottom .display-select {
+        display: flex;
+        width: 150px;
+        justify-content: space-between;
+    }
+
+    .batch-verify .list-account-section .table-bottom .display-select span {
+        margin-top: 8px;
+        font-weight: 500;
+    }
+
+    .batch-verify .list-account-section .table-bottom .display-select .select-container {
+        min-width: 80px;
+        height: 50px;
+    }
+    .batch-verify .list-account-section .table-bottom .pagination {
+        width: 400px;
+        margin-top: 0;
+        justify-content: flex-end!important;
+    }
+    .batch-verify .list-account-section .table-bottom .pagination .paginator {
+        display: flex;
+        justify-content: flex-end!important;
+        list-style-type: none;
+        margin: 0;
+    }
+
+    .batch-verify .list-account-section .table-bottom .pagination .paginator .item-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .batch-verify .list-account-section .table-bottom .pagination .paginator li {
+        background-color: #fff;
+        cursor: pointer;
+        width: 32px;
+        margin-right: 1px;
+        padding: 10px 20px;
+        border-radius: 3px;
+    }
+    .batch-verify .list-account-section .table-bottom .pagination .paginator .enable-page {
+        color: #ff9800;
+        text-decoration: underline;
+    }
+
+    .batch-verify .list-account-section .table-bottom .pagination .paginator .item-page .page {
+        font-size: 14px;
+    }
+
+    .batch-verify .list-account-section .table-bottom .pagination .paginator .button-last {
+        display: flex;
+        justify-content: center;
+    }
+    /*End Bath*/
+
+    /*_____Right ______*/
+    .main-container > .right {
+        margin-left: 270px;
+    }
+
+    .page-header {
+        width: calc(100% - 270px);
+        padding: 24px 30px 24px 30px;
+    }
+
+    .page-header .top-header {
+        display: none;
+    }
+
+    .page-header > .left-text {
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    .page-header > .user-info {
+        top: 30px;
+        right: 30px;
+    }
+
+    .page-header > .user-info .user-name {
+        display: inline-block;
+        color: #42236a;
+    }
+
+    /*_____Page body _____*/
+    .main-container > .right .page-body {
+        padding: 5px 30px 5px 30px;
+        margin-top: 105px;
+    }
+    .main-container > .right .page-body .left {
+        margin-right: 0;
+    }
+
+    /*Page body right*/
+    .main-container > .right .page-body .right {
+        display: none;
+    }
+    /*End Page body right*/
+
+
+    /*_____ End Page body _____*/
+   
+    /*_____Footer ____*/
+    app-footer .footer-1 {
+        padding: 20px 30px;
+    }
+}
+
+@media screen and (max-width: 1130px) {
+     /*____List card _____*/
+     .list-card-link .card-customize:nth-child(odd) {
+        padding-right: 0;
+        margin-right: 16px;
+    }
+
+    .list-card-link .card-link-wrapper {
+        max-width: none;
+    }
+
+    .list-card-link .card-customize {
+        display: inline-block;
+        width: 46%;
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+}
+
+@media only screen and (max-width: 1129px) {
+    /*_____Left container _____*/
+    .main-container > .left {
+        transition: all 0.3s ease;
+        transform: translateX(-270px);
+    }
+    /*___End left container___*/
+    
+
+    /*Bath*/
+    .batch-verify {
+        display: flex;
+        flex-direction: column;
+        width: 736px;
+    }
+
+    .batch-verify .account-info-section {
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        background-color: #fff;
+        border-radius: 5px;
+        display: flex;
+    }
+
+
+    .batch-verify .account-info-section .left-section {
+        width: 50%;
+    }
+
+    .batch-verify .account-info-section .left-section {
+        width: 50%;
+    }
+
+    .batch-verify .account-info-section .left-section .item1 {
+        width: 100%;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+    }
+
+    .batch-verify .account-info-section .left-section .item1 .transfer-info-card {
+        height: 100%;
+        padding-left: 5%;
+    }
+
+    .batch-verify .account-info-section .left-section .item3 {
+        width: 100%;
+        height: 105px;
+    }
+
+    .batch-verify .account-info-section .left-section .item3 .transfer-info-card {
+        min-height: 100%;
+    }
+
+    .batch-verify .account-info-section .left-section .item3 .transfer-info-card .message {
+        font-size: 14px;
+        font-weight: 500;
+        height: 24px;
+    }
+
+    .batch-verify .account-info-section .right-section {
+        width: 50%;
+        border-left: 1px solid #e6e9ee;
+    }
+
+    .batch-verify .account-info-section .right-section .item2 {
+        width: 100%;
+        height: 127px;
+    }
+
+    .batch-verify .account-info-section .right-section .item2 .line-vertical {
+        height: 1px!important;
+        display: none;
+    }
+
+    .batch-verify .account-info-section .right-section .item2 .account-card {
+        height: 100%;
+    }
+
+    .batch-verify .account-info-section .right-section .item2 .account-card .account-name {
+        font-size: 14px;
+        font-weight: 500;
+        height: 24px;
+        margin-top: 5px;
+    }
+
+    .batch-verify .account-info-section .right-section .item2 .account-card .account-number {
+        font-size: 14px;
+        font-weight: 400;
+        height: 24px;
+        margin-top: 5px;
+    }
+
+    .batch-verify .account-info-section .right-section .item4 {
+        width: 100%;
+        min-height: 105px;
+    }
+
+    .batch-verify .account-info-section .right-section .item4 .transfer-info-card {
+        height: 100%;
+    }
+    .batch-verify .account-info-section .right-section .item4 .transfer-info-card .message {
+        font-size: 14px;
+        font-weight: 500;
+        height: 24px;
+    }
+
+    .batch-verify .action-section {
+        margin-top: 25px;
+        display: flex;
+        width: 100%;
+        padding-left: calc(50% - 304px);
+        padding-right: calc(50% - 304px);
+        justify-content: space-between;
+    }
+
+    .batch-verify .action-section .btn-center, .batch-verify .action-section .btn-left, .batch-verify .action-section .btn-right {
+        width: 192px;
+        height: 48px;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .batch-verify .line-vertical-full {
+        height: 1px;
+        background-color: #e6e9ee;
+        margin-top: 30px;
+    }
+    .batch-verify .list-account-section .input-display-type {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 3px;
+    }
+
+    .batch-verify .list-account-section .input-display-type .select-container {
+        min-width: 140px;
+        margin-top: 20px;
+        height: 50px;
+    }
+
+    .batch-verify .list-account-section .table-section {
+        margin-top: 30px;
+    }
+
+    .batch-verify .list-account-section .table-section .table-scroll {
+        overflow-x: auto;
+        width: 100%;
+    }
+
+    .batch-verify .list-account-section .table-section table {
+        width: 800px;
+    }
+    .batch-verify .list-account-section .table-section table tbody .highlight-row {
+        background-color: #e2d8ee;
+    }
+    .batch-verify .list-account-section .table-section table tbody tr {
+        min-height: 57px;
+        background-color: #fff;
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .batch-verify .list-account-section .table-section table tbody tr .table-text {
+        min-height: 57px;
+        padding-top: 10px;
+    }
+
+    .batch-verify .list-account-section .table-section table tbody .error-message {
+        font-weight: 500;
+        color: #ff3b30;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .batch-verify .list-account-section .table-bottom {
+        margin-left: 2px;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .batch-verify .list-account-section .table-bottom .display-select {
+        display: flex;
+        width: 150px;
+        justify-content: space-between;
+    }
+
+    .batch-verify .list-account-section .table-bottom .display-select span {
+        margin-top: 8px;
+        font-weight: 500;
+    }
+
+    .batch-verify .list-account-section .table-bottom .display-select .select-container {
+        min-width: 80px;
+        height: 50px;
+    }
+
+    .batch-verify .list-account-section .table-bottom .pagination {
+        width: 400px;
+        display: flex;
+        padding: 0 0 20px;
+        margin-top: 0;
+        justify-content: flex-end!important;
+    }
+    .batch-verify .list-account-section .table-bottom .pagination .paginator {
+        display: flex;
+        justify-content: flex-end!important;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    .batch-verify .list-account-section .table-bottom .pagination .paginator li {
+        background-color: #fff;
+        cursor: pointer;
+        width: 32px;
+        margin-right: 1px;
+        border-radius: 3px;
+    }
+
+    .batch-verify .list-account-section .table-bottom .pagination .paginator .item-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .batch-verify .list-account-section .table-bottom .pagination .paginator .enable-page {
+        color: #ff9800;
+        text-decoration: underline;
+    }
+
+    .batch-verify .list-account-section .table-bottom .pagination .paginator .item-page .page {
+        font-size: 14px;
+    }
+    .batch-verify .list-account-section .table-bottom .pagination .paginator .button-last {
+        display: flex;
+        justify-content: center;
+    }
+    /*End Bath*/
+
+    /*_____Right ______*/
+    .main-container > .right {
+        margin-left: 0;
+    }
+
+    .page-header {
+        width: 100%;
+        padding: 24px 16px 24px 16px;
+    }
+
+    .page-header .top-header {
+        display: flex;
+    }
+    .page-header > .left-text {
+        margin-top: 65px;
+        margin-right: 0;
+    }
+
+    .page-header > .user-info {
+        top: 17px;
+        right: 16px;
+    }
+    .page-header > .user-info .user-name {
+        display: inline-block;
+        color: #ffffff;
+    }
+
+    /*_____Page body _____*/
+    .main-container > .right .page-body {
+        padding: 5px 16px 5px 16px;
+        margin-top: 169px;
+        min-height: calc(100vh - 395px);
+    }
+
+    .main-container > .right .page-body .left {
+        margin-right: 0;
+    }
+
+    /* Page body right */
+    .main-container > .right .page-body .right {
+        display: none;
+    }
+    /* End Page body right */
+
+
+
+    /*_____End Page body _____*/
+    
+
+    /*_____Footer ____*/
+    app-footer .footer-1 {
+        padding: 20px 16px;
+    }
+
+    app-footer .footer-2 {
+        padding: 15px 16px;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    /*_____Left container _____*/
+    .main-container > .left {
+        transition: all 0.3s ease;
+        transform: translateX(-270px);
+    }
+    /*_________End Left Contain______*/
+
+
+    /*Bath*/
+    .batch-verify {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .batch-verify .account-info-section {
+        background-color: #fff;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+    }
+
+    .batch-verify .account-info-section .left-section {
+        width: 100%;
+    }
+
+    .batch-verify .account-info-section .left-section {
+        width: 100%;
+    }
+
+    .batch-verify .account-info-section .left-section .item1 {
+        width: 100%;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+    }
+
+    .batch-verify .account-info-section .left-section .item1 .transfer-info-card {
+        height: 100%;
+        padding-left: 5%;
+    }
+
+    .batch-verify .account-info-section .left-section .item3 {
+        width: 100%;
+        height: 105px;
+    }
+
+    .batch-verify .account-info-section .left-section .item3 .transfer-info-card {
+        min-height: 100%;
+    }
+
+    .batch-verify .account-info-section .left-section .item3 .transfer-info-card .message {
+        font-size: 14px;
+        font-weight: 500;
+        height: 24px;
+    }
+
+    .batch-verify .account-info-section .right-section {
+        width: 100%;
+        border-left: none;
+    }
+
+    .batch-verify .account-info-section .right-section .item2 {
+        width: 100%;
+        height: 127px;
+    }
+
+    .batch-verify .account-info-section .right-section .item2 .line-vertical {
+        height: 1px!important;
+        display: block;
+    }
+    
+    .batch-verify .account-info-section .right-section .item2 .account-card {
+        height: 100%;
+    }
+
+    .batch-verify .account-info-section .right-section .item2 .account-card .account-name {
+        font-size: 14px;
+        font-weight: 500;
+        height: 24px;
+        margin-top: 5px;
+    }
+
+    .batch-verify .account-info-section .right-section .item2 .account-card .account-number {
+        font-size: 14px;
+        font-weight: 400;
+        height: 24px;
+        margin-top: 5px;
+    }
+
+    .batch-verify .account-info-section .right-section .item4 {
+        width: 100%;
+        min-height: 105px;
+    }
+
+    .batch-verify .account-info-section .right-section .item4 .transfer-info-card {
+        height: 100%;
+    }
+    .batch-verify .account-info-section .right-section .item4 .transfer-info-card .message {
+        font-size: 14px;
+        font-weight: 500;
+        height: 24px;
+    }
+
+    .batch-verify .action-section {
+        margin-top: 25px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .batch-verify .action-section .btn-center, .batch-verify .action-section .btn-left, .batch-verify .action-section .btn-right {
+        width: 168px;
+        height: 48px;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .batch-verify .line-vertical-full {
+        height: 1px;
+        background-color: #e6e9ee;
+        margin-top: 30px;
+    }
+
+    .batch-verify .list-account-section .input-display-type {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 3px;
+    }
+
+    .batch-verify .list-account-section .input-display-type .select-container {
+        min-width: 140px;
+        margin-top: 20px;
+        height: 50px;
+    }
+    .batch-verify .list-account-section .table-section {
+        margin-top: 30px;
+    }
+
+    .batch-verify .list-account-section .table-section .table-scroll {
+        overflow-x: auto;
+        width: 100%;
+    }
+
+    .batch-verify .list-account-section .table-section table {
+        width: 800px;
+    }
+
+    .batch-verify .list-account-section .table-section table tbody .highlight-row {
+        background-color: #e2d8ee;
+    }
+    .batch-verify .list-account-section .table-section table tbody tr {
+        min-height: 57px;
+        background-color: #fff;
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .batch-verify .list-account-section .table-section table tbody tr .table-text {
+        min-height: 57px;
+        padding-top: 10px;
+    }
+
+    .batch-verify .list-account-section .table-section table tbody .error-message {
+        font-weight: 500;
+        color: #ff3b30;
+        text-align: center;
+        padding: 5px;
+    }
+    .batch-verify .list-account-section .table-bottom {
+        margin-left: 2px;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .batch-verify .list-account-section .table-bottom .display-select {
+        display: flex;
+        width: 150px;
+        justify-content: space-between;
+    }
+
+    .batch-verify .list-account-section .table-bottom .display-select span {
+        margin-top: 8px;
+        font-weight: 500;
+    }
+
+    .batch-verify .list-account-section .table-bottom .display-select .select-container {
+        min-width: 80px;
+        height: 50px;
+    }
+    .batch-verify .list-account-section .table-bottom .pagination {
+        width: 400px;
+        display: flex;
+        margin-top: 0;
+        justify-content: flex-end!important;
+        padding: 0 0 20px;
+    }
+    .batch-verify .list-account-section .table-bottom .pagination .paginator {
+        display: flex;
+        justify-content: flex-end!important;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .batch-verify .list-account-section .table-bottom .pagination .paginator .item-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .batch-verify .list-account-section .table-bottom .pagination .paginator li {
+        background-color: #fff;
+        cursor: pointer;
+        width: 32px;
+        margin-right: 1px;
+        border-radius: 3px;
+    }
+
+    .batch-verify .list-account-section .table-bottom .pagination .paginator .enable-page {
+        color: #ff9800;
+        text-decoration: underline;
+    }
+
+    .batch-verify .list-account-section .table-bottom .pagination .paginator .item-page .page {
+        font-size: 14px;
+    }
+
+    .batch-verify .list-account-section .table-bottom .pagination .paginator .button-last {
+        display: flex;
+        justify-content: center;
+    }
+    /*Bath*/
+
+
+    /*_____Right ______*/
+    .main-container > .right {
+        margin-left: 0;
+    }
+
+    .page-header {
+        width: 100%;
+        padding: 16px 16px 16px 16px;
+    }
+
+    .page-header .top-header {
+        display: flex;
+    }
+
+    .page-header > .left-text {
+        margin-top: 65px;
+        margin-right: 0;
+    }
+
+    .page-header > .user-info {
+        top: 17px;
+        right: 16px;
+    }
+
+    .page-header > .user-info .user-name {
+        display: none;
+    }
+
+    /*_____Page body _____*/
+    .main-container > .right .page-body {
+        padding: 5px 16px 5px 16px;
+        margin-top: 153px;
+        min-height: calc(100vh - 500px);
+    }
+
+    .main-container > .right .page-body .left {
+        max-width: 100%;
+        margin-right: 0;
+    }
+    
+    /*Page body right*/
+    .main-container > .right .page-body .right {
+        display: none;
+    }
+    /*End Page body right*/
+
+
+   /*_____End Page Body _____*/
+
+
+    /*_____Footer ____*/
+    app-footer .footer-1 {
+        padding: 20px 16px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    app-footer .footer-1 .phone-col {
+        text-align: center;
+    }
+    app-footer .footer-1 .phone-col .call-center-text {
+        display: block;
+    }
+    app-footer .footer-1 .phone-col .phone-1 {
+        margin-bottom: 8px;
+    }
+
+    app-footer .footer-1 .footer-column-2, app-footer .footer-1 .footer-column-3 {
+        display: none;
+    }
+
+    app-footer .footer-1 .footer-column-2, app-footer .footer-1 .footer-column-3 {
+        display: none;
+    }
+
+    app-footer .footer-1 .app-store-col {
+        text-align: center;
+        padding: 32px 0 12px 0;
+    }
+
+    app-footer .footer-1 .app-store-col .download-desc {
+        display: block;
+    }
+    app-footer .footer-2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    /*____List card _____*/
+
+    .list-card-link {
+        margin-right: 0;
+    }
+
+    .list-card-link .card-link-wrapper {
+        max-width: none;
+    }
+    .list-card-link .card-customize {
+        display: block;
+        width: 100%;
+        margin-bottom: 16px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+   /*Bath*/
+   .batch-verify {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .batch-verify .account-info-section {
+        background-color: #fff;
+        border-radius: 5px;
+        display: flex;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+    }
+    
+    .batch-verify .account-info-section .left-section {
+        width: 100%;
+    }
+
+    .batch-verify .account-info-section .left-section {
+        width: 100%;
+    }
+
+    .batch-verify .account-info-section .left-section .item1 {
+        width: 100%;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+    }
+
+    .batch-verify .account-info-section .left-section .item1 .transfer-info-card {
+        height: 100%;
+        padding-left: 5%;
+    }
+
+    .batch-verify .account-info-section .left-section .item3 {
+        width: 100%;
+        height: 105px;
+    }
+
+    .batch-verify .account-info-section .left-section .item3 .transfer-info-card {
+        min-height: 100%;
+    }
+
+    .batch-verify .account-info-section .left-section .item3 .transfer-info-card .message {
+        font-size: 14px;
+        font-weight: 500;
+        height: 24px;
+    }
+
+    .batch-verify .account-info-section .right-section {
+        width: 100%;
+        border-left: none;
+    }
+
+    .batch-verify .account-info-section .right-section .item2 {
+        width: 100%;
+        height: 127px;
+    }
+
+    .batch-verify .account-info-section .right-section .item2 .line-vertical {
+        height: 1px!important;
+    }
+
+    .batch-verify .account-info-section .right-section .item2 .account-card {
+        height: 100%;
+    }
+
+    .batch-verify .account-info-section .right-section .item2 .account-card .account-name {
+        font-size: 14px;
+        font-weight: 500;
+        height: 24px;
+        margin-top: 5px;
+    }
+
+    .batch-verify .account-info-section .right-section .item2 .account-card .account-number {
+        font-size: 14px;
+        font-weight: 400;
+        height: 24px;
+        margin-top: 5px;
+    }
+
+    .batch-verify .account-info-section .right-section .item4 {
+        width: 100%;
+        min-height: 105px;
+    }
+
+    .batch-verify .account-info-section .right-section .item4 .transfer-info-card {
+        height: 100%;
+    }
+    .batch-verify .account-info-section .right-section .item4 .transfer-info-card .message {
+        font-size: 14px;
+        font-weight: 500;
+        height: 24px;
+    }
+
+    .batch-verify .action-section {
+        margin-top: 25px;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        transform: scaleY(-1);
+    }
+
+    .batch-verify .action-section .btn-center, .batch-verify .action-section .btn-left, .batch-verify .action-section .btn-right {
+        width: 100%;
+        height: 48px;
+        margin-top: 20px;
+        margin-left: 0;
+        transform: scaleY(-1);
+    }
+    .batch-verify .line-vertical-full {
+        height: 1px;
+        background-color: #e6e9ee;
+        margin-top: 30px;
+    }
+
+    .batch-verify .list-account-section .input-display-type {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 3px;
+    }
+
+    .batch-verify .list-account-section .input-display-type .error-notification {
+        width: 530px;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        font-size: 16px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    .batch-verify .list-account-section .input-display-type .select-container {
+        min-width: 140px;
+        margin-top: 20px;
+        height: 50px;
+    }
+
+    .select-container__select-option {
+        font-size: 13px!important;
+    }
+
+    .batch-verify .list-account-section .table-section {
+        margin-top: 30px;
+    }
+
+    .batch-verify .list-account-section .table-section .table-scroll {
+        overflow: auto;
+        width: 100%;
+    }
+
+    .batch-verify .list-account-section .table-section table {
+        width: 800px;
+    }
+
+    .batch-verify .list-account-section .table-section table tbody .highlight-row {
+        background-color: #e2d8ee;
+    }
+
+    .batch-verify .list-account-section .table-section table tbody tr {
+        min-height: 57px;
+        background-color: #fff;
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .batch-verify .list-account-section .table-section table tbody tr .table-text {
+        min-height: 57px;
+        padding-top: 10px;
+    }
+
+    .batch-verify .list-account-section .table-section table tbody .error-message {
+        font-weight: 500;
+        color: #ff3b30;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .batch-verify .list-account-section .table-bottom {
+        margin-left: 2px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .batch-verify .list-account-section .table-bottom .display-select {
+        display: flex;
+        width: 150px;
+        justify-content: space-between;
+    }
+
+    .batch-verify .list-account-section .table-bottom .display-select span {
+        margin-top: 8px;
+        font-weight: 500;
+    }
+
+    .batch-verify .list-account-section .table-bottom .display-select .select-container {
+        min-width: 80px;
+        height: 50px;
+    }
+
+    .batch-verify .list-account-section .table-bottom .pagination {
+        width: 100%;
+        margin-top: 16px;
+        display: flex;
+        justify-content: center!important;
+        padding: 0 0 20px;
+    }
+
+    .batch-verify .list-account-section .table-bottom .pagination .paginator {
+        display: flex;
+        justify-content: center!important;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .batch-verify .list-account-section .table-bottom .pagination .paginator .item-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .batch-verify .list-account-section .table-bottom .pagination .paginator li {
+        background-color: #fff;
+        cursor: pointer;
+        width: 32px;
+        margin-right: 1px;
+        border-radius: 3px;
+    }
+
+    .batch-verify .list-account-section .table-bottom .pagination .paginator .enable-page {
+        color: #ff9800;
+        text-decoration: underline;
+    }
+
+    .batch-verify .list-account-section .table-bottom .pagination .paginator .item-page .page {
+        font-size: 14px;
+    }
+
+    .batch-verify .list-account-section .table-bottom .pagination .paginator .button-last {
+        display: flex;
+        justify-content: center;
+    }
+   /*Bath*/
+}

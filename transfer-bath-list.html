@@ -9,8 +9,8 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link href="./assets/css/transfer-bath.css" rel="stylesheet" />
-    <link href="./assets/css/transfer-bath-responsive.css" rel="stylesheet" />
+    <link href="./assets/css/transfer-bath-list.css" rel="stylesheet" />
+    <link href="./assets/css/transfer-bath-list-responsive.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -212,19 +212,15 @@
 
                         <div class="content-wrap">
                             <div class="batch">
-                                <div>
+                                <div class="d-none">
                                     <div class="batch-upload-file">
                                         <div class="slide-section mx-auto mb-4" style="max-width: 500px">
-                                            <app-debit-account-selector>
-                                                <div class="debit-acc-selector">
-                                                    <div class="label-color">Từ tài khoản</div>
-                                                    <div class="fw-500 mt-2"> TRAN NGOC TAN </div>
-                                                    <div class="fw-500"> 0210 5921 501 </div>
-                                                    <div class="fw-500 mt-2" style="font-size: 20px;"> 5,283 VND </div>
-                                                </div>
-                                                <app-modal>
-                                                </app-modal>
-                                            </app-debit-account-selector>
+                                            <div class="debit-acc-selector">
+                                                <div class="label-color">Từ tài khoản</div>
+                                                <div class="fw-500 mt-2"> TRAN NGOC TAN </div>
+                                                <div class="fw-500"> 0210 5921 501 </div>
+                                                <div class="fw-500 mt-2" style="font-size: 20px;"> 5,283 VND </div>
+                                            </div>
                                         </div>
                                         <div class="row">
                                             <span class="text-1"> * Quý khách có thể chuyển tiền theo danh sách bằng
@@ -237,40 +233,233 @@
                                         </div>
                                         <div class="row">
                                             <a class="file-upload">
-                                                <img class="icon-download" src="assets/images/icons/transfer/Icons_DownLoad.svg"> Tải
+                                                <img class="icon-download" src="assets/icons/Icons_DownLoad.svg"> Tải
                                                 xuống file mẫu </a>
                                         </div>
                                         <div class="row">
                                             <div class="file-section">
-                                                <app-upload-file uploadtype="upload-excel" _nghost-dhv-c15="">
+                                                <div uploadtype="upload-excel">
                                                     <div class="upload-document-container">
                                                         <div class="upload-document-wrap">
                                                             <div class="upload-inner">
                                                                 <div class="upload-title">Tải lên danh sách chuyển khoản
                                                                 </div>
                                                                 <img alt="" class="upload-icon"
-                                                                    src="assets/images/icons/transfer/ic_file_upload_inactive.svg">
-                                                                <div class="upload-description">
-                                                                    <label class="select-file-button" for="myFile">Chọn
-                                                                        file</label>
-                                                                    <span>&nbsp;hoặc kéo thả file vào đây</span>
+                                                                    src="assets/icons/ic_file_upload.svg">
+                                                                <div class="selected-file-name">
+                                                                    ft_batch_xlsx_2019_VIE.xlsx <span
+                                                                        class="delete-file-button">
+                                                                        <img alt=""
+                                                                            src="./assets/images/icons/ic_close.svg"
+                                                                            style="width: 12px; height: 12px"></span>
                                                                 </div>
                                                                 <input id="myFile" name="myFile" type="file"
                                                                     accept="application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/csv,application/x-csv,text/csv,text/comma-separated-values,text/x-comma-separated-values,text/tab-separated-values">
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </app-upload-file>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <button class="btn-default btn-primary" disabled="disabled">Tiếp tục</button>
+                                            <button class="btn-default btn-primary">Tiếp tục</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="batch-verify">
+                                        <div class="account-info-section">
+                                            <div class="left-section">
+                                                <div class="item1">
+                                                    <transfer-info-card>
+                                                        <div class="transfer-info-card">
+                                                            <span class="title">SỐ TIỀN GIAO DỊCH</span>
+                                                            <div class="amount">
+                                                                <span> 1 VND </span>
+                                                            </div>
+                                                        </div>
+                                                    </transfer-info-card>
+                                                </div>
+                                                <div class="item3">
+                                                    <div class="line-vertical"></div>
+                                                    <transfer-info-card>
+                                                        <div class="transfer-info-card">
+                                                            <span class="title">Cách thức</span>
+                                                            <div class="message">
+                                                                <span>Chuyển tiền một lần</span>
+                                                            </div>
+                                                        </div>
+                                                    </transfer-info-card>
+                                                </div>
+                                            </div>
+                                            <div class="right-section">
+                                                <div class="item2">
+                                                    <div class="line-vertical"></div>
+                                                    <account-card>
+                                                        <div class="account-card">
+                                                            <div class="image-section">
+                                                                <app-avatar>
+                                                                    <div class="avatar-container"
+                                                                        style="width: 50px; height: 50px;">
+                                                                        <img class="avatar-content"
+                                                                            src="assets/images/icons/transfer/logo-round.svg"
+                                                                            width="50" height="50"
+                                                                            style="max-width: 100%; border-radius: 50%; object-fit: cover;">
+                                                                    </div>
+                                                                </app-avatar>
+                                                            </div>
+                                                            <div class="account-detail">
+                                                                <span class="title">Từ tài khoản </span>
+                                                                <div class="account-name text-in-div"> TRAN NGOC TAN
+                                                                </div>
+                                                                <div class="account-number text-in-div"> 0210 5921 501
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </account-card>
+                                                </div>
+                                                <div class="item4">
+                                                    <div class="line-vertical"></div>
+                                                    <transfer-info-card>
+                                                        <div class="transfer-info-card">
+                                                            <span class="title">Thông điệp</span>
+                                                            <div class="message">
+                                                                <span>Chuyen tien theo danh sach</span>
+                                                            </div>
+                                                        </div>
+                                                    </transfer-info-card>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="action-section">
+                                            <button class="btn-left btn-secondary">Tải Lại Tập Tin</button>
+                                            <button class="btn-center btn-secondary" tabindex="0">Hủy bỏ</button>
+                                            <button class="btn-right btn-primary" disabled="disabled">Xác Nhận Giao
+                                                Dịch</button>
+                                        </div>
+                                        <div class="line-vertical-full"></div>
+                                        <div class="list-account-section ng-untouched ng-pristine ng-valid"
+                                            style="width: 100%">
+                                            <div class="input-display-type">
+                                                <div class="error-notification">
+                                                    <span> Tập tin tải lên có
+                                                        <span style="color: red">1</span> thông báo lỗi. Vui lòng chỉnh
+                                                        sửa và tải lại tập tin để thực hiện giao dịch.
+                                                    </span>
+                                                </div>
+                                                <select-container formcontrolname="displayType" placeholder=""
+                                                    class="ng-untouched ng-pristine ng-valid">
+                                                    <div class="select-container">
+                                                        <div class="select-container__wrap-top">
+                                                            <span class="select-container__item-selected">Thông báo
+                                                                lỗi</span>
+                                                            <img class="select-container__icon"
+                                                                src="assets/images/icons/transfer/chevron-right-solid.svg" width="8px">
+                                                        </div>
+                                                        <div
+                                                            class="select-container__wrap-items select-container__wrap-items--height">
+                                                            <div class="select-container__select-option"> Tất cả </div>
+                                                            <div class="select-container__select-option"> Thông báo lỗi
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </select-container>
+                                            </div>
+                                            <div class="table-section">
+                                                <div class="table-scroll">
+                                                    <table class="table">
+                                                        <thead style="width: 100%">
+                                                            <tr
+                                                                style="height: 35px; font-size: 13px;font-weight: 500; color: white; background-color: #42236a; width: 100%;">
+                                                                <th style="width: 43px; padding-left: 5px;">STT</th>
+                                                                <th style="width: 157px">Tên người nhận</th>
+                                                                <th style="width: 110px">Số tài khoản</th>
+                                                                <th style="width: 130px">Số tiền chuyển</th>
+                                                                <th style="width: 140px">Thông điệp</th>
+                                                                <th style="width: 220px">Chi tiết lỗi</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="highlight-row">
+                                                                <td style="text-align: center">
+                                                                    <div class="table-text" style="width: 43px">1
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="table-text" style="width: 157px">
+                                                                        <span>Test</span>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="table-text" style="width: 110px">1231 23
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="table-text" style="width: 130px">1 VND
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="table-text" style="width: 140px">123123
+                                                                    </div>
+                                                                </td>
+                                                                <td class="table-text error-message"
+                                                                    style="width: 220px">
+                                                                    <div>Tài khoản người nhận không hợp lệ</div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="table-bottom">
+                                                <div class="display-select">
+                                                    <span> Hiển thị </span>
+                                                    <select-container formcontrolname="displayLimit" placeholder=""
+                                                        class="ng-untouched ng-pristine ng-valid">
+                                                        <div class="select-container">
+                                                            <div class="select-container__wrap-top">
+                                                                <span class="select-container__item-selected">5</span>
+                                                                <img class="select-container__icon"
+                                                                    src="assets/images/icons/transfer/chevron-right-solid.svg"
+                                                                    width="8px">
+                                                            </div>
+                                                            <div
+                                                                class="select-container__wrap-items select-container__wrap-items--height">
+                                                                <div class="select-container__select-option"> 5 </div>
+                                                                <div class="select-container__select-option"> 10 </div>
+                                                                <div class="select-container__select-option"> 25 </div>
+                                                            </div>
+                                                        </div>
+                                                    </select-container>
+                                                </div>
+                                                <div class="pagination">
+                                                    <ul class="paginator">
+                                                        <li class="item-page button-first">
+                                                            <i class="fas fa-angle-double-left">
+                                                            </i>
+                                                        </li>
+                                                        <li class="item-page button-first">
+                                                            <i class="fas fa-angle-left"></i>
+                                                        </li>
+                                                        <li class="item-page enable-page">
+                                                            <span class="page">1</span>
+                                                        </li>
+                                                        <li class="item-page button-last">
+                                                            <i class="fas fa-angle-right">
+
+                                                            </i>
+                                                        </li>
+                                                        <li class="item-page button-last">
+                                                            <i class="fas fa-angle-double-right"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                     <div class="right">
                         <div class="quick-links">
@@ -424,7 +613,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script src="./assets/js/transfer-bath.js"></script>
+    <script src="./assets/js/transfer-bath-list.js"></script>
 </body>
 
 </html>
