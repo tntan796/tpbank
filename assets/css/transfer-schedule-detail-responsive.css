@@ -1,0 +1,701 @@
+@media only screen and (min-width: 1440px) { 
+    /*____Page body _____*/
+    .page-header .top-header {
+        display: none;
+    }
+    .page-header > .left-text {
+        margin-top: 0;
+        margin-right: calc(270px + 30px);
+    }
+    /*____ End Page body _____*/
+
+    .main-container > .right .page-body .left {
+        margin-right: 30px;
+    }
+    /*_____Footer _____*/
+    app-footer .footer-1 {
+        padding: 20px 30px;
+    }
+    /*_____ End Footer _____*/
+}
+
+@media only screen and (max-width: 1439px) {
+    /*_____Left container _____*/
+    .main-container > .left {
+        transition: none;
+        transform: none;
+    }
+    /* _____End left container _____*/
+
+    /*Schedule detail*/
+    .schedule {
+        width: 100%;
+        display: flex;
+        color: #42236a;
+        justify-content: center;
+        font-size: 14px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .schedule .edit-area {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .schedule-create {
+        width: 800px;
+    }
+
+    #schedule-setting {
+        width: 495px;
+        justify-content: center;
+    }
+
+    #schedule-setting .tab {
+        overflow: hidden;
+        justify-content: center;
+        width: 100%;
+        border-bottom: 1px solid #e0e1e7;
+    }
+
+    #schedule-setting .tab .tab-active {
+        color: #42236a;
+        font-weight: 500;
+        border-bottom: 2px solid #7b35bb;
+    }
+
+    #schedule-setting .tab .tablinks {
+        color: #ad8ad8;
+        font-size: 16px;
+    }
+
+    #schedule-setting .tab button {
+        background-color: inherit;
+        border: none;
+        outline: 0;
+        width: 165px;
+        padding: 10px 16px;
+        font-size: 17px;
+    }
+
+    #schedule-setting #daily-schedule-setting, #schedule-setting #weekly-schedule-setting {
+        width: 100%;
+    }
+
+    #schedule-setting .schedule-description {
+        width: 100%;
+        height: 72px;
+        display: flex;
+        font-weight: 400;
+        font-style: normal;
+        font-stretch: normal;
+        color: #42236a;
+        line-height: 1.5;
+        font-size: 16px;
+        margin-top: 25px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #schedule-setting .schedule-description .radio-select-type {
+        margin-right: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        white-space: nowrap;
+        cursor: pointer;
+    }
+
+    #schedule-setting .schedule-description .radio-select-type .wrap-input-radio {
+        top: -4px;
+        display: block;
+        position: relative;
+        cursor: pointer;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        margin-right: 30px;
+    }
+
+    #schedule-setting .schedule-description .radio-select-type span {
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    #schedule-setting .schedule-description .radio-select-type .radio-checked {
+        background-color: #fff;
+        border: 5px solid #ff9800!important;
+    }
+
+    #schedule-setting .schedule-description .radio-select-type .wrap-input-radio .new-radio-button {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        border: 2px solid #c5ccd6;
+    }
+
+    #schedule-setting .radio-select-type span {
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    #schedule-setting .schedule-description .radio-select-type span {
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    #schedule-setting .schedule-description .radio-select-type .wrap-input-radio .new-radio-button {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        border: 2px solid #c5ccd6;
+    }
+
+    #schedule-setting .tab button {
+        background-color: inherit;
+        border: none;
+        outline: 0;
+        width: 165px;
+        padding: 10px 16px;
+        font-size: 17px;
+    }
+
+    #schedule-setting .tab button {
+        background-color: inherit;
+        border: none;
+        outline: 0;
+        width: 165px;
+        padding: 10px 16px;
+        font-size: 17px;
+    }
+
+    #schedule-setting .tab button {
+        background-color: inherit;
+        border: none;
+        outline: 0;
+        width: 33%;
+        padding: 10px 0;
+        font-size: 17px;
+        text-align: center;
+    }
+    
+    #schedule-setting .tab .tab-active {
+        color: #42236a;
+        font-weight: 500;
+        border-bottom: 2px solid #7b35bb;
+    }
+    /*End schedule detail*/
+
+
+    /*_____Right ______*/
+    .main-container > .right {
+        margin-left: 270px;
+    }
+
+    .page-header {
+        width: calc(100% - 270px);
+        padding: 24px 30px 24px 30px;
+    }
+
+    .page-header .top-header {
+        display: none;
+    }
+
+    .page-header > .left-text {
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    .page-header > .user-info {
+        top: 30px;
+        right: 30px;
+    }
+
+    .page-header > .user-info .user-name {
+        display: inline-block;
+        color: #42236a;
+    }
+
+    /*_____Page body _____*/
+    .main-container > .right .page-body {
+        padding: 5px 30px 5px 30px;
+        margin-top: 105px;
+    }
+    .main-container > .right .page-body .left {
+        margin-right: 0;
+    }
+
+    /*Page body right*/
+    .main-container > .right .page-body .right {
+        display: none;
+    }
+    /*End Page body right*/
+
+
+    /*_____ End Page body _____*/
+   
+    /*_____Footer ____*/
+    app-footer .footer-1 {
+        padding: 20px 30px;
+    }
+}
+
+@media screen and (max-width: 1130px) {
+    /*Schedule detail */
+    #schedule-setting {
+        width: 495px;
+    }
+
+    .tab {
+        overflow: hidden;
+        justify-content: center;
+        width: 100%;
+        border-bottom: 1px solid #e0e1e7;
+    }
+
+    .tab button {
+        width: 165px;
+    }
+    
+    #schedule-setting .radio-select-type {
+        margin-right: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        white-space: nowrap;
+        cursor: pointer;
+    }
+
+    #schedule-setting .radio-select-type .wrap-input-radio {
+        top: -4px;
+        display: block;
+        position: relative;
+        cursor: pointer;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        margin-right: 30px;
+    }
+
+    #schedule-setting .radio-select-type span {
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    #schedule-setting .radio-select-type .radio-checked {
+        background-color: #fff;
+        border: 5px solid #ff9800!important;
+    }
+
+    #schedule-setting .radio-select-type .wrap-input-radio .new-radio-button {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        border: 2px solid #c5ccd6;
+    }
+
+    #schedule-setting .radio-select-type .wrap-input-radio .new-radio-button {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        border: 2px solid #c5ccd6;
+    }
+    /*End schedule detail */
+}
+
+@media only screen and (max-width: 1129px) {
+    /*_____Left container _____*/
+    .main-container > .left {
+        transition: all 0.3s ease;
+        transform: translateX(-270px);
+    }
+
+    /*Schedule detail*/
+    .schedule {
+        width: 100%;
+        display: flex;
+        color: #42236a;
+        justify-content: center;
+        font-size: 14px;
+        padding-left: 8px;
+        padding-right: 168;
+    }
+
+    .schedule .edit-area {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .schedule-create {
+        width: 736px;
+    }
+    /*End schedule detail*/
+
+    /*_____Right ______*/
+    .main-container > .right {
+        margin-left: 0;
+    }
+
+    .page-header {
+        width: 100%;
+        padding: 24px 16px 24px 16px;
+    }
+
+    .page-header .top-header {
+        display: flex;
+    }
+    .page-header > .left-text {
+        margin-top: 65px;
+        margin-right: 0;
+    }
+
+    .page-header > .user-info {
+        top: 17px;
+        right: 16px;
+    }
+    .page-header > .user-info .user-name {
+        display: inline-block;
+        color: #ffffff;
+    }
+
+    /*_____Page body _____*/
+    .main-container > .right .page-body {
+        padding: 5px 16px 5px 16px;
+        margin-top: 169px;
+        min-height: calc(100vh - 395px);
+    }
+
+    .main-container > .right .page-body .left {
+        margin-right: 0;
+    }
+
+    /* Page body right */
+    .main-container > .right .page-body .right {
+        display: none;
+    }
+    /* End Page body right */
+
+
+
+    /*_____End Page body _____*/
+    
+
+    /*_____Footer ____*/
+    app-footer .footer-1 {
+        padding: 20px 16px;
+    }
+
+    app-footer .footer-2 {
+        padding: 15px 16px;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    /*_____Left container _____*/
+    .main-container > .left {
+        transition: all 0.3s ease;
+        transform: translateX(-270px);
+    }
+
+    /*Schedule detail*/
+    .schedule {
+        width: 100%;
+        display: flex;
+        color: #42236a;
+        font-size: 14px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .schedule .edit-area {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .schedule-create {
+        padding: 16px;
+        width: 100%;
+    }
+    /*End schedule detail*/
+
+    /*_____Right ______*/
+    .main-container > .right {
+        margin-left: 0;
+    }
+
+    .page-header {
+        width: 100%;
+        padding: 16px 16px 16px 16px;
+    }
+
+    .page-header .top-header {
+        display: flex;
+    }
+
+    .page-header > .left-text {
+        margin-top: 65px;
+        margin-right: 0;
+    }
+
+    .page-header > .user-info {
+        top: 17px;
+        right: 16px;
+    }
+
+    .page-header > .user-info .user-name {
+        display: none;
+    }
+
+    /*_____Page body _____*/
+    .main-container > .right .page-body {
+        padding: 5px 16px 5px 16px;
+        margin-top: 153px;
+        min-height: calc(100vh - 500px);
+    }
+
+    .main-container > .right .page-body .left {
+        max-width: 100%;
+        margin-right: 0;
+    }
+    
+    /*Page body right*/
+    .main-container > .right .page-body .right {
+        display: none;
+    }
+    /*End Page body right*/
+
+
+   /*_____End Page Body _____*/
+
+
+    /*_____Footer ____*/
+    app-footer .footer-1 {
+        padding: 20px 16px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    app-footer .footer-1 .phone-col {
+        text-align: center;
+    }
+    app-footer .footer-1 .phone-col .call-center-text {
+        display: block;
+    }
+    app-footer .footer-1 .phone-col .phone-1 {
+        margin-bottom: 8px;
+    }
+
+    app-footer .footer-1 .footer-column-2, app-footer .footer-1 .footer-column-3 {
+        display: none;
+    }
+
+    app-footer .footer-1 .footer-column-2, app-footer .footer-1 .footer-column-3 {
+        display: none;
+    }
+
+    app-footer .footer-1 .app-store-col {
+        text-align: center;
+        padding: 32px 0 12px 0;
+    }
+
+    app-footer .footer-1 .app-store-col .download-desc {
+        display: block;
+    }
+    app-footer .footer-2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+}
+
+@media screen and (max-width: 575px) {
+   /*Schedule detail*/
+   .schedule {
+        width: 100%;
+        display: flex;
+        color: #42236a;
+        font-size: 14px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .schedule .edit-area {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .schedule-create {
+        width: 100%;
+    }
+
+    #schedule-setting {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #schedule-setting .tab {
+        height: 55px;
+        justify-content: center;
+        width: 100%;
+        border-bottom: 1px solid #e0e1e7;
+        display: flex;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    #schedule-setting .tab button {
+        background-color: inherit;
+        border: none;
+        outline: 0;
+        width: 33%;
+        padding: 10px 0;
+        font-size: 17px;
+        text-align: center;
+    }
+    
+    #schedule-setting .tab .tablinks {
+        color: #ad8ad8;
+        font-size: 16px;
+        width: 100%;
+    }
+
+    #schedule-setting .tab .tab-active {
+        color: #42236a;
+        font-weight: 500;
+        border-bottom: 2px solid #7b35bb;
+    }
+    
+    #schedule-setting #daily-schedule-setting, #schedule-setting #weekly-schedule-setting {
+        width: 100%;
+    }
+
+    #schedule-setting .schedule-description {
+        width: 100%;
+        height: 72px;
+        display: flex;
+        font-weight: 400;
+        font-style: normal;
+        font-stretch: normal;
+        color: #42236a;
+        line-height: 1.5;
+        font-size: 16px;
+        margin-top: 25px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #schedule-setting .radio-select-type {
+        margin-right: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        white-space: nowrap;
+        cursor: pointer;
+    }
+
+    #schedule-setting .radio-select-type .wrap-input-radio {
+        top: -4px;
+        display: block;
+        position: relative;
+        cursor: pointer;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        margin-right: 30px;
+    }
+
+    #schedule-setting .radio-select-type .wrap-input-radio .new-radio-button {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        border: 2px solid #c5ccd6;
+    }
+
+    #schedule-setting .radio-select-type .radio-checked {
+        background-color: #fff;
+        border: 5px solid #ff9800!important;
+    }
+
+    #schedule-setting .radio-select-type span {
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    #schedule-setting .radio-select-type span {
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    #schedule-setting .radio-select-type .wrap-input-radio .new-radio-button {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        border: 2px solid #c5ccd6;
+    }
+
+    .tpb-date-picker2 input {
+        transition: none;
+    }
+
+    .tpb-date-picker2 i.fa-calendar {
+        position: absolute;
+        font-size: 23px;
+        right: 13px;
+        top: 10px;
+        cursor: pointer;
+        color: #ff9800;
+    }
+
+    .txtHiddenInput {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        visibility: hidden;
+    }
+
+    .tpb-date-picker2 input {
+        transition: none;
+    }
+
+    #schedule-setting .bot-menu1 {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 500;
+    }
+   /*End schedule detail*/
+}
