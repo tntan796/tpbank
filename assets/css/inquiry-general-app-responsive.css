@@ -159,6 +159,14 @@
         transform: translateX(-270px);
     }
 
+    /*app*/
+    .application-item {
+        width: calc(50% - 8px);
+        max-width: 172px;
+        margin-right: 12px;
+    }
+    /*end app*/
+
     /*_____Right ______*/
     .main-container > .right {
         margin-left: 0;
@@ -248,6 +256,13 @@
 }
 
 @media screen and (max-width: 576px) {
+    /*app*/
+    .application-item{
+        width: calc(50% - 8px);
+        max-width: 182px;
+        margin-right: 5px;
+    }
+    /*End app*/
 }
 
 @media screen and (max-width: 575px) {
