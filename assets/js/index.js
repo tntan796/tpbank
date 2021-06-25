@@ -1,17 +1,5 @@
-document.addEventListener('DOMContentLoaded', (event) => {
-    const inquiryDateRange = document.getElementsByClassName('inquiry-date-range-wrapper')[0];
-    inquiryDateRange.addEventListener('click', function() {
-        document.getElementsByClassName('select-option-date')[0].classList.add('show');
-    })
-});
-
-document.addEventListener('click', e => {
-    if(!e.target.classList.contains('open-options-btn')) {
-        document.getElementsByClassName('select-option-date')[0].classList.remove('show');
-    }
-  });
-
-  window.addEventListener('DOMContentLoaded', (event) => {
+window.addEventListener('DOMContentLoaded', (event) => {
+    // Xử lí mở menu trên mobile
     var menuIcon = document.getElementById('hamburger-menu');
     var menu = document.querySelector('#main-menu.left');
     menuIcon.addEventListener("click", function() {
@@ -21,6 +9,7 @@ document.addEventListener('click', e => {
             menu.classList.add('show');
         }
     })
+
 
     // Xử lí đóng mở dropdown menu
     var menuParentItem = document.querySelectorAll('.menu-item.parent');
@@ -47,6 +36,8 @@ document.addEventListener('click', e => {
     })
 });
 
+
+// xử lí đống menu khi click bất kì
 window.addEventListener("mouseup", (e) => {
     var menu = document.querySelector('#main-menu.left');
     if (menu.classList.contains('show')) {

@@ -101,7 +101,9 @@
         transition: all 0.3s ease;
         transform: translateX(-270px);
     }
-
+    .main-container > .left.show {
+        transform: translateX(0);
+    }
     /*_____Right ______*/
     .main-container > .right {
         margin-left: 0;
@@ -174,7 +176,9 @@
         transition: all 0.3s ease;
         transform: translateX(-270px);
     }
-
+    .main-container > .left.show {
+        transform: translateX(0);
+    }
     /*_____Right ______*/
     .main-container > .right {
         margin-left: 0;

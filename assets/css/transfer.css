@@ -473,6 +473,11 @@ input {
     padding: 0 16px;
 }
 
+.page-header .top-header .logo {
+    height: 20px;
+    margin-left: 8px;
+}
+
 .page-header .top-header #hamburger-menu {
     cursor: pointer;
 }
