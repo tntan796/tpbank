@@ -9,8 +9,8 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link href="./assets/css/saving-create-package.css" rel="stylesheet" />
-    <link href="./assets/css/saving-create-package-responsive.css" rel="stylesheet" />
+    <link href="./assets/css/notification.css" rel="stylesheet" />
+    <link href="./assets/css/notification-responsive.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -121,7 +121,7 @@
                             <div class="menu-icon"></div>
                             <div class="menu-name">Nâng cấp tài khoản</div>
                         </a>
-                       <a class="menu-item" href="/setting-user.html">
+                        <a class="menu-item" href="/setting-user.html">
                             <div class="menu-icon"></div>
                             <div class="menu-name">Thông tin tài khoản</div>
                         </a>
@@ -172,16 +172,13 @@
                     <div class="left-text">
                         <div>
                             <div class="breadcrumb">
-                                <a class="cursor-pointer" href="/index.html"> Trang Chủ
+                                <a class="cursor-pointer" href="/index.html"> Trang chủ
                                     <i class="fas fa-chevron-right"></i>
                                 </a>
-                                <a class="cursor-pointer" href="/saving.html"> Tiết Kiệm
-                                    <i class="fas fa-chevron-right"></i>
-                                </a>
-                                <a class="cursor-pointer">Tạo Gói Tiết Kiệm
+                                <a class="cursor-pointer">Chuyển khoản
                                 </a>
                             </div>
-                            <h1 class="page-title">Tạo Gói Tiết Kiệm</h1>
+                            <h1 class="page-title">Chuyển Khoản</h1>
                         </div>
                     </div>
                     <div class="user-info" id="globalUserInfo">
@@ -210,186 +207,75 @@
                     <div class="left">
 
 
-
-
                         <div class="content-wrap">
-                            <div class="create-saving-package">
-                                <div class="select-package-type d-block">
-                                    <div>
-                                        <div class="title">Lựa chọn loại tiết kiệm để bắt đầu</div>
-                                        <div class="card-select-package">
-                                            <div class="icon-package">
-                                                <img src="./assets/images/icons/saving/ic_piggy_2.svg">
-                                            </div>
-                                            <div class="package-info">
-                                                <div class="package-name">Tiết kiệm Điện Tử</div>
-                                                <div class="package-period">
-                                                    span class="txt-color-2">Kỳ hạn: </span>
-                                                    <span>Từ 1 tuần đến 36 tháng</span>
-                                                </div>
-                                                <div class="package-interest-rate">
-                                                    <div class="interest-rate">
-                                                        <span class="txt-color-2">Lãi suất cao nhất: </span>
-                                                        <span>6.45 %</span>
-                                                    </div>
-                                                    <div class="action">Chọn
-                                                        <i class="fas fa-chevron-right ml-2"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card-select-package">
-                                            <div class="icon-package">
-                                                <img src="./assets/images/icons/saving/ic_gold_2.svg">
-                                            </div>
-                                            <div class="package-info">
-                                                <div class="package-name">Tiết kiệm Tài Lộc Điện Tử</div>
-                                                <div class="package-period">
-                                                    <span class="txt-color-2">Kỳ hạn: </span>
-                                                    <span>4, 5, 7, 13 tháng</span>
-                                                </div>
-                                                <div class="package-interest-rate">
-                                                    <div class="interest-rate">
-                                                        <span class="txt-color-2">Lãi suất cao nhất: </span>
-                                                        <span>6.25 %</span>
-                                                    </div>
-                                                    <div class="action">Chọn
-                                                        <i class="fas fa-chevron-right ml-2"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                            <div class="notification-page">
+                                <div class="tab-list">
+                                    <div class="tab active"> Biến Động Số Dư
+                                    </div>
+                                    <div class="tab"> Ưu đãi
+                                        <span class="have-new-icon"></span>
+                                    </div>
+                                    <div class="tab"> Chung
+                                        <div class="have-new-icon number"> 22 </div>
                                     </div>
                                 </div>
-                                <div class="input-info-package d-none">
-                                    <app-header-button class="show-header-button d-block">
-                                        <div class="button-right-header">
-                                            <div class="content">
-                                                <div style="cursor: pointer;">
-                                                    <span class="btn-header-inner text-link">
-                                                        <img alt="" src="assets/icons/icons-question-fill.svg"
-                                                            style="margin-right: 8px">
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </app-header-button>
-                                    <div class="input-info-package-content">
-                                        <div class="select-account">
-                                            <div class="debit-acc-selector">
-                                                <div class="label-color">Từ tài khoản</div>
-                                                <div class="fw-500 mt-2"> TRAN NGOC TAN </div>
-                                                <div class="fw-500"> 0210 5921 501 </div>
-                                                <div class="fw-500 mt-2" style="font-size: 20px;"> 5,283 VND
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <input class="input-package-name" maxlength="250" spellcheck="false" type="text"
-                                            placeholder="Nhập tên gói">
-                                        <div class="input-money">
-                                            <div class="money-container ng-untouched ng-pristine ng-valid">
-                                                <div class="money-input">
-                                                    <input formcontrolname="money"
-                                                        placeholder="Tối thiểu 10,000,000 VND" maxlength="19"
-                                                        class="ng-untouched ng-pristine ng-valid">
-                                                    <span class="currency">VND</span>
-                                                </div>
-                                                <div class="suggest">
-                                                </div>
-                                            </div>
-                                            <div class="method">
-                                                <div class="method-detail">
-                                                    <p>10,000,000 VND</p>
-                                                </div>
-                                                <div class="method-detail">
-                                                    <p>20,000,000 VND</p>
-                                                </div>
-                                                <div class="method-detail">
-                                                    <p>30,000,000 VND</p>
-                                                </div>
-                                                <div class="method-detail">
-                                                    <p>50,000,000 VND</p>
-                                                </div>
-                                                <div class="method-detail">
-                                                    <p>100,000,000 VND</p>
-                                                </div>
-                                                <div class="method-detail">
-                                                    <p>200,000,000 VND</p>
-                                                </div>
-                                                <div class="method-detail">
-                                                    <p>300,000,000 VND</p>
-                                                </div>
-                                                <div class="method-detail">
-                                                    <p>500,000,000 VND</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="select-interest-rate">
-                                            <div class="select-container">
-                                                <div class="select-container__wrap-top">
-                                                    <span class="select-container__placeholder">Chọn kỳ
-                                                        hạn</span>
-                                                    <img class="select-container__icon"
-                                                        src="assets/icons/chevron-right-solid.svg" width="8px">
-                                                </div>
-                                                <div
-                                                    class="select-container__wrap-items select-container__wrap-items--height">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="interest-amount">
-                                            <span style="color: #ad8ad8">Lãi tạm tính cuối kỳ</span>
-                                            <span style="font-size: 20px;font-weight: 500">-- </span>
-                                        </div>
-                                        <div class="setting-autoroll">
-                                            <div class="select-container">
-                                                <div class="select-container__wrap-top">
-                                                    <span class="select-container__placeholder">Cài đặt tự động
-                                                        tái tục</span>
-                                                    <img class="select-container__icon"
-                                                        src="assets/icons/chevron-right-solid.svg" width="8px">
-                                                </div>
-                                                <div
-                                                    class="select-container__wrap-items select-container__wrap-items--height">
-                                                    <div class="select-container__select-option"> Nhận cả gốc và
-                                                        lãi </div>
-                                                    div class="select-container__select-option"> Nhận lãi,
-                                                    chuyển gốc sang kỳ hạn mới
-                                                </div>
-                                                <div class="select-container__select-option"> Chuyển cả gốc và
-                                                    lãi sang kỳ hạn mới </div>
-                                            </div>
-                                        </div>
+                                <div class="list">
+                                    <div class="item notification-list-item read-noti">
+                                        <div class="message">(TPBank): 25/06/21;14:16
+                                            TK: xxxx5921501
+                                            PS:+1.000.000VND
+                                            SD: 1.005.324VND
+                                            SD KHA DUNG: 1.005.324VND
+                                            ND: anh manh gui tien</div>
+                                        <div class="date">25/06 14:28</div>
+                                        <i class="fas fa-trash btn-delete"></i>
                                     </div>
-                                    <div class="select-account d-none">
-                                        <div>
-                                            <div class="position-relative tpb-dropdown">
-                                                <div class="child-2-side display-area active">
-                                                    <div>
-                                                        <span>0210 5921 501 - TRAN NGOC TAN</span>
-                                                    </div>
-                                                    <div class="text-secondary">
-                                                        <i class="fas fa-chevron-down"></i>
-                                                        <i class="fas fa-chevron-up d-none"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div class="item notification-list-item read-noti">
+                                        <div class="message">(TPBank):23/06/21;17:21
+                                            TK: xxxx5921501
+                                            PS: -1.000.000VND
+                                            SD: 5.283VND
+                                            SD KHA DUNG: 5.283VND
+                                            ND: RUT TIEN TAI ATM</div>
+                                        <div class="date">23/06 17:21</div>
+                                        <i class="fas fa-trash btn-delete"></i>
                                     </div>
-                                    <button class="btn btn-primary w-100" disabled="">Tiếp tục</button>
+                                    <div class="item notification-list-item read-noti">
+                                        <div class="message">(TPBank): 22/06/21;17:42
+                                            TK: xxxx5921501
+                                            PS:-3.565.000VND
+                                            SD: 1.005.283VND
+                                            SD KHA DUNG: 1.005.283VND
+                                            ND: TRAN NGOC TAN chuyen tien</div>
+                                        <div class="date">22/06 17:43</div>
+                                        <i class="fas fa-trash btn-delete"></i>
+                                    </div>
+                                    <div class="item notification-list-item read-noti">
+                                        <div class="message">(TPBank): 13/06/21;09:14
+                                            TK: xxxx5921501
+                                            PS:-50.000VND
+                                            SD: 2.639VND
+                                            SD KHA DUNG: 2.639VND
+                                            ND: NAP TIEN VI MOMO - 0964909796 - 12816082480</div>
+                                        <div class="date">13/06 09:15</div>
+                                        <i class="fas fa-trash btn-delete"></i>
+                                    </div>
+                                </div>
+                                <img class="btn-check-all" src="./assets/images/icons/check-all.svg">
+                            </div>
+                        </div>
+                        <div class="d-none">
+                            <div class="mx-auto" style="width: 496px;">
+                                <div class="preview d-none" style="height: 673px; overflow: hidden">
+                                    <div>
+                                        <img src="./assets/images/icons/bao-lixi.svg">
+                                    </div>
+                                    <div class="lottieContainer d-none">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <app-modal class="not-enough-money modal-text">
-                        </app-modal>
-                        <app-modal class="not-enough-money modal-text">
-                        </app-modal>
-                        <app-modal class="not-enough-money not-money">
-                        </app-modal>
-                        <app-modal class="modal-lucky-money"></app-modal>
                     </div>
-
-
 
 
 
@@ -398,8 +284,8 @@
                     <div class="quick-links">
                         <div class="title"> Tiện ích nhanh </div>
                         <div class="body">
-                            <a routerlink="/main/transfer/internal" href="/retail/vX/main/transfer/internal">Chuyển tiền
-                                trong ngân hàng
+                            <a routerlink="/main/transfer/internal" href="/retail/vX/main/transfer/internal">Chuyển
+                                tiền trong ngân hàng
                                 <i class="fas fa-chevron-right"></i>
                             </a>
                             <a routerlink="/main/transfer/interbank" href="/retail/vX/main/transfer/interbank">Chuyển
@@ -409,8 +295,8 @@
                             <a routerlink="/main/bill" href="/retail/vX/main/bill">Thanh toán hoá đơn
                                 <i class="fas fa-chevron-right"></i>
                             </a>
-                            <a routerlink="/main/inquiry/credit-card" href="/retail/vX/main/inquiry/credit-card">Tra cứu
-                                thẻ tín dụng
+                            <a routerlink="/main/inquiry/credit-card" href="/retail/vX/main/inquiry/credit-card">Tra
+                                cứu thẻ tín dụng
                                 <i class="fas fa-chevron-right"></i>
                             </a>
                             <a routerlink="/main/mobile" href="/retail/vX/main/mobile">Nạp tiền điện thoại
@@ -546,7 +432,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script src="./assets/js/saving-create-package.js"></script>
+    <script src="./assets/js/notification.js"></script>
 </body>
 
 </html>
