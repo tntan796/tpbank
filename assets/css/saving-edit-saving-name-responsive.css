@@ -254,6 +254,7 @@
 }
 
 @media screen and (max-width: 575px) {
+    /*Saving Edit Name*/
     .edit-new-name {
         width: 100%;
     }
@@ -261,4 +262,5 @@
         width: 100%!important;
         margin: 0!important;
     }
+    /*Saving Edit name*/
 }
