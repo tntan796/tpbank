@@ -167,6 +167,7 @@
 }
 
 @media screen and (max-width: 832px) {
+    /*Setting Auth */
     .show-header-button .button-right-header {
         margin-right: 32px;
     }
@@ -174,6 +175,7 @@
         width: 100%;
         max-width: unset;
     }
+    /*Setting Auth */
 }
 
 @media only screen and (max-width: 767px) {
