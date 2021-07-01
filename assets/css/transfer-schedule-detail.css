@@ -486,29 +486,67 @@ input {
     justify-content: center;
 }
 
-.show {
-    display: block;
-}
-
-.hide {
-    display: none;
-}
-
 .tpb-date-picker2 {
     position: relative;
     background-color: #fcfcfc;
 }
 
-button, [type=button], [type=reset], [type=submit] {
-    -webkit-appearance: button;
+.tpb-date-picker2 input {
+    transition: none;
 }
 
-button, select {
-    text-transform: none;
+.tpb-date-picker2 i.fa-calendar {
+    position: absolute;
+    font-size: 23px;
+    right: 13px;
+    top: 10px;
+    cursor: pointer;
+    color: #ff9800;
 }
 
-button, [type=button], [type=reset], [type=submit] {
-    -webkit-appearance: button;
+.txtHiddenInput {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    visibility: hidden;
+}
+
+.tpb-date-picker2 input {
+    transition: none;
+}
+
+#monthly-schedule-setting, #weekly-schedule-setting {
+    padding-top: 25px;
+}
+
+.tpb-month-picker {
+    position: relative;
+    background-color: #fcfcfc;
+}
+.tpb-month-picker input {
+    transition: none;
+}
+
+.tpb-month-picker i.fa-calendar {
+    position: absolute;
+    font-size: 23px;
+    right: 13px;
+    top: 10px;
+    cursor: pointer;
+    color: #ff9800;
+}
+
+.txtHiddenInput {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    visibility: hidden;
+}
+
+.tpb-month-picker input {
+    transition: none;
 }
 /*end schedule detail */
 
