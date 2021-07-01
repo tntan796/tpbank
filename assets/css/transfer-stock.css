@@ -480,6 +480,8 @@ input {
     margin: 0 auto;
 }
 
+/*Transfer stock*/
+
 .stock {
     display: flex;
     justify-content: space-between;
@@ -512,6 +514,7 @@ input {
     align-items: center;
     color: #ff9800;
 }
+/*Transfer stock*/
 
 /*__End page left__*/
 

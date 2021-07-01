@@ -12,21 +12,6 @@
     .main-container > .right .page-body .left {
         margin-right: 30px;
     }
-
-    /*Transfer internal*/
-    .transfer-wrap-component {
-        width: 800px;
-        display: flex;
-        justify-content: center;
-    }
-    .transfer-container {
-        position: relative;
-        padding: 0;
-        margin: 32px auto auto;
-        width: 496px;
-    }
-    /*End Transfer internal*/
-
     /*_____Footer _____*/
     app-footer .footer-1 {
         padding: 20px 30px;
@@ -92,16 +77,6 @@
     app-footer .footer-1 {
         padding: 20px 30px;
     }
-}
-
-@media screen and (max-width: 1130px) {
-    /*Transfer internal*/
-    .transfer-wrap-component {
-        width: 736px;
-        display: flex;
-        justify-content: center;
-    }
-    /*End Transfer internal*/
 }
 
 @media only screen and (max-width: 1129px) {
@@ -272,34 +247,4 @@
     app-footer .footer-2 {
         display: none;
     }
-}
-
-@media screen and (max-width: 576px) {
-/*Transfer internal*/
-.transfer-wrap-component {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.transfer-container {
-    position: relative;
-    padding: 0;
-    margin: 32px auto auto;
-    width: 100%;
-}
-/*End Transfer internal*/
-}
-
-@media screen and (max-width: 575px) {
-   /*transer internel */
-   .method-detail {
-        width: 47%;
-    }
-    .btn-primary {
-        margin-bottom: 15px;
-    }
-    .btn-primary, .btn-secondary, .button {
-        width: 100%;
-    }
-   /*End transer internel */
 }
