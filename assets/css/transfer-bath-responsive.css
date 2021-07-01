@@ -9,6 +9,16 @@
     }
     /*____ End Page body _____*/
 
+    /* transfer bath*/
+    .batch-upload-file .row {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        font-size: 14px;
+        text-align: center;
+    }
+    /* end transfer bath*/
+
     .main-container > .right .page-body .left {
         margin-right: 30px;
     }
@@ -29,7 +39,7 @@
     .batch-upload-file .slide-section {
         width: 100%;
     }
-
+    
     .batch-upload-file .row {
         display: flex;
         justify-content: center;
@@ -37,7 +47,7 @@
         font-size: 14px;
         text-align: center;
     }
-    
+
     .batch-upload-file .row .text-1 {
         padding-left: 10px;
         padding-right: 10px;

@@ -487,6 +487,7 @@ input {
     position: relative;
 }
 
+
 .label-color {
     color: #AD8AD8;
 }
@@ -533,6 +534,13 @@ input {
     width: 50px;
     height: 64px;
     margin: 22px 0;
+}
+
+.upload-document-container .select-file-button {
+    color: #ff9800;
+    margin: 0;
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .upload-document-container .upload-document-wrap input {

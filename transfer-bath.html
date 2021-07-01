@@ -121,7 +121,7 @@
                             <div class="menu-icon"></div>
                             <div class="menu-name">Nâng cấp tài khoản</div>
                         </a>
-                       <a class="menu-item" href="/setting-user.html">
+                        <a class="menu-item" href="/setting-user.html">
                             <div class="menu-icon"></div>
                             <div class="menu-name">Thông tin tài khoản</div>
                         </a>
@@ -185,7 +185,8 @@
                         </div>
                     </div>
                     <div class="user-info" id="globalUserInfo">
-                        <i class="fas fa-bell" id="notification-btn" tabindex="0" onclick="window.location.replace('/notification.html');">
+                        <i class="fas fa-bell" id="notification-btn" tabindex="0"
+                            onclick="window.location.replace('/notification.html');">
                             <div class="notification-active-icon"></div>
                         </i>
                         <div id="user-btn">
@@ -211,61 +212,59 @@
 
 
                         <div class="content-wrap">
-                            <div class="batch">
-                                <div>
-                                    <div class="batch-upload-file">
-                                        <div class="slide-section mx-auto mb-4" style="max-width: 500px">
-                                            <div class="debit-acc-selector">
-                                                <div class="label-color">Từ tài khoản</div>
-                                                <div class="fw-500 mt-2"> TRAN NGOC TAN </div>
-                                                <div class="fw-500"> 0210 5921 501 </div>
-                                                <div class="fw-500 mt-2" style="font-size: 20px;"> 5,283 VND </div>
+                                <div class="batch">
+                                    <div>
+                                        <div class="batch-upload-file">
+                                            <div class="slide-section mx-auto mb-4" style="max-width: 500px">
+                                                <div class="debit-acc-selector">
+                                                    <div class="label-color">Từ tài khoản</div>
+                                                    <div class="fw-500 mt-2"> TRAN NGOC TAN </div>
+                                                    <div class="fw-500"> 0210 5921 501 </div>
+                                                    <div class="fw-500 mt-2" style="font-size: 20px;"> 544,991 VND
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <app-modal>
-                                            </app-modal>
-                                        </div>
-                                        <div class="row">
-                                            <span class="text-1"> * Quý khách có thể chuyển tiền theo danh sách bằng
-                                                cách upload thông tin giao dịch dưới dạng file Excel theo mẫu của
-                                                TPBank. </span>
-                                        </div>
-                                        <div class="row">
-                                            <span class="text-2"> ** Giới hạn tối đa là 200 giao dịch/lần chuyển theo danh sách. </span>
-                                        </div>
-                                        <div class="row">
-                                            <a class="file-upload">
-                                                <img class="icon-download"
-                                                    src="assets/images/icons/transfer/Icons_DownLoad.svg"> Tải xuống file mẫu </a>
-                                        </div>
-                                        <div class="row">
-                                            <div class="file-section">
-                                                <div class="app-upload-file" uploadtype="upload-excel">
-                                                    <div class="upload-document-container">
-                                                        <div class="upload-document-wrap">
-                                                            <div class="upload-inner">
-                                                                <div class="upload-title">Tải lên danh sách chuyển khoản
+                                            <div class="row">
+                                                <span class="text-1"> * Quý khách có thể chuyển tiền theo danh sách bằng
+                                                    cách upload thông tin giao dịch dưới dạng file Excel theo mẫu của
+                                                    TPBank. </span>
+                                            </div>
+                                            <div class="row">
+                                                <span class="text-2"> ** Giới hạn tối đa là 200 giao dịch/lần chuyển
+                                                    theo danh sách. </span>
+                                            </div>
+                                            <div class="row">
+                                                <a class="file-upload">
+                                                    <img class="icon-download" src="/assets/images/icons/transfer/Icons_DownLoad.svg">
+                                                    Tải xuống file mẫu </a>
+                                            </div>
+                                            <div class="row">
+                                                <div class="file-section">
+                                                    <div uploadtype="upload-excel">
+                                                        <div class="upload-document-container">
+                                                            <div class="upload-document-wrap">
+                                                                <div class="upload-inner">
+                                                                    <div class="upload-title">Tải lên danh sách chuyển khoản</div>
+                                                                    <img alt="" class="upload-icon"
+                                                                        src="/assets/images/icons/transfer/ic_file_upload_inactive.svg">
+                                                                    <div class="upload-description">
+                                                                        <label class="select-file-button" for="myFile">Chọn file</label>
+                                                                        <span>&nbsp;hoặc kéo thả file vào đây</span>
+                                                                    </div>
+                                                                    <input id="myFile" name="myFile" type="file"
+                                                                        accept="application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/csv,application/x-csv,text/csv,text/comma-separated-values,text/x-comma-separated-values,text/tab-separated-values">
                                                                 </div>
-                                                                <img alt="" class="upload-icon"
-                                                                    src="assets/images/icons/transfer/ic_file_upload_inactive.svg">
-                                                                <div class="upload-description">
-                                                                    <label class="select-file-button" for="myFile">Chọn
-                                                                        file</label>
-                                                                    <span>&nbsp;hoặc kéo thả file vào đây</span>
-                                                                </div>
-                                                                <input id="myFile" name="myFile" type="file"
-                                                                    accept="application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/csv,application/x-csv,text/csv,text/comma-separated-values,text/x-comma-separated-values,text/tab-separated-values">
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="row">
-                                            <button class="btn-default btn-primary" onclick="window.location.replace('/transfer-bath-list.html');">Tiếp tục</button>
+                                            <div class="row">
+                                                <button class="btn-default btn-primary" disabled="disabled">Tiếp tục</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
                         </div>
 
                     </div>
