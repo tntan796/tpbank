@@ -9,27 +9,47 @@
     }
     /*____ End Page body _____*/
 
-    .main-container > .right .page-body .left {
-        margin-right: 30px;
+    /* Transfer bath*/
+    .batch-upload-file .slide-section {
+        width: 100%;
     }
-    /*_____Footer _____*/
-    app-footer .footer-1 {
-        padding: 20px 30px;
+
+    .batch-upload-file .row .text-1 {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 450px;
     }
-    /*_____ End Footer _____*/
-}
 
-@media only screen and (max-width: 1439px) {
-    /*_____Left container _____*/
-    .main-container > .left {
-        transition: none;
-        transform: none;
+    .batch-upload-file .row .text-2 {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 10px;
+        width: 450px;
     }
-    /*___End left container ____*/
 
+    .batch-upload-file .row .file-upload {
+        color: #ff9800;
+        margin-top: 15px;
+        height: 24px;
+        cursor: pointer;
+    }
 
+    .batch-upload-file .row .file-upload .icon-download {
+        margin-bottom: 4px;
+        margin-right: 10px;
+    }
 
-    /*Bath*/
+    .batch-upload-file .row .file-section {
+        width: 500px;
+        margin-top: 30px;
+    }
+
+    .batch-upload-file .row .btn-default {
+        width: 345px;
+        height: 48px;
+        margin-top: 25px;
+    }
+
     .batch-verify .account-info-section {
         height: -webkit-fit-content;
         height: -moz-fit-content;
@@ -37,10 +57,6 @@
         background-color: #fff;
         border-radius: 5px;
         display: flex;
-    } 
-
-    .batch-verify .account-info-section .left-section {
-        width: 50%;
     }
 
     .batch-verify .account-info-section .left-section {
@@ -72,7 +88,7 @@
         min-height: 100%;
     }
 
-    section .left-section .item3 .transfer-info-card .message {
+    .batch-verify .account-info-section .left-section .item3 .transfer-info-card .message {
         font-size: 14px;
         font-weight: 500;
         height: 24px;
@@ -95,7 +111,7 @@
     .batch-verify .account-info-section .right-section .item2 .account-card {
         height: 100%;
     }
-
+    
     .batch-verify .account-info-section .right-section .item2 .account-card .account-name {
         font-size: 14px;
         font-weight: 500;
@@ -114,10 +130,10 @@
         width: 100%;
         min-height: 105px;
     }
-
     .batch-verify .account-info-section .right-section .item4 .transfer-info-card {
         height: 100%;
     }
+
     .batch-verify .account-info-section .right-section .item4 .transfer-info-card .message {
         font-size: 14px;
         font-weight: 500;
@@ -133,6 +149,11 @@
         height: 48px;
         margin-left: calc(50% - 308px);
     }
+    .batch-verify .action-section .btn-center, .batch-verify .action-section .btn-right {
+        width: 192px;
+        height: 48px;
+        margin-left: 20px;
+    }
 
     .batch-verify .line-vertical-full {
         height: 1px;
@@ -144,6 +165,14 @@
         display: flex;
         justify-content: space-between;
         margin-right: 3px;
+    }
+
+    .batch-verify .list-account-section .input-display-type .error-notification {
+        width: 530px;
+        height: 48px;
+        font-size: 16px;
+        margin-top: 20px;
+        margin-left: 10px;
     }
 
     .batch-verify .list-account-section .input-display-type .select-container {
@@ -164,15 +193,16 @@
     .batch-verify .list-account-section .table-section table {
         width: 100%;
     }
-    .batch-verify .list-account-section .table-section table tbody .highlight-row {
-        background-color: #e2d8ee;
-    }
 
     .batch-verify .list-account-section .table-section table tbody tr {
         min-height: 57px;
         background-color: #fff;
         font-size: 13px;
         font-weight: 400;
+    }
+
+    .batch-verify .list-account-section .table-section table tbody .highlight-row {
+        background-color: #e2d8ee;
     }
 
     .batch-verify .list-account-section .table-section table tbody tr .table-text {
@@ -187,6 +217,13 @@
         text-align: center;
         padding: 5px;
     }
+
+    .batch-verify .list-account-section .table-section table tbody tr .table-text {
+        min-height: 57px;
+        padding: 10px 0;
+        word-wrap: break-word;
+    }
+
     .batch-verify .list-account-section .table-bottom {
         margin-left: 2px;
         height: 50px;
@@ -209,11 +246,13 @@
         min-width: 80px;
         height: 50px;
     }
+
     .batch-verify .list-account-section .table-bottom .pagination {
         width: 400px;
         margin-top: 0;
         justify-content: flex-end!important;
     }
+
     .batch-verify .list-account-section .table-bottom .pagination .paginator {
         display: flex;
         justify-content: flex-end!important;
@@ -235,20 +274,373 @@
         padding: 10px 20px;
         border-radius: 3px;
     }
+
+    .batch-verify .list-account-section .table-bottom .pagination .paginator li {
+        background-color: #fff;
+        cursor: pointer;
+        width: 32px;
+        margin-right: 1px;
+        padding: 10px 20px;
+        border-radius: 3px;
+    }
+
+    .batch-verify .list-account-section .table-bottom .pagination .paginator .item-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .batch-verify .list-account-section .table-bottom .pagination .paginator li {
+        background-color: #fff;
+        cursor: pointer;
+        width: 32px;
+        margin-right: 1px;
+        padding: 10px 20px;
+        border-radius: 3px;
+    }
+
+    .batch-verify .list-account-section .table-bottom .pagination .paginator .item-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .batch-verify .list-account-section .table-bottom .pagination .paginator .enable-page {
         color: #ff9800;
         text-decoration: underline;
-    }
-
-    .batch-verify .list-account-section .table-bottom .pagination .paginator .item-page .page {
-        font-size: 14px;
     }
 
     .batch-verify .list-account-section .table-bottom .pagination .paginator .button-last {
         display: flex;
         justify-content: center;
     }
-    /*End Bath*/
+    /*End Bath List*/
+    .main-container > .right .page-body .left {
+        margin-right: 30px;
+    }
+    /*_____Footer _____*/
+    app-footer .footer-1 {
+        padding: 20px 30px;
+    }
+    /*_____ End Footer _____*/
+}
+
+@media only screen and (max-width: 1439px) {
+    /*_____Left container _____*/
+    .main-container > .left {
+        transition: none;
+        transform: none;
+    }
+    /*___End left container ____*/
+
+
+
+    /*Bath List*/
+    .batch-upload-file .slide-section {
+        width: 100%;
+    }
+
+    .batch-upload-file .row .text-1 {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 450px;
+    }
+
+    .batch-upload-file .row .text-2 {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 10px;
+        width: 450px;
+    }
+
+    .batch-upload-file .row .file-upload {
+        color: #ff9800;
+        margin-top: 15px;
+        height: 24px;
+        cursor: pointer;
+    }
+
+    .batch-upload-file .row .file-upload .icon-download {
+        margin-bottom: 4px;
+        margin-right: 10px;
+    }
+
+    .batch-upload-file .row .file-section {
+        width: 500px;
+        margin-top: 30px;
+    }
+
+    .batch-upload-file .row .btn-default {
+        width: 345px;
+        height: 48px;
+        margin-top: 25px;
+    }
+
+    .batch-verify .account-info-section {
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        background-color: #fff;
+        border-radius: 5px;
+        display: flex;
+    }
+
+    .batch-verify .account-info-section .left-section {
+        width: 50%;
+    }
+
+    .batch-verify .account-info-section .left-section .item1 {
+        width: 100%;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+    }
+
+    .batch-verify .account-info-section .left-section .item1 .transfer-info-card {
+        height: 100%;
+        padding-left: 5%;
+    }
+
+    .batch-verify .account-info-section .left-section .item1 .transfer-info-card .title {
+        font-weight: 500;
+    }
+
+    .batch-verify .account-info-section .left-section .item3 {
+        width: 100%;
+        height: 105px;
+    }
+
+    .batch-verify .account-info-section .left-section .item3 .transfer-info-card {
+        min-height: 100%;
+    }
+
+    .batch-verify .account-info-section .left-section .item3 .transfer-info-card .message {
+        font-size: 14px;
+        font-weight: 500;
+        height: 24px;
+    }
+
+    .batch-verify .account-info-section .right-section {
+        width: 50%;
+        border-left: 1px solid #e6e9ee;
+    }
+
+    .batch-verify .account-info-section .right-section .item2 {
+        width: 100%;
+        height: 127px;
+    }
+
+    .batch-verify .account-info-section .right-section .item2 .line-vertical {
+        height: 0!important;
+    }
+
+    .batch-verify .account-info-section .right-section .item2 .account-card {
+        height: 100%;
+    }
+    
+    .batch-verify .account-info-section .right-section .item2 .account-card .account-name {
+        font-size: 14px;
+        font-weight: 500;
+        height: 24px;
+        margin-top: 5px;
+    }
+
+    .batch-verify .account-info-section .right-section .item2 .account-card .account-number {
+        font-size: 14px;
+        font-weight: 400;
+        height: 24px;
+        margin-top: 5px;
+    }
+
+    .batch-verify .account-info-section .right-section .item4 {
+        width: 100%;
+        min-height: 105px;
+    }
+    .batch-verify .account-info-section .right-section .item4 .transfer-info-card {
+        height: 100%;
+    }
+
+    .batch-verify .account-info-section .right-section .item4 .transfer-info-card .message {
+        font-size: 14px;
+        font-weight: 500;
+        height: 24px;
+    }
+
+    .batch-verify .action-section {
+        margin-top: 25px;
+    }
+
+    .batch-verify .action-section .btn-left {
+        width: 192px;
+        height: 48px;
+        margin-left: calc(50% - 308px);
+    }
+    .batch-verify .action-section .btn-center, .batch-verify .action-section .btn-right {
+        width: 192px;
+        height: 48px;
+        margin-left: 20px;
+    }
+
+    .batch-verify .line-vertical-full {
+        height: 1px;
+        background-color: #e6e9ee;
+        margin-top: 30px;
+    }
+
+    .batch-verify .list-account-section .input-display-type {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 3px;
+    }
+
+    .batch-verify .list-account-section .input-display-type .error-notification {
+        width: 530px;
+        height: 48px;
+        font-size: 16px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    .batch-verify .list-account-section .input-display-type .select-container {
+        min-width: 140px;
+        margin-top: 20px;
+        height: 50px;
+    }
+
+    .batch-verify .list-account-section .table-section {
+        margin-top: 30px;
+    }
+
+    .batch-verify .list-account-section .table-section .table-scroll {
+        overflow-x: auto;
+        width: 800px;
+    }
+
+    .batch-verify .list-account-section .table-section table {
+        width: 100%;
+    }
+
+    .batch-verify .list-account-section .table-section table tbody tr {
+        min-height: 57px;
+        background-color: #fff;
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .batch-verify .list-account-section .table-section table tbody .highlight-row {
+        background-color: #e2d8ee;
+    }
+
+    .batch-verify .list-account-section .table-section table tbody tr .table-text {
+        min-height: 57px;
+        padding: 10px 0;
+        word-wrap: break-word;
+    }
+
+    .batch-verify .list-account-section .table-section table tbody .error-message {
+        font-weight: 500;
+        color: #ff3b30;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .batch-verify .list-account-section .table-section table tbody tr .table-text {
+        min-height: 57px;
+        padding: 10px 0;
+        word-wrap: break-word;
+    }
+
+    .batch-verify .list-account-section .table-bottom {
+        margin-left: 2px;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .batch-verify .list-account-section .table-bottom .display-select {
+        display: flex;
+        width: 150px;
+        justify-content: space-between;
+    }
+
+    .batch-verify .list-account-section .table-bottom .display-select span {
+        margin-top: 8px;
+        font-weight: 500;
+    }
+
+    .batch-verify .list-account-section .table-bottom .display-select .select-container {
+        min-width: 80px;
+        height: 50px;
+    }
+
+    .batch-verify .list-account-section .table-bottom .pagination {
+        width: 400px;
+        margin-top: 0;
+        justify-content: flex-end!important;
+    }
+
+    .batch-verify .list-account-section .table-bottom .pagination .paginator {
+        display: flex;
+        justify-content: flex-end!important;
+        list-style-type: none;
+        margin: 0;
+    }
+
+    .batch-verify .list-account-section .table-bottom .pagination .paginator .item-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .batch-verify .list-account-section .table-bottom .pagination .paginator li {
+        background-color: #fff;
+        cursor: pointer;
+        width: 32px;
+        margin-right: 1px;
+        padding: 10px 20px;
+        border-radius: 3px;
+    }
+
+    .batch-verify .list-account-section .table-bottom .pagination .paginator li {
+        background-color: #fff;
+        cursor: pointer;
+        width: 32px;
+        margin-right: 1px;
+        padding: 10px 20px;
+        border-radius: 3px;
+    }
+
+    .batch-verify .list-account-section .table-bottom .pagination .paginator .item-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .batch-verify .list-account-section .table-bottom .pagination .paginator li {
+        background-color: #fff;
+        cursor: pointer;
+        width: 32px;
+        margin-right: 1px;
+        padding: 10px 20px;
+        border-radius: 3px;
+    }
+
+    .batch-verify .list-account-section .table-bottom .pagination .paginator .item-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .batch-verify .list-account-section .table-bottom .pagination .paginator .enable-page {
+        color: #ff9800;
+        text-decoration: underline;
+    }
+
+    .batch-verify .list-account-section .table-bottom .pagination .paginator .button-last {
+        display: flex;
+        justify-content: center;
+    }
+    /*End Bath List*/
 
     /*_____Right ______*/
     .main-container > .right {
@@ -331,7 +723,7 @@
     /*___End left container___*/
     
 
-    /*Bath*/
+    /*Bath List*/
     .batch-verify {
         display: flex;
         flex-direction: column;
@@ -345,11 +737,6 @@
         background-color: #fff;
         border-radius: 5px;
         display: flex;
-    }
-
-
-    .batch-verify .account-info-section .left-section {
-        width: 50%;
     }
 
     .batch-verify .account-info-section .left-section {
@@ -424,6 +811,7 @@
     .batch-verify .account-info-section .right-section .item4 .transfer-info-card {
         height: 100%;
     }
+
     .batch-verify .account-info-section .right-section .item4 .transfer-info-card .message {
         font-size: 14px;
         font-weight: 500;
@@ -451,10 +839,21 @@
         background-color: #e6e9ee;
         margin-top: 30px;
     }
+
     .batch-verify .list-account-section .input-display-type {
         display: flex;
         justify-content: space-between;
         margin-right: 3px;
+    }
+
+    .batch-verify .list-account-section .input-display-type .error-notification {
+        width: 530px;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        font-size: 16px;
+        margin-top: 20px;
+        margin-left: 10px;
     }
 
     .batch-verify .list-account-section .input-display-type .select-container {
@@ -475,14 +874,16 @@
     .batch-verify .list-account-section .table-section table {
         width: 800px;
     }
-    .batch-verify .list-account-section .table-section table tbody .highlight-row {
-        background-color: #e2d8ee;
-    }
+
     .batch-verify .list-account-section .table-section table tbody tr {
         min-height: 57px;
         background-color: #fff;
         font-size: 13px;
         font-weight: 400;
+    }
+
+    .batch-verify .list-account-section .table-section table tbody .highlight-row {
+        background-color: #e2d8ee;
     }
 
     .batch-verify .list-account-section .table-section table tbody tr .table-text {
@@ -497,12 +898,18 @@
         padding: 5px;
     }
 
+    .batch-verify .list-account-section .table-section table tbody tr .table-text {
+        min-height: 57px;
+        padding-top: 10px;
+    }
+
     .batch-verify .list-account-section .table-bottom {
         margin-left: 2px;
         height: 100px;
         display: flex;
         justify-content: space-between;
     }
+
     .batch-verify .list-account-section .table-bottom .display-select {
         display: flex;
         width: 150px;
@@ -526,6 +933,7 @@
         margin-top: 0;
         justify-content: flex-end!important;
     }
+
     .batch-verify .list-account-section .table-bottom .pagination .paginator {
         display: flex;
         justify-content: flex-end!important;
@@ -533,12 +941,45 @@
         margin: 0;
         padding: 0;
     }
+
     .batch-verify .list-account-section .table-bottom .pagination .paginator li {
         background-color: #fff;
         cursor: pointer;
         width: 32px;
         margin-right: 1px;
         border-radius: 3px;
+    }
+    .batch-verify .list-account-section .table-bottom .pagination .paginator .item-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .batch-verify .list-account-section .table-bottom .pagination .paginator .item-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .batch-verify .list-account-section .table-bottom .pagination .paginator li {
+        background-color: #fff;
+        cursor: pointer;
+        width: 32px;
+        margin-right: 1px;
+        border-radius: 3px;
+    }
+
+    .batch-verify .list-account-section .table-bottom .pagination .paginator li {
+        background-color: #fff;
+        cursor: pointer;
+        width: 32px;
+        margin-right: 1px;
+        border-radius: 3px;
+    }
+
+    .batch-verify .list-account-section .table-bottom .pagination .paginator .enable-page {
+        color: #ff9800;
+        text-decoration: underline;
     }
 
     .batch-verify .list-account-section .table-bottom .pagination .paginator .item-page {
@@ -552,14 +993,11 @@
         text-decoration: underline;
     }
 
-    .batch-verify .list-account-section .table-bottom .pagination .paginator .item-page .page {
-        font-size: 14px;
-    }
     .batch-verify .list-account-section .table-bottom .pagination .paginator .button-last {
         display: flex;
         justify-content: center;
     }
-    /*End Bath*/
+    /*End Bath List*/
 
     /*_____Right ______*/
     .main-container > .right {
@@ -630,13 +1068,7 @@
     /*_________End Left Contain______*/
 
 
-    /*Bath*/
-    .batch-verify {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
+    /*Bath List*/
     .batch-verify .account-info-section {
         background-color: #fff;
         border-radius: 5px;
@@ -645,14 +1077,6 @@
         height: -webkit-fit-content;
         height: -moz-fit-content;
         height: fit-content;
-    }
-
-    .batch-verify .account-info-section .left-section {
-        width: 100%;
-    }
-
-    .batch-verify .account-info-section .left-section {
-        width: 100%;
     }
 
     .batch-verify .account-info-section .left-section .item1 {
@@ -696,7 +1120,7 @@
         height: 1px!important;
         display: block;
     }
-    
+
     .batch-verify .account-info-section .right-section .item2 .account-card {
         height: 100%;
     }
@@ -707,7 +1131,6 @@
         height: 24px;
         margin-top: 5px;
     }
-
     .batch-verify .account-info-section .right-section .item2 .account-card .account-number {
         font-size: 14px;
         font-weight: 400;
@@ -723,6 +1146,7 @@
     .batch-verify .account-info-section .right-section .item4 .transfer-info-card {
         height: 100%;
     }
+
     .batch-verify .account-info-section .right-section .item4 .transfer-info-card .message {
         font-size: 14px;
         font-weight: 500;
@@ -755,11 +1179,22 @@
         margin-right: 3px;
     }
 
+    .batch-verify .list-account-section .input-display-type .error-notification {
+        width: 530px;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        font-size: 16px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
     .batch-verify .list-account-section .input-display-type .select-container {
         min-width: 140px;
         margin-top: 20px;
         height: 50px;
     }
+
     .batch-verify .list-account-section .table-section {
         margin-top: 30px;
     }
@@ -773,15 +1208,17 @@
         width: 800px;
     }
 
-    .batch-verify .list-account-section .table-section table tbody .highlight-row {
-        background-color: #e2d8ee;
-    }
     .batch-verify .list-account-section .table-section table tbody tr {
         min-height: 57px;
         background-color: #fff;
         font-size: 13px;
         font-weight: 400;
     }
+
+    .batch-verify .list-account-section .table-section table tbody .highlight-row {
+        background-color: #e2d8ee;
+    }
+
 
     .batch-verify .list-account-section .table-section table tbody tr .table-text {
         min-height: 57px;
@@ -794,6 +1231,12 @@
         text-align: center;
         padding: 5px;
     }
+
+    .batch-verify .list-account-section .table-section table tbody tr .table-text {
+        min-height: 57px;
+        padding-top: 10px;
+    }
+
     .batch-verify .list-account-section .table-bottom {
         margin-left: 2px;
         height: 100px;
@@ -816,6 +1259,7 @@
         min-width: 80px;
         height: 50px;
     }
+
     .batch-verify .list-account-section .table-bottom .pagination {
         width: 400px;
         display: flex;
@@ -823,12 +1267,35 @@
         justify-content: flex-end!important;
         padding: 0 0 20px;
     }
+
     .batch-verify .list-account-section .table-bottom .pagination .paginator {
         display: flex;
         justify-content: flex-end!important;
         list-style-type: none;
         margin: 0;
         padding: 0;
+    }
+
+    .batch-verify .list-account-section .table-bottom .pagination .paginator li {
+        background-color: #fff;
+        cursor: pointer;
+        width: 32px;
+        margin-right: 1px;
+        border-radius: 3px;
+    }
+
+    .batch-verify .list-account-section .table-bottom .pagination .paginator .item-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .batch-verify .list-account-section .table-bottom .pagination .paginator li {
+        background-color: #fff;
+        cursor: pointer;
+        width: 32px;
+        margin-right: 1px;
+        border-radius: 3px;
     }
 
     .batch-verify .list-account-section .table-bottom .pagination .paginator .item-page {
@@ -850,15 +1317,27 @@
         text-decoration: underline;
     }
 
-    .batch-verify .list-account-section .table-bottom .pagination .paginator .item-page .page {
-        font-size: 14px;
+    .batch-verify .list-account-section .table-bottom .pagination .paginator .item-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .batch-verify .list-account-section .table-bottom .pagination .paginator .enable-page {
+        color: #ff9800;
+        text-decoration: underline;
     }
 
     .batch-verify .list-account-section .table-bottom .pagination .paginator .button-last {
         display: flex;
         justify-content: center;
     }
-    /*Bath*/
+
+    .batch-verify .list-account-section .table-bottom .pagination .paginator .button-last {
+        display: flex;
+        justify-content: center;
+    }
+    /*End Bath List*/
 
 
     /*_____Right ______*/
@@ -964,15 +1443,70 @@
         width: 100%;
         margin-bottom: 16px;
     }
-}
 
-@media screen and (max-width: 575px) {
-   /*Bath*/
-   .batch-verify {
+    /*Bath list*/
+    .batch-verify {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
+
+    .batch-verify .account-info-section .left-section {
+        width: 100%;
+    }
+    /*End bath list*/
+}
+
+@media screen and (max-width: 575px) {
+   /*Bath List*/
+   .batch-upload-file .slide-section {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .batch-upload-file .row .text-1 {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 450px;
+    }
+
+    .batch-upload-file .row .text-2 {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 10px;
+        width: 450px;
+    }
+
+    .batch-upload-file .row .file-upload {
+        color: #ff9800;
+        margin-top: 15px;
+        height: 24px;
+        cursor: pointer;
+    }
+
+    .batch-upload-file .row .file-upload .icon-download {
+        margin-bottom: 4px;
+        margin-right: 10px;
+    }
+
+    .batch-upload-file .row .file-section {
+        width: 500px;
+        margin-top: 30px;
+    }
+
+    .batch-upload-file .row .btn-default {
+        width: 100%;
+        font-weight: 500;
+        height: 48px;
+        margin-top: 24px;
+    }
+
+    .batch-verify {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
     .batch-verify .account-info-section {
         background-color: #fff;
         border-radius: 5px;
@@ -980,10 +1514,6 @@
         height: -webkit-fit-content;
         height: -moz-fit-content;
         height: fit-content;
-    }
-    
-    .batch-verify .account-info-section .left-section {
-        width: 100%;
     }
 
     .batch-verify .account-info-section .left-section {
@@ -1057,6 +1587,7 @@
     .batch-verify .account-info-section .right-section .item4 .transfer-info-card {
         height: 100%;
     }
+
     .batch-verify .account-info-section .right-section .item4 .transfer-info-card .message {
         font-size: 14px;
         font-weight: 500;
@@ -1078,6 +1609,7 @@
         margin-left: 0;
         transform: scaleY(-1);
     }
+
     .batch-verify .line-vertical-full {
         height: 1px;
         background-color: #e6e9ee;
@@ -1123,15 +1655,15 @@
         width: 800px;
     }
 
-    .batch-verify .list-account-section .table-section table tbody .highlight-row {
-        background-color: #e2d8ee;
-    }
-
     .batch-verify .list-account-section .table-section table tbody tr {
         min-height: 57px;
         background-color: #fff;
         font-size: 13px;
         font-weight: 400;
+    }
+
+    .batch-verify .list-account-section .table-section table tbody .highlight-row {
+        background-color: #e2d8ee;
     }
 
     .batch-verify .list-account-section .table-section table tbody tr .table-text {
@@ -1144,6 +1676,11 @@
         color: #ff3b30;
         text-align: center;
         padding: 5px;
+    }
+
+    .batch-verify .list-account-section .table-section table tbody tr .table-text {
+        min-height: 57px;
+        padding-top: 10px;
     }
 
     .batch-verify .list-account-section .table-bottom {
@@ -1169,6 +1706,10 @@
         height: 50px;
     }
 
+    .select-container__select-option {
+        font-size: 13px!important;
+    }
+
     .batch-verify .list-account-section .table-bottom .pagination {
         width: 100%;
         margin-top: 16px;
@@ -1183,6 +1724,28 @@
         list-style-type: none;
         margin: 0;
         padding: 0;
+    }
+
+    .batch-verify .list-account-section .table-bottom .pagination .paginator li {
+        background-color: #fff;
+        cursor: pointer;
+        width: 32px;
+        margin-right: 1px;
+        border-radius: 3px;
+    }
+
+    .batch-verify .list-account-section .table-bottom .pagination .paginator .item-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .batch-verify .list-account-section .table-bottom .pagination .paginator li {
+        background-color: #fff;
+        cursor: pointer;
+        width: 32px;
+        margin-right: 1px;
+        border-radius: 3px;
     }
 
     .batch-verify .list-account-section .table-bottom .pagination .paginator .item-page {
@@ -1204,13 +1767,20 @@
         text-decoration: underline;
     }
 
-    .batch-verify .list-account-section .table-bottom .pagination .paginator .item-page .page {
-        font-size: 14px;
+    .batch-verify .list-account-section .table-bottom .pagination .paginator .item-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .batch-verify .list-account-section .table-bottom .pagination .paginator .enable-page {
+        color: #ff9800;
+        text-decoration: underline;
     }
 
     .batch-verify .list-account-section .table-bottom .pagination .paginator .button-last {
         display: flex;
         justify-content: center;
     }
-   /*Bath*/
+   /*End Bath List*/
 }
